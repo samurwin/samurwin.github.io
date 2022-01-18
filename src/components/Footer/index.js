@@ -6,19 +6,19 @@ function Footer() {
             <img 
             src={require('../../assets/icons/github.png')} 
             alt='github icon'
-            className='px-3' 
+            className='p-3' 
             />
 
             <img 
             src={require('../../assets/icons/linkedIn.png')} 
             alt='linkedin icon' 
-            className='px-3'
+            className='p-3'
             />
 
             <img 
             src={require('../../assets/icons/insta.png')} 
             alt='instagram icon' 
-            className='px-3'
+            className='p-3'
             />
         </footer>
     )
