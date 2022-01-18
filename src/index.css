@@ -6,6 +6,11 @@
   --dark: #36393B;
   --light: #EFF3F7;
   --error: #B44647;
+  --spacing-one: calc(1rem * 0.25);
+  --spacing-two: calc(1rem * 0.5);
+  --spacing-three: 1rem;
+  --spacing-four: calc(1rem * 1.5);
+  --spacing-five: calc(1rem * 3);
 }
 
 * {
@@ -65,7 +70,16 @@ a:visited {
 
 nav {
   width: 100%;
+  display: flex;
   justify-content: center;
+  color: var(--secondary);
+}
+
+nav li {
+  list-style: none;
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+  font-size: 1.2rem;
 }
 
 nav a {
@@ -84,6 +98,10 @@ nav a:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+header {
+  background-color: var(--primary);
 }
 
 /* HEIGHT / WIDTH UTILS */
