@@ -104,6 +104,13 @@ header {
   background-color: var(--primary);
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;
