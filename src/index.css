@@ -1,8 +1,8 @@
 :root {
   --primary: #f05d5e;
   --secondary: #d6e0ec;
-  --tertiary: #FFB870
-  --quartriary: #0F7173;
+  --tertiary: #FFB870;
+  --quatrinary: #0F7173;
   --dark: #36393B;
   --light: #EFF3F7;
   --error: #B44647;
@@ -109,6 +109,17 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: var(--secondary);
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.about-blurb {
+  background-color: var(--tertiary);
+  border-radius: 15px;
 }
 
 /* HEIGHT / WIDTH UTILS */

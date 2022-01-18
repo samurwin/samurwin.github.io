@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className='flex-row justify-center pb-3'>
+        <footer className='flex-row justify-center px-3'>
             <img 
             src={require('../../assets/icons/github.png')} 
             alt='github icon'
