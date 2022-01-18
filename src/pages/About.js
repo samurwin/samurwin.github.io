@@ -4,11 +4,11 @@ function About() {
     return (
         <div className='my-3'>
             <section className='flex-row justify-space-around align-center'>
-                <div className='col-12 col-lg-6'>
+                <div className='col-12 col-lg-7'>
                     <h1 className='text-primary'>Hi I'm Sam!</h1>
-                    <h3 className='text-quatrinary'>Full Stack Developer & Graphic Designer</h3>
+                    <h4 className='text-quatrinary'>Full Stack Developer & Graphic Designer</h4>
                 </div>
-                <div className='col-12 col-lg-6'>
+                <div className='col-12 col-lg-5'>
                     <img 
                     src={require('../assets/images/website-heroimg.png')} 
                     alt='Samantha Urwin at a desk' 
