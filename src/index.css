@@ -60,7 +60,7 @@ p {
 }
 
 a {
-  color: var(--dark);
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -68,29 +68,14 @@ a:visited {
   color: inherit;
 }
 
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: var(--secondary);
-}
-
-nav li {
-  list-style: none;
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-  font-size: 1.2rem;
-}
-
 nav a {
-  padding: 6px 10px;
-  margin: 0 15px;
+  padding-right: var(--spacing-three);
+  padding-left: var(--spacing-three);
   transition: all 0.2s;
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  color: var(--tertiary);
 }
 
 .container {
