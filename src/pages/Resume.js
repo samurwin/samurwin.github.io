@@ -2,36 +2,45 @@ import React from 'react';
 
 function Resume() {
     return (
-        <section>
-            <h1 className='text-primary'>Resume</h1>
-            <button className='btn m-2'>Download Resume</button>
-            <div className='m-2'>
-                <h4 className='text-quatrinary'>Skills</h4>
-                <ul>
-                    <li>Web Design</li>
-                    <li>Full Stack Web Development</li>
-                </ul>
+        <section className='w-100 my-4 flex-row justify-center'>
+            <div className='col-12 col-lg-10 flex-row justify-space-between'>
+                <h1 className='text-primary'>Resume</h1>
+                <button className='btn m-2'>Download Resume</button>
             </div>
-            <div className='m-2'>
-                <h4 className='text-quatrinary'>Education</h4>
+
+            <div className='m-2 card col-12 col-lg-10 flex-column align-center'>
+                <h4 className='text-quatrinary mb-2'>Education</h4>
                 <ul>
                     <li>Full Stack Coding Bootcamp - University of Toronto</li>
                     <li>Advertising & Graphic Design - Humber College</li>
                 </ul>
             </div>
-            <div className='m-2'>
-                <h4 className='text-quatrinary'>Technologies</h4>
-                <ul>
+
+            <div className='m-2 card col-12 col-lg-5'>
+                <h4 className='text-quatrinary mb-2 text-center'>Technologies</h4>
+                <ul className='pl-5'>
                     <li>React</li>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
+                    <li>MongoDB, Mongoose</li>
+                    <li>MySQL, Sequalize</li>
                     <li>Express</li>
                     <li>Javascript</li>
                     <li>HTML/CSS</li>
                     <li>Adobe Creative Cloud</li>
-                    <li>Figma</li>
                 </ul>
             </div>
+
+            <div className='m-2 card col-12 col-lg-5'>
+                <h4 className='text-quatrinary mb-2 text-center'>Skills</h4>
+                <ul className='pl-5'>
+                    <li>Web Design</li>
+                    <li>Full Stack Web Development</li>
+                    <li>Accessible Design</li>
+                    <li>Responsive Design</li>
+                    <li>RESTful APIs</li>
+                    <li>GraphQL APIs</li>
+                </ul>
+            </div>
+
         </section>
     );
 };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
-        <nav className='col-12 col-lg-5 pt-3 flex-row text-secondary'>
+        <nav className='col-12 col-lg-5 pt-3 flex-row justify-center text-secondary'>
             <Link to='/'>About</Link>
             <Link to='/portfolio'>Portfolio</Link>
             <Link to='/resume'>Resume</Link>

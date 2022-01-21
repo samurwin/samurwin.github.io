@@ -21,7 +21,7 @@
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -68,6 +68,12 @@ a:visited {
   color: inherit;
 }
 
+li {
+  margin-bottom: var(--spacing-one);
+  color: var(--dark);
+  font-weight: bolder;
+}
+
 nav a {
   padding-right: var(--spacing-three);
   padding-left: var(--spacing-three);
@@ -106,6 +112,27 @@ footer {
 .about-blurb {
   background-color: var(--tertiary);
   border-radius: 15px;
+}
+
+.btn {
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  background-color: var(--primary);
+  padding: var(--spacing-two) var(--spacing-three);
+  color: var(--light);
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.card {
+  background-color: var(--light);
+  padding: var(--spacing-four);
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.3);
 }
 
 /* HEIGHT / WIDTH UTILS */
