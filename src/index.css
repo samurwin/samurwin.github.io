@@ -84,6 +84,27 @@ nav a:hover {
   color: var(--tertiary);
 }
 
+input, textarea {
+  width: 100%;
+  font-size: 1rem;
+  background: var(--light);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  padding: var(--spacing-two) var(--spacing-one);
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+textarea {
+  min-height: 150px;
+}
+
 .container {
   width: 85%;
   max-width: 1200px;
@@ -1014,8 +1035,8 @@ footer {
     align-items: stretch;
   }
 
-  .align-end-lg {
-    align-items: flex-end;
+  .align-start-lg {
+    align-items: flex-start;
   }
 
   .align-center-lg {

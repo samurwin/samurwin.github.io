@@ -3,20 +3,20 @@ import React from 'react';
 function Resume() {
     return (
         <section className='w-100 my-4 flex-row justify-center'>
-            <div className='col-12 col-lg-10 flex-row justify-space-between'>
+            <div className='col-12 col-md-10 flex-row justify-space-between'>
                 <h1 className='text-primary'>Resume</h1>
                 <button className='btn m-2'>Download Resume</button>
             </div>
 
-            <div className='m-2 card col-12 col-lg-10 flex-column align-center'>
+            <div className='m-2 card col-12 col-md-10 flex-column align-center'>
                 <h4 className='text-quatrinary mb-2'>Education</h4>
-                <ul>
+                <ul className='pl-5'>
                     <li>Full Stack Coding Bootcamp - University of Toronto</li>
                     <li>Advertising & Graphic Design - Humber College</li>
                 </ul>
             </div>
 
-            <div className='m-2 card col-12 col-lg-5'>
+            <div className='m-2 card col-12 col-md-5'>
                 <h4 className='text-quatrinary mb-2 text-center'>Technologies</h4>
                 <ul className='pl-5'>
                     <li>React</li>
@@ -29,7 +29,7 @@ function Resume() {
                 </ul>
             </div>
 
-            <div className='m-2 card col-12 col-lg-5'>
+            <div className='m-2 card col-12 col-md-5'>
                 <h4 className='text-quatrinary mb-2 text-center'>Skills</h4>
                 <ul className='pl-5'>
                     <li>Web Design</li>

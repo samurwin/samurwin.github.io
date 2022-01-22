@@ -16,7 +16,7 @@ function About() {
                     />
                 </div>
             </section>
-            <section className='my-3 p-4 about-blurb'>
+            <section className='my-3 p-4 card'>
                 <h2 className='text-center text-quatrinary'>About Me</h2>
                 <p className='text-dark my-2'>
                 I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization. 
