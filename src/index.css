@@ -156,6 +156,10 @@ footer {
   box-shadow: rgba(0,0,0,0.3);
 }
 
+.project-img {
+  width: 100%;
+}
+
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;

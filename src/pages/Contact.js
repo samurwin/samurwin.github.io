@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
     return (
-        <section className='w-100 my-4 flex-column align-center align-start-lg'>
+        <section className='w-100 my-4 flex-column align-center'>
             <h1 className='text-primary mb-2'>Contact Me</h1>
             <form className='flex-column align-center align-start-lg card my-2 w-75'>
                 <div className='my-2 flex-column w-100'>

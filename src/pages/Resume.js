@@ -3,10 +3,8 @@ import React from 'react';
 function Resume() {
     return (
         <section className='w-100 my-4 flex-row justify-center'>
-            <div className='col-12 col-md-10 flex-row justify-space-between'>
-                <h1 className='text-primary'>Resume</h1>
-                <button className='btn m-2'>Download Resume</button>
-            </div>
+
+            <h1 className='text-primary col-12 text-center mb-2'>Resume</h1>
 
             <div className='m-2 card col-12 col-md-10 flex-column align-center'>
                 <h4 className='text-quatrinary mb-2'>Education</h4>
@@ -40,6 +38,8 @@ function Resume() {
                     <li>GraphQL APIs</li>
                 </ul>
             </div>
+
+            <button className='btn m-2 w-75'>Download Resume</button>
 
         </section>
     );
