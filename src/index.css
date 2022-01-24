@@ -160,6 +160,10 @@ footer {
   width: 100%;
 }
 
+.icon:hover {
+  cursor: pointer;
+}
+
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;

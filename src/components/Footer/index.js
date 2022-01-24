@@ -14,7 +14,7 @@ function Footer() {
             <img 
             src={require('../../assets/icons/github.png')} 
             alt='github icon'
-            className='p-3'
+            className='p-3 icon'
             onClick={(e) => {
                 e.preventDefault();
                 onClick(github)
@@ -24,7 +24,7 @@ function Footer() {
             <img 
             src={require('../../assets/icons/linkedIn.png')} 
             alt='linkedin icon' 
-            className='p-3'
+            className='p-3 icon'
             onClick={(e) => {
                 e.preventDefault();
                 onClick(linkedIn)
@@ -34,7 +34,7 @@ function Footer() {
             <img 
             src={require('../../assets/icons/insta.png')} 
             alt='instagram icon' 
-            className='p-3'
+            className='p-3 icon'
             onClick={(e) => {
                 e.preventDefault();
                 onClick(insta)
