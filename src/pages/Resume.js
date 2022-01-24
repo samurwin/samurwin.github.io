@@ -39,7 +39,12 @@ function Resume() {
                 </ul>
             </div>
 
-            <button className='btn m-2 w-75'>Download Resume</button>
+            <a 
+            href='https://drive.google.com/file/d/1XIGmPSdUwjZCGlBuAxCZAaZYDSMuynyK/view?usp=sharing' 
+            className='btn m-2 w-75'
+            >
+            Download Resume
+            </a>
 
         </section>
     );
