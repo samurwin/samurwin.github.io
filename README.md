@@ -8,7 +8,7 @@ This is my personal portfolio website! **Created with React**, to showcase my wo
 
 ![Screenshot of Webpage](./portfolio-home.png)
 
-Visit the website at: [Deployed Website](https://samurwin.github.io/smu-portfolio/)
+Visit the website at: [Deployed Website](https://samurwin.github.io/)
 
 ## The Creator
 
