@@ -1,7 +1,7 @@
 {
   "name": "smu-portfolio",
   "version": "0.1.0",
-  "homepage": "https://samurwin.github.io/",
+  "homepage": "https://samurwin.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
