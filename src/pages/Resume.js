@@ -6,8 +6,8 @@ function Resume() {
 
             <h1 className='text-primary col-12 text-center mb-2'>Resume</h1>
 
-            <div className='m-2 card col-12 col-md-10 flex-column align-center'>
-                <h4 className='text-quatrinary mb-2'>Education</h4>
+            <div className='m-2 card col-12 col-md-10 flex-column align-center-md align-start'>
+                <h4 className='w-100 text-quatrinary mb-2 text-center'>Education</h4>
                 <ul className='pl-5'>
                     <li>Full Stack Coding Bootcamp - University of Toronto</li>
                     <li>Advertising & Graphic Design - Humber College</li>
@@ -15,7 +15,7 @@ function Resume() {
             </div>
 
             <div className='m-2 card col-12 col-md-5'>
-                <h4 className='text-quatrinary mb-2 text-center'>Technologies</h4>
+                <h4 className='w-100 text-quatrinary mb-2 text-center'>Technologies</h4>
                 <ul className='pl-5'>
                     <li>React</li>
                     <li>MongoDB, Mongoose</li>
@@ -28,7 +28,7 @@ function Resume() {
             </div>
 
             <div className='m-2 card col-12 col-md-5'>
-                <h4 className='text-quatrinary mb-2 text-center'>Skills</h4>
+                <h4 className='w-100 text-quatrinary mb-2 text-center'>Skills</h4>
                 <ul className='pl-5'>
                     <li>Web Design</li>
                     <li>Full Stack Web Development</li>
@@ -41,7 +41,7 @@ function Resume() {
 
             <a 
             href='https://drive.google.com/file/d/1XIGmPSdUwjZCGlBuAxCZAaZYDSMuynyK/view?usp=sharing' 
-            className='btn m-2 w-75'
+            className='btn m-2 w-75 text-center'
             >
             Download Resume
             </a>
