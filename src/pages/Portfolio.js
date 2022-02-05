@@ -37,6 +37,13 @@ function Portfolio() {
             deployed: "https://samurwin.github.io/weather-dashboard/",
             image: "weather-dash.jpg",
             description: "Find the current, and 5 day forcast. Created with Javascript & third party APIs."
+        },
+        {
+            title: "Savoury Subscriptions",
+            github: "https://github.com/ScalexanderB/Savoury-Subscriptions",
+            deployed: "https://savoury-subscriptions.herokuapp.com/",
+            image: "savoury-sub.jpg",
+            description: "A meal kit subscription service website. Created with React, MongoDB/Mongoose, & GraphQL."
         }
     ]
 
