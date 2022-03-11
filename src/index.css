@@ -13,6 +13,12 @@
   --spacing-five: calc(1rem * 3);
 }
 
+@font-face {
+  font-family: "MilgranCondensed";
+  src: local("MilgranCondensed"),
+  url("./assets/fonts/Milgran-Condensed.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,17 +31,17 @@ body {
 }
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--tertiary-color);
   background-color: var(--secondary);
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 h3 {
@@ -60,7 +66,7 @@ p {
 }
 
 a {
-  color: var(--secondary);
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -114,7 +120,9 @@ textarea {
 }
 
 header {
-  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 footer {
@@ -126,7 +134,7 @@ footer {
 }
 
 .hero-img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 

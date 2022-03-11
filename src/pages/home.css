@@ -1,0 +1,14 @@
+body {
+    background-color: var(--dark);
+}
+.title {
+    font-size: 4.25rem;
+    font-family: 'MilgranCondensed';
+    margin: -25px 0;
+    text-align: right;
+}
+
+.hero {
+    background-color: var(--dark);
+    top: 0;
+}

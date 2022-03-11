@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className='p-4 flex-row justify-space-between-lg justify-center'>
             <div>
-            <img src={require('../../assets/images/logo.png')} alt='SMU logo' />
+            <img src={require('../../assets/images/logo-red.png')} alt='SMU logo' />
             </div>
             <Nav />
         </header>
