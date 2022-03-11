@@ -11,6 +11,7 @@
   --spacing-three: 1rem;
   --spacing-four: calc(1rem * 1.5);
   --spacing-five: calc(1rem * 3);
+  --spacing-six: calc(1rem * 6);
 }
 
 @font-face {
@@ -125,11 +126,9 @@ textarea {
 }
 
 header {
-  position: sticky;
   top: 0;
   left: 0;
   z-index: 99999;
-
 }
 
 footer {

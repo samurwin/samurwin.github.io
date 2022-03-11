@@ -4,7 +4,7 @@ body {
 .title {
     font-size: 4.25rem;
     font-family: 'MilgranCondensed';
-    margin: -25px 0;
+    margin: -1.75rem 0;
     text-align: right;
 }
 
@@ -12,8 +12,26 @@ body {
     background-color: var(--dark);
 }
 
-/* angled div */
 .home-slanted-div {
+    padding: var(--spacing-six) 0;
+    clip-path: polygon(0% 0, 100% 5%, 100% 100%, 0 100%);
+    background-color: var(--secondary);
+}
+
+.skill-card {
+    background-color: var(--light);
+    padding: var(--spacing-three);
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    text-align: center;
+}
+
+.featured-img {
+    width: 40%;
+}
+
+/* .home-slanted-div {
     position: relative;
     padding: var(--spacing-four) 0;
     background: var(--secondary);
@@ -21,7 +39,6 @@ body {
     z-index: 1;
 }
   
-/* where the magic happens */
 .home-slanted-div:after {
     content: '';
     width: 100%;
@@ -33,3 +50,10 @@ body {
     transform-origin: right top;
     transform: skewY(2deg);
 }
+
+.home-slanted-div div .skill-card {
+    background-color: light;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+} */
