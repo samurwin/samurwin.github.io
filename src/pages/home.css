@@ -10,5 +10,26 @@ body {
 
 .hero {
     background-color: var(--dark);
-    top: 0;
+}
+
+/* angled div */
+.home-slanted-div {
+    position: relative;
+    padding: var(--spacing-four) 0;
+    background: var(--secondary);
+    overflow: visible;
+    z-index: 1;
+}
+  
+/* where the magic happens */
+.home-slanted-div:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: right top;
+    transform: skewY(2deg);
 }

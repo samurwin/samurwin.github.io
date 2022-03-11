@@ -36,6 +36,10 @@ body {
   background-color: var(--secondary);
 }
 
+.milgran {
+  font-family: 'MilgranCondensed';
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -84,6 +88,7 @@ nav a {
   padding-right: var(--spacing-three);
   padding-left: var(--spacing-three);
   transition: all 0.2s;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -123,6 +128,8 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 99999;
+
 }
 
 footer {
@@ -177,8 +184,8 @@ footer {
   width: 100%;
 }
 
-.w-75 {
-  width: 75%;
+.w-80 {
+  width: 80%;
 }
 
 .w-50 {
