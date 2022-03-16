@@ -41,7 +41,7 @@ function Home() {
 
                 <div className='section-spacing'>
                     <h1 className='milgran text-quatrinary text-center'>FEATURED PROJECTS</h1>
-                    <div className='flex-row align-center justify-space-around mt-4'>
+                    <div className='flex-row align-center justify-space-around mt-5'>
                         <img 
                         src={require('../assets/images/dev-diaries.jpg')}
                         alt='dev diaries project'

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import Home from './pages/Home';
 // import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -20,7 +20,7 @@ function App() {
             <Route exact path='/resume' component={Resume} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
