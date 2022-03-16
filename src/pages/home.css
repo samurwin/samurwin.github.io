@@ -12,6 +12,8 @@ body {
     background: radial-gradient(#36393B, #252729);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    padding-top: calc(1rem * 8);
+    padding-bottom: var(--spacing-five);
 }
 
 .hero-img {

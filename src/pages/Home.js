@@ -14,7 +14,7 @@ function Home() {
                     <img
                     src={require('../assets/images/hero-star.png')} 
                     alt='Samantha Urwin Web/Graphic Designer and Developer'
-                    className='hero-img py-5'
+                    className='hero-img'
                     />
                 </div>
             </section>
