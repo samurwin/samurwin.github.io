@@ -1,5 +1,5 @@
 body {
-    background-color: var(--dark);
+    background-color: var(--secondary);
 }
 .title {
     font-size: 4.25rem;
@@ -9,13 +9,14 @@ body {
 }
 
 .hero {
-    background-color: var(--dark);
+    background: radial-gradient(#36393B, #252729);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
-.home-slanted-div {
-    padding: var(--spacing-six) 0;
-    clip-path: polygon(0% 0, 100% 5%, 100% 100%, 0 100%);
-    background-color: var(--secondary);
+.hero-img {
+    width: 80%;
+    height: auto;
 }
 
 .skill-card {
@@ -29,6 +30,7 @@ body {
 
 .featured-img {
     width: 40%;
+    border-radius: 10px;
 }
 
 /* .home-slanted-div {

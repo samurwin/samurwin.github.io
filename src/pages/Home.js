@@ -10,19 +10,21 @@ function Home() {
                     <p className='title text-primary'>DESIGNER<span className='title text-secondary'>.</span></p>
                     <p className='title text-secondary'>DEVELOPER<span className='title text-primary'>.</span> </p>
                 </div>
-                <div className='col-12 col-lg-5 mt-3'>
+                <div className='col-12 col-lg-5 my-3'>
                     <img
                     src={require('../assets/images/hero-star.png')} 
                     alt='Samantha Urwin Web/Graphic Designer and Developer'
-                    className='hero-img'
+                    className='hero-img py-5'
                     />
                 </div>
             </section>
-            <section className='home-slanted-div'>
-                <h1 className='milgran text-quatrinary text-center my-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
-                <br/> AND A STRATEGIC MIND.</h1>
+            <section>
+                <div className='section-spacing'>
+                    <h1 className='milgran text-quatrinary text-center my-5 pt-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
+                    <br/> AND A STRATEGIC MIND.</h1>
+                </div>
 
-                <div className='flex-row align-center justify-space-around my-5'>
+                <div className='flex-row align-center justify-space-around section-spacing'>
                     <div className='skill-card'>
                         <h4 className='milgran text-dark'>BRAND DESIGN</h4>
                         <p className='text-dark'>I design...</p>
@@ -37,7 +39,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='mt-5'>
+                <div className='section-spacing'>
                     <h1 className='milgran text-quatrinary text-center'>FEATURED PROJECTS</h1>
                     <div className='flex-row align-center justify-space-around mt-4'>
                         <img 
