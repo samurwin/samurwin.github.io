@@ -129,6 +129,12 @@ textarea {
   margin: calc(1rem * 6) 0;
 }
 
+@media screen and (max-width: 768px) {
+  .section-spacing {
+    margin: calc(1rem * 3) 0;
+  }
+}
+
 header {
   top: 0;
   left: 0;
