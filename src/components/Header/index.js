@@ -3,8 +3,8 @@ import Nav from '../Nav';
 
 function Header() {
     return (
-        <header className='p-4 flex-row justify-space-between-lg justify-center'>
-            <div>
+        <header className='flex-row justify-space-between'>
+            <div className='p-4'>
             <img src={require('../../assets/images/logo-red.png')} alt='SMU logo' />
             </div>
             <Nav />

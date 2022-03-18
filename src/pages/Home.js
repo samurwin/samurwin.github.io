@@ -4,8 +4,9 @@ import './home.css';
 function Home() {
     return (
         <div>
+            {/* Hero */}
             <section className='flex-row justify-space-around align-center hero w-100'>
-                <div className='col-12 col-md-5 my-3'>
+                <div className='col-12 col-md-5 my-5'>
                     <h4 className='text-secondary pb-4 pr-4 intro'>Hi, I'm Sam!</h4>
                     <p className='title text-primary'>DESIGNER<span className='title text-secondary'>.</span></p>
                     <p className='title text-secondary'>DEVELOPER<span className='title text-primary'>.</span> </p>
@@ -18,6 +19,8 @@ function Home() {
                     />
                 </div>
             </section>
+
+            {/* Page Content */}
             <section>
                 <div className='section-spacing'>
                     <h1 className='milgran text-quatrinary text-center p-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
@@ -26,15 +29,15 @@ function Home() {
 
                 {/* Skills */}
                 <div className='flex-row align-center justify-space-around section-spacing'>
-                    <div className='skill-card col-8 col-lg-3'>
+                    <div className='skill-card col-8 col-md-5 col-lg-3'>
                         <h4 className='milgran text-dark'>BRAND DESIGN</h4>
                         <p className='text-dark'>I design...</p>
                     </div>
-                    <div className='skill-card col-8 col-lg-3'>
+                    <div className='skill-card col-8 col-md-5 col-lg-3'>
                         <h4 className='milgran text-dark'>WEB DESIGN</h4>
                         <p className='text-dark'>I design...</p>
                     </div>
-                    <div className='skill-card col-8 col-lg-3'>
+                    <div className='skill-card col-8 col-md-5 col-lg-3'>
                         <h4 className='milgran text-dark'>DEVELOPMENT</h4>
                         <p className='text-dark'>I design...</p>
                     </div>

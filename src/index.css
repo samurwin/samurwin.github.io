@@ -85,17 +85,6 @@ li {
   font-weight: bolder;
 }
 
-nav a {
-  padding-right: var(--spacing-three);
-  padding-left: var(--spacing-three);
-  transition: all 0.2s;
-  text-transform: uppercase;
-}
-
-nav a:hover {
-  color: var(--tertiary);
-}
-
 input, textarea {
   width: 100%;
   font-size: 1rem;
@@ -135,26 +124,6 @@ textarea {
   }
 }
 
-header {
-  top: 0;
-  left: 0;
-  z-index: 99999;
-  position: absolute;
-  width: 100%;
-  margin-bottom: -105px;
-}
-
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--secondary);
-}
-
-.about-blurb {
-  background-color: var(--tertiary);
-  border-radius: 15px;
-}
 
 .btn {
   border: 2px solid var(--primary);
@@ -169,6 +138,76 @@ footer {
   color: var(--primary);
   background-color: var(--secondary);
 }
+
+/* HEADER STYLES */
+header {
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+  margin-bottom: -105px;
+}
+
+nav a {
+  padding-right: var(--spacing-three);
+  padding-left: var(--spacing-three);
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--tertiary);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    border: none;
+    background-color: rgba(0,0,0,0);
+  }
+
+  nav .navbar {
+    display: none;
+  }
+
+  nav:focus-within .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    text-align: right;
+  }
+
+  nav:focus-within {
+    background-color: var(--secondary);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    margin-bottom: var(--spacing-two);
+    margin-top: var(--spacing-two);
+  }
+
+  nav a {
+    padding: var(--spacing-three);
+  }
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.about-blurb {
+  background-color: var(--tertiary);
+  border-radius: 15px;
+}
+
 
 .card {
   background-color: var(--light);
@@ -985,15 +1024,6 @@ footer {
 
 /* col-lg */
 @media screen and (min-width: 992px) {
-  nav {
-    width: auto;
-    justify-content: flex-end;
-  }
-
-  .page-title {
-    width: auto;
-  }
-
   .col-md-auto {
     flex-grow: 1;
     flex-basis: 0;

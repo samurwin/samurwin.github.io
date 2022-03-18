@@ -63,4 +63,9 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    .hero {
+        padding-top: calc(1rem * 6);
+        padding-bottom: var(--spacing-six);
+    }
 }
