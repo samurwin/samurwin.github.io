@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css';
+import {Helmet} from 'react-helmet';
 import ListItem from '../components/ListItem';
 
 import ACC from '../assets/icons/tech/adobe-creative-cloud-icon.svg';
@@ -71,9 +72,12 @@ function About() {
 
     return (
         <div>
+            <Helmet>
+                <style>{'body { background: radial-gradient(#36393B, #252729); }'}</style>
+            </Helmet>
             {/* ABOUT ME */}
             <section className='slanted-left'>
-                <div className='container flex-row justify-space-around align-center'>
+                <div className='container flex-row justify-space-between align-center'>
                     <div className='col-lg-4 pr-5'>
                         <img 
                             src={require('../assets/images/about-me.jpg')} 

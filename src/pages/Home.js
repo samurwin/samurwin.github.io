@@ -1,9 +1,13 @@
 import React from 'react';
 import './home.css';
+import {Helmet} from 'react-helmet';
 
 function Home() {
     return (
         <div>
+            <Helmet>
+                <style>{'body { background: var(--secondary); }'}</style>
+            </Helmet>
             {/* Hero */}
             <section className='flex-row justify-space-around align-center hero w-100'>
                 <div className='col-12 col-md-5 my-5'>

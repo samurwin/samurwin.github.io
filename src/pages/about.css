@@ -1,13 +1,9 @@
 .slanted-left {
     background-color: var(--secondary);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     padding-top: calc(1rem * 10);
     padding-bottom: var(--spacing-six);
-}
-
-body {
-    background: radial-gradient(#36393B, #252729);
 }
 
 .about-img {
@@ -29,7 +25,8 @@ body {
     font-style: italic;
     font-size: 1rem;
 }
+
 .star {
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
 }

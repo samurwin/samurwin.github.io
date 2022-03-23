@@ -8,7 +8,7 @@ function Nav() {
             <div className='navbar flex-row align-center'>
                 <Link to='/'>Home</Link>
                 <Link to='/portfolio'>Portfolio</Link>
-                <Link to='/resume'>About</Link>
+                <Link to='/about'>About</Link>
             </div>
         </nav>
     )
