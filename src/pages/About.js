@@ -1,7 +1,63 @@
 import React from 'react';
 import './about.css';
+import ListItem from '../components/ListItem';
+
+import ACC from '../assets/icons/tech/adobe-creative-cloud-icon.svg';
+import JS from '../assets/icons/tech/javascript-icon.svg';
+import RCT from '../assets/icons/tech/react-icon.svg';
+import MDB from '../assets/icons/tech/mongodb-icon.svg';
+import SQL from '../assets/icons/tech/mysql-icon.svg';
+import GQL from '../assets/icons/tech/graphql-icon.svg';
+import NJS from '../assets/icons/tech/nodejs-icon.svg';
+import CSS from '../assets/icons/tech/css-3-Icon.svg';
+import HTML from '../assets/icons/tech/html-5-icon.svg';
+
+
+
+
 
 function About() {
+
+    const technologies = [
+        {
+            title: 'ADOBE CREATIVE CLOUD',
+            svg: ACC
+        },
+        {
+            title: 'JAVASCRIPT',
+            svg: JS
+        },
+        {
+            title: 'REACT',
+            svg: RCT
+       
+        },
+        {
+            title: 'MONGODB',
+            svg: MDB
+        },
+        {
+            title: 'MYSQL',
+            svg: SQL
+        },
+        {
+            title: 'GRAPHQL',
+            svg: GQL
+        },
+        {
+            title: 'NODE.JS',
+            svg: NJS
+        },
+        {
+            title: 'CSS 3',
+            svg: CSS
+        },
+        {
+            title: 'HTML 5',
+            svg: HTML
+        }
+    ];
+
     return (
         <div>
             {/* ABOUT ME */}
@@ -36,30 +92,33 @@ function About() {
             </section>
 
             {/* RESUME */}
-            <section className='container dark-div w-100'>
+            <section className='container'>
                 {/* CONTACT */}
-                <div>
-                    <h1>CONTACT ME</h1>
+                <div className='section-spacing flex-row justify-space-between align-center'>
+                    <h1 className='milgran text-primary'>CONTACT ME</h1>
                     <div>
-                        <h5><span></span> URWINSAMANTHA@GMAIL.COM</h5>
-                        <h5><span></span> RESUME</h5>
+                        <h5 className='text-primary underline'><span></span> URWINSAMANTHA@GMAIL.COM</h5>
+                        <h5 className='text-primary underline pt-3'><span></span> RESUME</h5>
                     </div>
                 </div>
 
                 {/* TECHNOLOGIES LIST */}
-                <div>
-                    <h1>TECHNOLOGIES</h1>
-                    <ul>
-                        <li>
-                            <span></span>
-                            ABOBE CREATIVE CLOUD
-                        </li>
+                <div className='section-spacing'>
+                    <h2 className='milgran text-secondary'>TECHNOLOGIES</h2>
+                    <ul className='tech-list mt-5 ml-4'>
+                        {technologies.map((technology) => (
+                            <ListItem 
+                            title={technology.title}
+                            key={technology.title}
+                            svg={technology.svg}
+                            />
+                        ))}
                     </ul>
                 </div>
 
                 {/* EDUCATION LIST */}
-                <div>
-                    <h1>EDUCATION</h1>
+                <div className='section-spacing'>
+                    <h2 className='milgran text-secondary'>EDUCATION</h2>
 
                 </div>
             </section>

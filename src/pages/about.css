@@ -18,3 +18,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
 }
+
+.tech-list {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
