@@ -179,7 +179,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     width: 100%;
     text-align: right;
   }
