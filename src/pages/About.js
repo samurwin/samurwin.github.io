@@ -12,9 +12,7 @@ import NJS from '../assets/icons/tech/nodejs-icon.svg';
 import CSS from '../assets/icons/tech/css-3-Icon.svg';
 import HTML from '../assets/icons/tech/html-5-icon.svg';
 
-
-
-
+import star from '../assets/icons/star.svg';
 
 function About() {
 
@@ -58,6 +56,19 @@ function About() {
         }
     ];
 
+    const education = [ 
+        {
+            title: 'ADVERTISING & GRAPHIC DESIGN',
+            svg: star,
+            subheading: 'HUMBER COLLEGE'
+        },
+        {
+            title: 'FULL STACK CODING BOOTCAMP',
+            svg: star,
+            subheading: 'UNIVERSITY OF TORONTO'
+        }
+    ];
+
     return (
         <div>
             {/* ABOUT ME */}
@@ -95,7 +106,14 @@ function About() {
             <section className='container'>
                 {/* CONTACT */}
                 <div className='section-spacing flex-row justify-space-between align-center'>
-                    <h1 className='milgran text-primary'>CONTACT ME</h1>
+                    <div className='flex-row'>
+                        <img 
+                            src={star}
+                            alt=''
+                            className='star pr-2'
+                        />
+                        <h1 className='milgran text-primary'>CONTACT ME</h1>
+                    </div>
                     <div>
                         <h5 className='text-primary underline'><span></span> URWINSAMANTHA@GMAIL.COM</h5>
                         <h5 className='text-primary underline pt-3'><span></span> RESUME</h5>
@@ -119,7 +137,16 @@ function About() {
                 {/* EDUCATION LIST */}
                 <div className='section-spacing'>
                     <h2 className='milgran text-secondary'>EDUCATION</h2>
-
+                    <div className='flex-row align-center justify-space-between mt-5 ml-4'>
+                        {education.map((degree) => (
+                            <ListItem
+                            title={degree.title}
+                            key={degree.title}
+                            subheading={degree.subheading}
+                            svg={degree.svg}
+                            />
+                        ))}
+                    </div>
                 </div>
             </section>
         </div>

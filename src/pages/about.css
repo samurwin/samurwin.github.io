@@ -24,3 +24,12 @@ body {
     -webkit-columns: 3;
     -moz-columns: 3;
 }
+
+.italic-small {
+    font-style: italic;
+    font-size: 1rem;
+}
+.star {
+    width: 3rem;
+    height: 3rem;
+}
