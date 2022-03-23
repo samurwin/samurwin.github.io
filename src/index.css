@@ -68,6 +68,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  line-height: 1.6;
 }
 
 a {
@@ -115,7 +116,8 @@ textarea {
 }
 
 .section-spacing {
-  margin: calc(1rem * 6) 0;
+  margin-top: calc(1rem * 6);
+  margin-bottom: calc(1rem * 6);
 }
 
 @media screen and (max-width: 768px) {
@@ -123,7 +125,6 @@ textarea {
     margin: calc(1rem * 3) 0;
   }
 }
-
 
 .btn {
   border: 2px solid var(--primary);

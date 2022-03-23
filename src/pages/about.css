@@ -1,0 +1,20 @@
+.slanted-left {
+    background-color: var(--secondary);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding-top: calc(1rem * 10);
+    padding-bottom: var(--spacing-six);
+}
+
+body {
+    background: radial-gradient(#36393B, #252729);
+}
+
+.about-img {
+    width: 100%;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
