@@ -77,17 +77,20 @@ function About() {
             </Helmet>
             {/* ABOUT ME */}
             <section className='slanted-left'>
-                <div className='container flex-row justify-space-between align-center'>
-                    <div className='col-lg-4 pr-5'>
+                <div className='container flex-row justify-center justify-space-between-lg align-center'>
+                    <div className='col-8 col-md-5 col-xl-4 about-img'>
                         <img 
                             src={require('../assets/images/about-me.jpg')} 
                             alt='Samantha Urwin on the Street' 
-                            className='about-img'
                         />
                     </div>
 
-                    <div className='col-lg-8 pl-5'>
-                        <h1 className='milgran text-quatrinary'>HI I'M SAM! <span className='desc'>DESIGNER / DEVELOPER - TORONTO, ON</span></h1>
+                    <div className='col-10 col-md-7 col-xl-8 about-text'>
+                        <div className='about-title'>
+                            <h1 className='milgran text-quatrinary'>HI I'M SAM! </h1>
+                            <span className='desc text-quatrinary'>DESIGNER / DEVELOPER - TORONTO, ON</span>
+                        </div>
+
                         <p className='text-dark pt-4'>
                             Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                             Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
@@ -109,7 +112,7 @@ function About() {
             {/* RESUME */}
             <section className='container'>
                 {/* CONTACT */}
-                <div className='section-spacing flex-row justify-space-between align-center'>
+                <div className='section-spacing flex-row justify-center justify-space-between-md align-center'>
                     <div className='flex-row'>
                         <img 
                             src={star}
@@ -118,7 +121,7 @@ function About() {
                         />
                         <h1 className='milgran text-primary'>CONTACT ME</h1>
                     </div>
-                    <div>
+                    <div className='contact-links'>
                         <h5 className='text-primary underline'><span></span> URWINSAMANTHA@GMAIL.COM</h5>
                         <h5 className='text-primary underline pt-3'><span></span> RESUME</h5>
                     </div>
@@ -141,7 +144,7 @@ function About() {
                 {/* EDUCATION LIST */}
                 <div className='section-spacing'>
                     <h2 className='milgran text-secondary'>EDUCATION</h2>
-                    <div className='flex-row align-center justify-space-between mt-5 ml-4'>
+                    <div id='education' className='flex-row align-center justify-center justify-space-between-md mt-5 ml-4'>
                         {education.map((degree) => (
                             <ListItem
                             title={degree.title}

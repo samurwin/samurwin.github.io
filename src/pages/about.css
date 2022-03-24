@@ -6,13 +6,21 @@
     padding-bottom: var(--spacing-six);
 }
 
-.about-img {
+.about-img img {
     width: 100%;
+}
+
+.about-img {
+    padding-right: var(--spacing-five);
 }
 
 .desc {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
+}
+
+.about-text {
+    padding-left: var(--spacing-five);
 }
 
 .tech-list {
@@ -29,4 +37,64 @@
 .star {
     width: 2.6rem;
     height: 2.6rem;
+}
+
+@media screen and (max-width: 992px) {
+    .about-text {
+        padding-left: var(--spacing-one);
+    }
+
+    .tech-list {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    .contact-links {
+        padding-left: var(--spacing-three);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .slanted-left {
+        padding-top: calc(1rem * 8);
+        padding-bottom: calc(1rem * 10)
+    }
+
+    .about-img {
+        padding-right: 0;
+    }
+
+    .about-text {
+        padding-top: var(--spacing-four);
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .tech-list div {
+        justify-content: center;
+    }
+
+    .contact-links {
+        text-align: center;
+        padding-top: var(--spacing-three);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .tech-list {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        margin-left: 0;
+    }
+
+    #education {
+        margin-left: 0;
+    }
 }
