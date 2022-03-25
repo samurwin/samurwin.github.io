@@ -1,52 +1,80 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
+import './portfolio.css';
 import Project from '../components/Project';
 
+import placeholder from '../assets/images/portfolio-placeholder.png';
+
 function Portfolio() {
-    const projects = [
+    const designProjects = [
+        {
+            title: "Trust Me Branding",
+            image: "TM-project-img.jpg",
+        },
+        {
+            title: "Sorgen Mørket",
+            image: "SM-project-img.jpg",
+        },
+        {
+            title: "The Basket Project",
+            image: "BP-project-img.jpg",
+        }
+    ];
+
+    const developmentProjects = [
+        {
+            title: "Savoury Subscriptions",
+            image: "SS-project-img.jpg"
+        },
         {
             title: "Dev Diaries",
-            github: "https://github.com/samurwin/dev-diaries",
-            deployed: "https://polar-retreat-06699.herokuapp.com/",
-            image: "dev-diaries.jpg",
-            description: "Blog Forum. Created with Javascript, MySQL/Sequelize & TailwindCSS."
-        },
-        {
-            title: "Budget Tracker",
-            github: "https://github.com/samurwin/budget-tracker-PWA",
-            deployed: "https://stormy-brook-60885.herokuapp.com/",
-            image: "budget-tracker.jpg",
-            description: "A Budget tracker PWA. Created with Javascript & MongoDB/Mongoose."
-        },
-        {
-            title: "Surveyorama",
-            github: "https://github.com/samurwin/surveyorama",
-            deployed: "https://pacific-fortress-98134.herokuapp.com/login",
-            image: "surveyorama.jpg",
-            description: "Create and share surveys. Created with Javascript & MySQL/Sequelize."
-        },
-        {
-            title: "Last Minute Planner",
-            github: "https://github.com/samurwin/the-last-minute-planner",
-            deployed: "https://samurwin.github.io/the-last-minute-planner/",
-            image: "last-minute.jpg",
-            description: "Search for events near you. Created with Javascript & third party APIs."
+            image: "DD-project-img.jpg"
         },
         {
             title: "Weather Dashboard",
-            github: "https://github.com/samurwin/weather-dashboard",
-            deployed: "https://samurwin.github.io/weather-dashboard/",
-            image: "weather-dash.jpg",
-            description: "Find the current, and 5 day forcast. Created with Javascript & third party APIs."
-        }
+            image: "WD-project-img.jpg"
+        },
     ]
 
     return (
-        <div className='my-4'>
-            <h1 className='text-primary text-center mb-2'>Portfolio</h1>
-            <section className='flex-row justify-center'>
-                {projects.map(project => (
-                    <Project key={project.title} project={project} />
-                ))}
+        <div>
+            <Helmet>
+                <style>{'body { background: radial-gradient(#36393B, #252729); }'}</style>
+            </Helmet>
+
+            <section className='slanted-right'>
+                <div className='container flex-row justify-center justify-space-between-lg align-center'>
+                    <div className='col-12 col-md-6'>
+                        <h1 className='milgran text-quatrinary'>PORTFOLIO</h1>
+                        <p className='text-dark'>View my projects in both design and development!</p>
+                    </div>
+                    <div className='col-6'>
+                        <img
+                        src={placeholder}
+                        alt=''
+                        className='placeholder'
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className='container section-spacing'>
+                <div className='flex-row justify-space-between-lg justify-center align-center'>
+                    <h2 className='milgran text-tertiary text-center col-5'>GRAPHIC DESIGN</h2>
+                    <h2 className='milgran text-tertiary text-center col-5'>DEVELOPMENT</h2>
+                </div>
+                <div className='flex-row justify-space-between-lg justify-center align-center'>
+                    <div className='design col-5'>
+                        {designProjects.map((project) => (
+                            <Project key={project.title} project={project} />
+                        ))}
+                    </div>
+                    <div className='development col-5'>
+                        {developmentProjects.map((project) => (
+                            <Project key={project.title} project={project} />
+                        ))}
+                    </div>
+                </div>
             </section>
         </div>
     );

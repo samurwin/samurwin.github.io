@@ -1,0 +1,49 @@
+.slanted-right {
+    background-color: var(--secondary);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    padding-top: calc(1rem * 11);
+    padding-bottom: calc(1rem * 9);
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .design {
+        padding-right: var(--spacing-five);
+    }
+    .development {
+        padding-left: var(--spacing-five);
+    }
+    h2 {
+        padding-right: var(--spacing-five);
+    }
+    h2 + h2 {
+        padding-right: 0;
+        padding-left: var(--spacing-five);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .placeholder {
+        display: none;
+    }
+
+    h1, p {
+        text-align: center; 
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    .design {
+        padding: 0;
+    }
+
+    .development {
+        padding: 0;
+    }
+}
