@@ -10,19 +10,35 @@ img {
     width: 100%;
 }
 
+.divider {
+    color: var(--tertiary);
+    font-size: 2.25rem;
+}
+
+.galleryBtn {
+    border: none;
+    background-color: inherit;
+    color: var(--tertiary);
+    font-size: 2.25rem;
+}
+
+.selected {
+    border-bottom: 4px solid var(--primary); 
+}
+
 @media screen and (max-width: 992px) {
     .design {
-        padding-right: var(--spacing-five);
+        padding-right: var(--spacing-four);
     }
     .development {
-        padding-left: var(--spacing-five);
+        padding-left: var(--spacing-four);
     }
     h2 {
-        padding-right: var(--spacing-five);
+        padding-right: var(--spacing-four);
     }
     h2 + h2 {
         padding-right: 0;
-        padding-left: var(--spacing-five);
+        padding-left: var(--spacing-four);
     }
 }
 
@@ -39,11 +55,7 @@ img {
         padding: 0;
     }
 
-    .design {
-        padding: 0;
-    }
-
-    .development {
+    h2 + h2 {
         padding: 0;
     }
 }

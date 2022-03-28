@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Helmet} from 'react-helmet';
 import './portfolio.css';
-import Project from '../components/Project';
+import LgProjectGallery from '../components/LgProjectGallery';
+import SmProjectGallery from '../components/SmProjectGallery';
 
 import placeholder from '../assets/images/portfolio-placeholder.png';
 
 function Portfolio() {
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 769;
+  
+    useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleWindowResize);
+  
+      // Return a function from the effect that removes the event listener
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     const designProjects = [
         {
             title: "Trust Me Branding",
@@ -34,7 +46,7 @@ function Portfolio() {
             title: "Weather Dashboard",
             image: "WD-project-img.jpg"
         },
-    ]
+    ];
 
     return (
         <div>
@@ -59,22 +71,11 @@ function Portfolio() {
             </section>
 
             <section className='container section-spacing'>
-                <div className='flex-row justify-space-between-lg justify-center align-center'>
-                    <h2 className='milgran text-tertiary text-center col-5'>GRAPHIC DESIGN</h2>
-                    <h2 className='milgran text-tertiary text-center col-5'>DEVELOPMENT</h2>
-                </div>
-                <div className='flex-row justify-space-between-lg justify-center align-center'>
-                    <div className='design col-5'>
-                        {designProjects.map((project) => (
-                            <Project key={project.title} project={project} />
-                        ))}
-                    </div>
-                    <div className='development col-5'>
-                        {developmentProjects.map((project) => (
-                            <Project key={project.title} project={project} />
-                        ))}
-                    </div>
-                </div>
+                {width > breakpoint ? 
+                    <LgProjectGallery designProjects={designProjects} developmentProjects={developmentProjects}/>
+                    :
+                    <SmProjectGallery designProjects={designProjects} developmentProjects={developmentProjects} />
+                }
             </section>
         </div>
     );
