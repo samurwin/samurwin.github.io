@@ -22,7 +22,7 @@ img {
     font-size: 2.25rem;
 }
 
-.selected {
+.galleryBtn:focus {
     border-bottom: 4px solid var(--primary); 
 }
 

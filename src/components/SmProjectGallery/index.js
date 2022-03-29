@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Project from '../Project';
 
 function SmProjectGallery({ designProjects, developmentProjects }) {
+    const [gallery, setGallery] = useState(0);
+
     return (
         <>
             <div className='flex-row align-center justify-center'>
-                <button type='button' className='milgran galleryBtn selected'>DESIGN</button>
+                <button 
+                type='button' 
+                className='milgran galleryBtn'
+                onClick={() => setGallery(0)}
+                >DESIGN</button>
+
                 <span className='milgran divider px-2'> / </span>
-                <button type='button' className= 'milgran galleryBtn'>DEVELOPMENT</button>
+                
+                <button 
+                type='button' 
+                className= 'milgran galleryBtn'
+                onClick={() => setGallery(1)}
+                >DEVELOPMENT</button>
             </div>
             <div className='px-5'>
-                {designProjects.map((project) => (
-                    <Project key={project.title} project={project} />
-                ))}
+                {gallery ? 
+                    developmentProjects.map((project) => (
+                        <Project key={project.title} project={project} />
+                    ))
+                : 
+                    designProjects.map((project) => (
+                        <Project key={project.title} project={project} />
+                    ))
+                }
+
             </div>
         </>
     )
