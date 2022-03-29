@@ -7,19 +7,39 @@ function SmProjectGallery({ designProjects, developmentProjects }) {
     return (
         <>
             <div className='flex-row align-center justify-center'>
-                <button 
-                type='button' 
-                className='milgran galleryBtn'
-                onClick={() => setGallery(0)}
-                >DESIGN</button>
+                {gallery ? <>
+                    <button 
+                    type='button' 
+                    className='milgran galleryBtn'
+                    onClick={() => setGallery(0)}
+                    >DESIGN</button>
+    
+                    <span className='milgran divider px-2'> / </span>
+                    
+                    <button 
+                    type='button' 
+                    className= 'milgran galleryBtn selected'
+                    onClick={() => setGallery(1)}
+                    >DEVELOPMENT</button>
+                </>
+                :
+                <>
+                    <button 
+                    type='button' 
+                    className='milgran galleryBtn selected'
+                    onClick={() => setGallery(0)}
+                    >DESIGN</button>
+    
+                    <span className='milgran divider px-2'> / </span>
+                    
+                    <button 
+                    type='button' 
+                    className= 'milgran galleryBtn'
+                    onClick={() => setGallery(1)}
+                    >DEVELOPMENT</button>
+                </>
+                }
 
-                <span className='milgran divider px-2'> / </span>
-                
-                <button 
-                type='button' 
-                className= 'milgran galleryBtn'
-                onClick={() => setGallery(1)}
-                >DEVELOPMENT</button>
             </div>
             <div className='px-5'>
                 {gallery ? 
