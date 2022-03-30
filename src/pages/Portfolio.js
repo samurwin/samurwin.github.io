@@ -20,31 +20,37 @@ function Portfolio() {
 
     const designProjects = [
         {
-            title: "Trust Me Branding",
+            title: "Trust Me",
             image: "TM-project-img.jpg",
+            url: "trustme"
         },
         {
             title: "Sorgen Mørket",
             image: "SM-project-img.jpg",
+            url: "sorgenmorket"
         },
         {
             title: "The Basket Project",
             image: "BP-project-img.jpg",
+            url: "thebasketproject"
         }
     ];
 
     const developmentProjects = [
         {
             title: "Savoury Subscriptions",
-            image: "SS-project-img.jpg"
+            image: "SS-project-img.jpg",
+            url: "savourysubscriptions"
         },
         {
             title: "Dev Diaries",
-            image: "DD-project-img.jpg"
+            image: "DD-project-img.jpg",
+            url: "devdiaries"
         },
         {
             title: "Weather Dashboard",
-            image: "WD-project-img.jpg"
+            image: "WD-project-img.jpg",
+            url: "weatherdashboard"
         },
     ];
 
