@@ -1,25 +1,7 @@
-.title {
-    font-size: 4.25rem;
-    font-family: 'MilgranCondensed';
-    margin: -1.75rem 0;
-    text-align: right;
-}
-
-.intro {
-    text-align: right;
-}
-
-.hero {
-    background: radial-gradient(#36393B, #252729);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-    padding-top: calc(1rem * 9);
-    padding-bottom: var(--spacing-five);
-}
-
-.hero-img {
-    width: 80%;
-    height: auto;
+.featured-img {
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-five);
 }
 
 .skill-card {
@@ -29,40 +11,68 @@
     border-radius: 10px;
     width: 20rem;
     text-align: center;
+    margin-bottom: var(--spacing-five);
 }
 
-.featured-img {
-    width: 40%;
-    border-radius: 10px;
+.title {
+    font-size: 4.25rem;
+    font-family: 'MilgranCondensed';
+    margin: -1.75rem 0;
+    text-align: center;
 }
 
-@media screen and (max-width: 992px) {
+.intro {
+    text-align: center;
+    padding-right: 0;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    background: radial-gradient(#36393B, #252729);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    padding-top: calc(1rem * 6);
+    padding-bottom: var(--spacing-six);
+}
+
+.hero-img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: right;
+    }
+    
+    .intro {
+        text-align: right;
+        padding-right: var(--spacing-four);
+    }
+}
+
+@media screen and (min-width: 992px) {
     .featured-img {
-        margin-bottom: var(--spacing-five);
+        margin-bottom: 0;
     }
 
     .skill-card {
-        margin-bottom: var(--spacing-five);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
-    }
-
-    .intro {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: center;
+        margin-bottom: 0;
     }
 
     .hero {
-        padding-top: calc(1rem * 6);
-        padding-bottom: var(--spacing-six);
+        padding-top: calc(1rem * 9);
+        padding-bottom: var(--spacing-five);
+    }
+
+    .img-container {
+        display: block;
     }
 }
+

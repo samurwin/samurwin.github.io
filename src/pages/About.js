@@ -78,16 +78,16 @@ function About() {
             {/* ABOUT ME */}
             <section className='slanted-left'>
                 <div className='container flex-row justify-center justify-space-between-lg align-center'>
-                    <div className='col-8 col-md-5 col-xl-4 about-img'>
+                    <div className='col-8 col-lg-5 col-xl-4 about-img'>
                         <img 
                             src={require('../assets/images/about-me.jpg')} 
                             alt='Samantha Urwin on the Street' 
                         />
                     </div>
 
-                    <div className='col-10 col-md-7 col-xl-8 about-text'>
+                    <div className='col-10 col-lg-7 col-xl-8 about-text'>
                         <div className='about-title'>
-                            <h1 className='milgran text-quatrinary'>HI I'M SAM! </h1>
+                            <h1 className='milgran text-quatrinary s'>HI I'M SAM! </h1>
                             <span className='desc text-quatrinary'>DESIGNER / DEVELOPER - TORONTO, ON</span>
                         </div>
 
@@ -112,7 +112,7 @@ function About() {
             {/* RESUME */}
             <section className='container'>
                 {/* CONTACT */}
-                <div className='section-spacing flex-row justify-center justify-space-between-md align-center'>
+                <div className='section-spacing flex-column justify-center justify-space-between-lg align-center contact'>
                     <div className='flex-row'>
                         <img 
                             src={star}
@@ -129,8 +129,8 @@ function About() {
 
                 {/* TECHNOLOGIES LIST */}
                 <div className='section-spacing'>
-                    <h2 className='milgran text-secondary'>TECHNOLOGIES</h2>
-                    <ul className='tech-list mt-5 ml-4'>
+                    <h2 className='milgran text-secondary subhead'>TECHNOLOGIES</h2>
+                    <ul className='tech-list mt-5'>
                         {technologies.map((technology) => (
                             <ListItem 
                             title={technology.title}
@@ -143,8 +143,8 @@ function About() {
 
                 {/* EDUCATION LIST */}
                 <div className='section-spacing'>
-                    <h2 className='milgran text-secondary'>EDUCATION</h2>
-                    <div id='education' className='flex-row align-center justify-center justify-space-between-md mt-5 ml-4'>
+                    <h2 className='milgran text-secondary subhead'>EDUCATION</h2>
+                    <div id='education' className='flex-row align-center justify-center justify-space-between-md mt-5'>
                         {education.map((degree) => (
                             <ListItem
                             title={degree.title}

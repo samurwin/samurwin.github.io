@@ -2,7 +2,7 @@ import React from 'react';
 
 function ListItem({title, svg, subheading}) {
     return (
-        <div className='mb-4 flex-row'>
+        <div className='mb-4 flex-row nowrap'>
             <img
                 src={svg}
                 alt=''

@@ -11,7 +11,7 @@ function Home() {
             {/* Hero */}
             <section className='flex-row justify-space-around align-center hero w-100'>
                 <div className='col-12 col-md-5 my-5'>
-                    <h4 className='text-secondary pb-4 pr-4 intro'>Hi, I'm Sam!</h4>
+                    <h4 className='text-secondary pb-4 intro'>Hi, I'm Sam!</h4>
                     <p className='title text-primary'>DESIGNER<span className='title text-secondary'>.</span></p>
                     <p className='title text-secondary'>DEVELOPER<span className='title text-primary'>.</span> </p>
                 </div>

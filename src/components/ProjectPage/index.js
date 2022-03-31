@@ -5,8 +5,8 @@ function ProjectPage({ projectInfo }) {
     return (
         <div>
             <section className='container project-header flex-column justify-center align-center'>
-                <h1 className='milgran text-quatrinary text-uppercase'>{projectInfo.title}</h1>
-                <h4 className='text-uppercase text-dark'>{projectInfo.category}</h4>
+                <h1 className='milgran text-quatrinary text-uppercase page-title'>{projectInfo.title}</h1>
+                <h4 className='text-uppercase text-dark text-center'>{projectInfo.category}</h4>
                 <img
                 src={require(`../../assets/images/projects/${projectInfo.mainImg}`)}
                 alt={projectInfo.title}
