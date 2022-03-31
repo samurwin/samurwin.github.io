@@ -1,20 +1,22 @@
 import React from 'react';
+import './style.css';
 
 function ProjectPage({ projectInfo }) {
     return (
         <div>
-            <section>
-                <h1>{projectInfo.title}</h1>
-                <h2>{projectInfo.category}</h2>
+            <section className='container project-header flex-column justify-center align-center'>
+                <h1 className='milgran text-quatrinary text-uppercase'>{projectInfo.title}</h1>
+                <h4 className='text-uppercase text-dark'>{projectInfo.category}</h4>
                 <img
                 src={require(`../../assets/images/projects/${projectInfo.mainImg}`)}
                 alt={projectInfo.title}
+                className='pt-4 project-img'
                 />
             </section>
-            <section>
-                <p>{projectInfo.description}</p>
+            <section className='container flex-column align-center project-body'>
+                <p className='mb-5 text-dark description'>{projectInfo.description}</p>
                 {projectInfo.github ? 
-                    <div>
+                    <div className='projLinks'>
                         <a href={projectInfo.github}>GitHub Respository</a>
                         <a href={projectInfo.deployed}>View Website</a>
                     </div>
@@ -26,6 +28,8 @@ function ProjectPage({ projectInfo }) {
                         <img
                         src={require(`../../assets/images/projects/${img}`)}
                         alt={img}
+                        key={img}
+                        className='project-img mb-5'
                         />
                     ))
                     :

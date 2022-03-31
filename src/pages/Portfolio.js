@@ -64,7 +64,7 @@ function Portfolio() {
                 <div className='container flex-row justify-center justify-space-between-lg align-center'>
                     <div className='col-12 col-md-6'>
                         <h1 className='milgran text-quatrinary'>PORTFOLIO</h1>
-                        <p className='text-dark'>View my projects in both design and development!</p>
+                        <p className='text-dark portfolio-blurb'>View my projects in both design and development!</p>
                     </div>
                     <div className='col-6'>
                         <img
