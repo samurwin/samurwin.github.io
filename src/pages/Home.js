@@ -28,29 +28,29 @@ function Home() {
             {/* Page Content */}
             <section>
                 <div className='section-spacing'>
-                    <h1 className='milgran text-quatrinary text-center p-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
+                    <h1 className='blurb milgran text-quatrinary text-center p-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
                     <br/> AND A STRATEGIC MIND.</h1>
                 </div>
 
                 {/* Skills */}
-                <div className='flex-row align-center justify-space-around section-spacing'>
+                <div className='flex-row align-center justify-space-around section-spacing mx-5'>
                     <div className='skill-card col-8 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-dark'>BRAND DESIGN</h4>
-                        <p className='text-dark'>I design...</p>
+                        <h4 className='milgran text-primary'>BRAND DESIGN</h4>
+                        <p className='text-dark pt-1 px-3'>I create eye-catching, unique designs to bring your brand to life and stand out from the rest!</p>
                     </div>
                     <div className='skill-card col-8 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-dark'>WEB DESIGN</h4>
-                        <p className='text-dark'>I design...</p>
+                        <h4 className='milgran text-tertiary'>WEB DESIGN</h4>
+                        <p className='text-dark pt-1 px-3'>I design accessible, responsive websites that will greatly enhance your brand’s online presence.</p>
                     </div>
                     <div className='skill-card col-8 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-dark'>DEVELOPMENT</h4>
-                        <p className='text-dark'>I design...</p>
+                        <h4 className='milgran text-quatrinary'>DEVELOPMENT</h4>
+                        <p className='text-dark pt-1 px-3'>I develop seamless, full-stack applications with a focus on front-end development.</p>
                     </div>
                 </div>
 
                 {/* Featured Projects */}
                 <div className='section-spacing'>
-                    <h1 className='milgran text-quatrinary text-center'>FEATURED PROJECTS</h1>
+                    <h1 className='milgran text-quatrinary text-center mx-3'>FEATURED PROJECTS</h1>
                     <div className='flex-row align-center justify-space-around mt-5'>
                         <Link to='/trustme' className='col-8 col-lg-4'>
                             <img 

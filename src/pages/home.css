@@ -4,14 +4,19 @@
     margin-bottom: var(--spacing-five);
 }
 
+.blurb {
+    font-size: 2.5rem;
+}
+
 .skill-card {
     background-color: var(--light);
-    padding: var(--spacing-three);
+    padding: var(--spacing-four);
     border: none;
     border-radius: 10px;
     width: 20rem;
     text-align: center;
     margin-bottom: var(--spacing-five);
+    box-shadow: 0px 2px 2px 0 rgba(0,0,0,.1);
 }
 
 .title {
@@ -58,6 +63,9 @@
 }
 
 @media screen and (min-width: 992px) {
+    .blurb {
+        font-size: 3rem;
+    }
     .featured-img {
         margin-bottom: 0;
     }

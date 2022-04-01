@@ -92,18 +92,17 @@ function About() {
                         </div>
 
                         <p className='text-dark pt-4'>
-                            Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                            Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
-                            convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat.
-                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat,
-                            accumsan id imperdiet et, porttitor at sem.
+                        You can find me designing brand identities, websites or exploring my new found passion for coding 
+                        and front-end development. My current focus is in combining my skills in design and development in 
+                        order to create accessible, responsive web designs.
                         </p>
                         <br></br>
                         <p className='text-dark'>
-                            Proin eget tortor risus. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque
-                            nec, egestas non nisi. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
-                            Pellentesque in ipsum id orci porta dapibus.
+                        I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization. 
                         </p>
+                        <br></br>
+                        <p className='text-dark'>
+                        Outside of work I enjoy keeping a healthy, active lifestyle - cooking delicious meals, enjoying nature, and practicing yoga.                         </p>
                     </div>
                 </div>
 
