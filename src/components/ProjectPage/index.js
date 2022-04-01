@@ -17,8 +17,8 @@ function ProjectPage({ projectInfo }) {
                 <p className='mb-5 text-dark description'>{projectInfo.description}</p>
                 {projectInfo.github ? 
                     <div className='projLinks'>
-                        <a href={projectInfo.github}>GitHub Respository</a>
-                        <a href={projectInfo.deployed}>View Website</a>
+                        <a target='_blank' rel="noreferrer" href={projectInfo.github}>GitHub Respository</a>
+                        <a target='_blank' rel="noreferrer" href={projectInfo.deployed}>View Website</a>
                     </div>
                     :
                     <></>

@@ -121,9 +121,12 @@ function About() {
                         />
                         <h1 className='milgran text-primary'>CONTACT ME</h1>
                     </div>
-                    <div className='contact-links'>
-                        <h5 className='text-primary underline'><span></span> URWINSAMANTHA@GMAIL.COM</h5>
-                        <h5 className='text-primary underline pt-3'><span></span> RESUME</h5>
+                    <div className='contact-links flex-column justify-center align-start-lg align-center'>
+                        <a href='mailto:urwinsamantha@gmail.com' className='underline'><span></span>URWINSAMANTHA@GMAIL.COM</a>
+                        <a 
+                        href='https://drive.google.com/file/d/1XIGmPSdUwjZCGlBuAxCZAaZYDSMuynyK/view?usp=sharing' 
+                        target='_blank' rel="noreferrer"
+                        className='underline pt-3'> <span></span>RESUME</a>
                     </div>
                 </div>
 

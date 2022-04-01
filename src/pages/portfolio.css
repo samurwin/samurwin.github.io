@@ -26,6 +26,10 @@ img {
     width: 100%;
 }
 
+.project:hover {
+    cursor: pointer;
+}
+
 .divider {
     color: var(--tertiary);
     font-size: 2.25rem;

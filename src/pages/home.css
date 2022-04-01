@@ -1,5 +1,5 @@
 .featured-img {
-    width: 40%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: var(--spacing-five);
 }

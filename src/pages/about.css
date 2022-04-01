@@ -25,8 +25,18 @@
 }
 
 .contact-links {
+
+    font-size: 1.25rem;
     text-align: center;
     padding-top: var(--spacing-three);
+}
+
+.contact-links a {
+    color: var(--primary);
+}
+
+.contact-links a:hover {
+    color: var(--tertiary);
 }
 
 .subhead {
@@ -54,43 +64,12 @@
 }
 
 .star {
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 .nowrap {
     flex-wrap: nowrap;
-}
-
-@media screen and (min-width: 992px) {
-    .about-text {
-        padding-left: var(--spacing-five);
-    }
-
-    .about-title {
-        text-align: left;
-    }
-
-    .about-img {
-        width: 100%;
-        padding-right: var(--spacing-five);
-    }
-
-    .tech-list {
-        columns: 3;
-        -webkit-columns: 3;
-        -moz-columns: 3;
-    }
-
-    .contact {
-        flex-direction: row;
-    }
-
-    .contact-links {
-        text-align: left;
-        padding-top: 0;
-    }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -130,4 +109,35 @@
     #education {
         margin-left: var(--spacing-four);
     }
+}
+
+@media screen and (min-width: 992px) {
+    .about-text {
+        padding-left: var(--spacing-five);
+    }
+
+    .about-title {
+        text-align: left;
+    }
+
+    .about-img {
+        width: 100%;
+        padding-right: var(--spacing-five);
+    }
+
+    .tech-list {
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact-links {
+        text-align: left;
+        padding-top: 0;
+    }
+
 }

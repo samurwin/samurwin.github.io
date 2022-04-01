@@ -3,7 +3,7 @@ import React from 'react';
 function Project({ project }) {
 
     return (
-        <div className='flex-column align-center pt-5'>
+        <div className='flex-column align-center pt-5 project'>
             <img
             src={require(`../../assets/images/${project.image}`)}
             alt={project.title}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import {Helmet} from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -51,16 +52,21 @@ function Home() {
                 <div className='section-spacing'>
                     <h1 className='milgran text-quatrinary text-center'>FEATURED PROJECTS</h1>
                     <div className='flex-row align-center justify-space-around mt-5'>
-                        <img 
-                        src={require('../assets/images/dev-diaries.jpg')}
-                        alt='dev diaries project'
-                        className='featured-img col-8 col-lg-5'
-                        />
-                        <img
-                        src={require('../assets/images/weather-dash.jpg')}
-                        alt='weather dashboard project'
-                        className='featured-img col-8 col-lg-5'
-                        />
+                        <Link to='/trustme' className='col-8 col-lg-4'>
+                            <img 
+                            src={require('../assets/images/TM-project-img.jpg')}
+                            alt='Trust Me Branding Project'
+                            className='featured-img col-8 col-lg-3'
+                            />
+                        </Link>
+
+                        <Link to='/savourysubscriptions' className='col-8 col-lg-4'>
+                            <img
+                            src={require('../assets/images/SS-project-img.jpg')}
+                            alt='Savoury Subscriptions Full Stack Development Project'
+                            className='featured-img'
+                            />
+                        </Link>
                     </div>
                 </div>
             </section>
