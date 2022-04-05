@@ -75,7 +75,7 @@
 @media screen and (min-width: 768px) {
     .slanted-left {
         padding-top: calc(1rem * 10);
-        padding-bottom: var(--spacing-six);
+        padding-bottom: calc(1rem * 8);
     }
 
     .about-title {

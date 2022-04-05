@@ -92,13 +92,15 @@ function About() {
                         </div>
 
                         <p className='text-dark pt-4'>
-                        You can find me designing brand identities, websites or exploring my new found passion for coding 
-                        and front-end development. My current focus is in combining my skills in design and development in 
-                        order to create accessible, responsive web designs.
+                        I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization.
+                        I feel very grateful to have been able to find a path that allows me to exercise both aspects of myself! 
+                        Eager to learn and challenge myself, I am often learning new techniques and technologies to elevate my skills. 
                         </p>
                         <br></br>
                         <p className='text-dark'>
-                        I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization. 
+                        You can find me designing brand identities, websites or exploring my new found passion for coding 
+                        and front-end development. Currently, I am focused on combining my skills in design and development in 
+                        order to create accessible, responsive web designs.
                         </p>
                         <br></br>
                         <p className='text-dark'>
