@@ -13,8 +13,13 @@ function ProjectPage({ projectInfo }) {
                 className='pt-4 project-img'
                 />
             </section>
+
             <section className='container flex-column align-center project-body'>
-                <p className='mb-5 text-dark description'>{projectInfo.description}</p>
+                <div className='mb-4'>
+                    {projectInfo.description.map((paragraph) => (
+                        <p className='mb-4 text-dark description'>{paragraph}</p>
+                    ))}
+                </div>
                 {projectInfo.github ? 
                     <div className='projLinks'>
                         <a target='_blank' rel="noreferrer" href={projectInfo.github}>GitHub Respository</a>

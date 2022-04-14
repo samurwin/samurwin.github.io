@@ -217,6 +217,10 @@ footer {
   background-color: inherit;
 }
 
+.bottom-border {
+  border-bottom: solid 2px var(--tertiary);
+}
+
 .card {
   background-color: var(--light);
   padding: var(--spacing-four);

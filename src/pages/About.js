@@ -92,9 +92,9 @@ function About() {
                         </div>
 
                         <p className='text-dark pt-4'>
-                        I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization.
-                        I feel very grateful to have been able to find a path that allows me to exercise both aspects of myself! 
-                        Eager to learn and challenge myself, I am often learning new techniques and technologies to elevate my skills. 
+                        I would describe myself as a dualistic person. Creativity comes easily to me and so does logic and organization. 
+                        I feel very grateful to have found a path which allows me to exercise both aspects of myself! Eager to learn and 
+                        challenge myself, I am often exploring new techniques and technologies to elevate my skills. 
                         </p>
                         <br></br>
                         <p className='text-dark'>
