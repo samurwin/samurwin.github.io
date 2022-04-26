@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 
 function Header() {
     return (
-        <header className='p-4 flex-row justify-space-between-lg justify-center'>
-            <div>
-            <img src={require('../../assets/images/logo.png')} alt='SMU logo' />
+        <header className='flex-row justify-space-between'>
+            <div className='p-4'>
+                <Link to='/'>
+                    <img src={require('../../assets/images/logo-red.png')} alt='SMU logo' />
+                </Link>
             </div>
             <Nav />
         </header>

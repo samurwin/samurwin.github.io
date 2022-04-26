@@ -1,0 +1,143 @@
+.slanted-left {
+    background-color: var(--secondary);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding-top: calc(1rem * 8);
+    padding-bottom: calc(1rem * 10);
+}
+
+.about-title {
+    padding-top: var(--spacing-two);
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-img {
+    padding-right: 0;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
+
+.contact-links {
+
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: var(--spacing-three);
+}
+
+.contact-links a {
+    color: var(--primary);
+}
+
+.contact-links a:hover {
+    color: var(--tertiary);
+}
+
+.subhead {
+    text-align: center;
+}
+
+.tech-list div {
+    justify-content: center;
+}
+
+.tech-list {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    margin-left: 0;
+}
+
+#education {
+    margin-left: 0;
+}
+
+.italic-small {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.star {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .slanted-left {
+        padding-top: calc(1rem * 10);
+        padding-bottom: calc(1rem * 8);
+    }
+
+    .about-title {
+        padding-top: 0;
+    }
+
+    .about-img {
+        width: 75%;
+    }
+
+    .about-text {
+        padding-top: var(--spacing-one);
+        padding-bottom: var(--spacing-four);
+    }
+
+    .tech-list div {
+        justify-content: flex-start;
+    }
+
+    .subhead {
+        text-align: left;
+    }
+
+    .tech-list {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        margin-left: var(--spacing-four);
+    }
+
+    #education {
+        margin-left: var(--spacing-four);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-text {
+        padding-left: var(--spacing-five);
+    }
+
+    .about-title {
+        text-align: left;
+    }
+
+    .about-img {
+        width: 100%;
+        padding-right: var(--spacing-five);
+    }
+
+    .tech-list {
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact-links {
+        text-align: left;
+        padding-top: 0;
+    }
+
+}

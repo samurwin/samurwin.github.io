@@ -1,0 +1,86 @@
+.featured-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-five);
+}
+
+.blurb {
+    font-size: 2.5rem;
+}
+
+.skill-card {
+    background-color: var(--light);
+    padding: var(--spacing-four);
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: var(--spacing-five);
+    box-shadow: 0px 2px 2px 0 rgba(0,0,0,.1);
+}
+
+.title {
+    font-size: 4.25rem;
+    font-family: 'MilgranCondensed';
+    margin: -1.75rem 0;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    padding-right: 0;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    background: radial-gradient(#36393B, #252729);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    padding-top: calc(1rem * 6);
+    padding-bottom: var(--spacing-six);
+}
+
+.hero-img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: right;
+    }
+    
+    .intro {
+        text-align: right;
+        padding-right: var(--spacing-four);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blurb {
+        font-size: 3rem;
+    }
+    .featured-img {
+        margin-bottom: 0;
+    }
+
+    .skill-card {
+        margin-bottom: 0;
+    }
+
+    .hero {
+        padding-top: calc(1rem * 9);
+        padding-bottom: var(--spacing-five);
+    }
+
+    .img-container {
+        display: block;
+    }
+}
+

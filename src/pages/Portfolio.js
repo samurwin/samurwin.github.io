@@ -1,59 +1,90 @@
-import React from 'react';
-import Project from '../components/Project';
+import React, { useState, useEffect } from 'react';
+import {Helmet} from 'react-helmet';
+import './portfolio.css';
+import LgProjectGallery from '../components/LgProjectGallery';
+import SmProjectGallery from '../components/SmProjectGallery';
+
+import placeholder from '../assets/images/portfolio-placeholder.png';
 
 function Portfolio() {
-    const projects = [
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 769;
+  
+    useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleWindowResize);
+  
+      // Return a function from the effect that removes the event listener
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
+    const designProjects = [
+        {
+            title: "Trust Me",
+            image: "TM-project-img.jpg",
+            url: "trustme"
+        },
+        {
+            title: "Sorgen Mørket",
+            image: "SM-project-img.jpg",
+            url: "sorgenmorket"
+        },
+        {
+            title: "The Basket Project",
+            image: "BP-project-img.jpg",
+            url: "thebasketproject"
+        }
+    ];
+
+    const developmentProjects = [
+        {
+            title: "Savoury Subscriptions",
+            image: "SS-project-img.jpg",
+            url: "savourysubscriptions"
+        },
         {
             title: "Dev Diaries",
-            github: "https://github.com/samurwin/dev-diaries",
-            deployed: "https://polar-retreat-06699.herokuapp.com/",
-            image: "dev-diaries.jpg",
-            description: "Blog Forum. Created with Javascript, MySQL/Sequelize & TailwindCSS."
-        },
-        {
-            title: "Budget Tracker",
-            github: "https://github.com/samurwin/budget-tracker-PWA",
-            deployed: "https://stormy-brook-60885.herokuapp.com/",
-            image: "budget-tracker.jpg",
-            description: "A Budget tracker PWA. Created with Javascript & MongoDB/Mongoose."
-        },
-        {
-            title: "Surveyorama",
-            github: "https://github.com/samurwin/surveyorama",
-            deployed: "https://pacific-fortress-98134.herokuapp.com/login",
-            image: "surveyorama.jpg",
-            description: "Create and share surveys. Created with Javascript & MySQL/Sequelize."
-        },
-        {
-            title: "Last Minute Planner",
-            github: "https://github.com/samurwin/the-last-minute-planner",
-            deployed: "https://samurwin.github.io/the-last-minute-planner/",
-            image: "last-minute.jpg",
-            description: "Search for events near you. Created with Javascript & third party APIs."
+            image: "DD-project-img.jpg",
+            url: "devdiaries"
         },
         {
             title: "Weather Dashboard",
-            github: "https://github.com/samurwin/weather-dashboard",
-            deployed: "https://samurwin.github.io/weather-dashboard/",
-            image: "weather-dash.jpg",
-            description: "Find the current, and 5 day forcast. Created with Javascript & third party APIs."
+
+            image: "WD-project-img.jpg",
+            url: "weatherdashboard"
         },
-        {
-            title: "Savoury Subscriptions",
-            github: "https://github.com/ScalexanderB/Savoury-Subscriptions",
-            deployed: "https://savoury-subscriptions.herokuapp.com/",
-            image: "savoury-sub.jpg",
-            description: "A meal kit subscription service website. Created with React, MongoDB/Mongoose, & GraphQL."
-        }
-    ]
+    ];
+
+
 
     return (
-        <div className='my-4'>
-            <h1 className='text-primary text-center mb-2'>Portfolio</h1>
-            <section className='flex-row justify-center'>
-                {projects.map(project => (
-                    <Project key={project.title} project={project} />
-                ))}
+        <div>
+            <Helmet>
+                <style>{'body { background: radial-gradient(#36393B, #252729); }'}</style>
+            </Helmet>
+
+            <section className='slanted-right'>
+                <div className='container flex-row justify-center justify-space-between-lg align-center'>
+                    <div className='col-12 col-md-6'>
+                        <h1 className='milgran text-quatrinary page-title'>PORTFOLIO</h1>
+                        <p className='text-dark portfolio-blurb'>View my projects in both design and development!</p>
+                    </div>
+                    <div className='col-6'>
+                        <img
+                        src={placeholder}
+                        alt=''
+                        className='placeholder'
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className='container section-spacing'>
+                {width > breakpoint ? 
+                    <LgProjectGallery designProjects={designProjects} developmentProjects={developmentProjects}/>
+                    :
+                    <SmProjectGallery designProjects={designProjects} developmentProjects={developmentProjects} />
+                }
             </section>
         </div>
     );
