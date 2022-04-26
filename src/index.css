@@ -217,17 +217,6 @@ footer {
   background-color: inherit;
 }
 
-.bottom-border {
-  border-bottom: solid 2px var(--tertiary);
-}
-
-.card {
-  background-color: var(--light);
-  padding: var(--spacing-four);
-  border-radius: 10px;
-  box-shadow: rgba(0,0,0,0.3);
-}
-
 .project-img {
   width: 100%;
 }
