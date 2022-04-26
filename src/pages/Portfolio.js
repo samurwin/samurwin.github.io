@@ -49,10 +49,13 @@ function Portfolio() {
         },
         {
             title: "Weather Dashboard",
+
             image: "WD-project-img.jpg",
             url: "weatherdashboard"
         },
     ];
+
+
 
     return (
         <div>
