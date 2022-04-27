@@ -6,6 +6,7 @@
 
 .blurb {
     font-size: 2.5rem;
+    width: 100%
 }
 
 .skill-card {
@@ -14,10 +15,10 @@
     border: none;
     border-radius: 10px;
     width: 20rem;
-    text-align: center;
     margin-bottom: var(--spacing-five);
     box-shadow: 0px 2px 2px 0 rgba(0,0,0,.1);
 }
+
 
 .title {
     font-size: 4.25rem;
@@ -53,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
     .title {
-        text-align: right;
+        text-align: right !important;
     }
     
     .intro {
@@ -65,6 +66,7 @@
 @media screen and (min-width: 992px) {
     .blurb {
         font-size: 3rem;
+        width: 60%;
     }
     .featured-img {
         margin-bottom: 0;

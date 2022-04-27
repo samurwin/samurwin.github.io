@@ -27,24 +27,24 @@ function Home() {
 
             {/* Page Content */}
             <section>
-                <div className='section-spacing'>
+                <div className='section-spacing flex-column align-center justify-center'>
                     <h1 className='blurb milgran text-quatrinary text-center p-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
-                    <br/> AND A STRATEGIC MIND.</h1>
+                     AND A STRATEGIC MIND.</h1>
                 </div>
 
                 {/* Skills */}
                 <div className='flex-row align-center justify-space-around section-spacing mx-5'>
                     <div className='skill-card col-10 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-primary'>BRAND DESIGN</h4>
-                        <p className='text-dark pt-1 px-3'>I create eye-catching, unique designs to bring your brand to life and stand out from the rest!</p>
+                        <h4 className='milgran text-primary text-center'>BRAND DESIGN</h4>
+                        <p className='text-dark pt-1 px-3 text-center'>I create eye-catching, unique designs to bring your brand to life and stand out from the rest!</p>
                     </div>
                     <div className='skill-card col-10 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-tertiary'>WEB DESIGN</h4>
-                        <p className='text-dark pt-1 px-3'>I design accessible, responsive websites that will greatly enhance your brand’s online presence.</p>
+                        <h4 className='milgran text-tertiary text-center'>WEB DESIGN</h4>
+                        <p className='text-dark pt-1 px-3 text-center'>I design accessible, responsive websites that will greatly enhance your brand’s online presence.</p>
                     </div>
                     <div className='skill-card col-10 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-quatrinary'>DEVELOPMENT</h4>
-                        <p className='text-dark pt-1 px-3'>I develop seamless, full-stack applications with a focus on front-end development.</p>
+                        <h4 className='milgran text-quatrinary text-center'>DEVELOPMENT</h4>
+                        <p className='text-dark pt-1 px-3 text-center'>I develop seamless, full-stack applications with a focus on front-end development.</p>
                     </div>
                 </div>
 

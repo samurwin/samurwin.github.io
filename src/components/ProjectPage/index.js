@@ -17,7 +17,7 @@ function ProjectPage({ projectInfo }) {
             <section className='container flex-column align-center project-body'>
                 <div className='mb-4'>
                     {projectInfo.description.map((paragraph) => (
-                        <p className='mb-4 text-dark description'>{paragraph}</p>
+                        <p key={paragraph} className='mb-4 text-dark description'>{paragraph}</p>
                     ))}
                 </div>
                 {projectInfo.github ? 

@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -69,6 +69,7 @@ p {
   font-size: 1.1rem;
   margin-top: 0;
   line-height: 1.6;
+  text-align: center;
 }
 
 a {
@@ -78,6 +79,14 @@ a {
 
 a:visited {
   color: inherit;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    text-align: left;
+  }
 }
 
 li {
@@ -222,7 +231,7 @@ footer {
 }
 
 .icon {
-  width: 4rem;
+  width: 3rem;
   height: auto;
   margin: var(--spacing-two);
   padding: var(--spacing-three);
@@ -232,6 +241,11 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .icon {
+    width: 4rem;
+  }
+}
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;
