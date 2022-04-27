@@ -1036,6 +1036,10 @@ footer {
     align-items: flex-end;
   }
 
+  .align-start-md {
+    align-items: flex-start;
+  }
+
   .align-center-md {
     align-items: center;
   }
