@@ -14,6 +14,6 @@ Visit the website at: [Deployed Website](https://samurwin.github.io/)
 
 Made with ❤️ by Samantha Urwin
 
-*This website was initially created as a school project. I plan to keep expanding on this website and would appreciate any and all feedback/suggestions!*
+*I plan to keep expanding on this website and would appreciate any and all feedback/suggestions!*
 
 Issue open for suggestions: [Suggestions](https://github.com/samurwin/smu-portfolio/issues/1)
