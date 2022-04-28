@@ -34,15 +34,15 @@ function Home() {
 
                 {/* Skills */}
                 <div className='flex-row align-center justify-space-around section-spacing mx-5'>
-                    <div className='skill-card col-10 col-md-5 col-lg-3'>
+                    <div className='skill-card col-12 col-md-5 col-lg-3'>
                         <h4 className='milgran text-primary text-center'>BRAND DESIGN</h4>
                         <p className='text-dark pt-1 px-3 text-center'>I create eye-catching, unique designs to bring your brand to life and stand out from the rest!</p>
                     </div>
-                    <div className='skill-card col-10 col-md-5 col-lg-3'>
+                    <div className='skill-card col-12 col-md-5 col-lg-3'>
                         <h4 className='milgran text-tertiary text-center'>WEB DESIGN</h4>
                         <p className='text-dark pt-1 px-3 text-center'>I design accessible, responsive websites that will greatly enhance your brand’s online presence.</p>
                     </div>
-                    <div className='skill-card col-10 col-md-5 col-lg-3'>
+                    <div className='skill-card col-12 col-md-5 col-lg-3'>
                         <h4 className='milgran text-quatrinary text-center'>DEVELOPMENT</h4>
                         <p className='text-dark pt-1 px-3 text-center'>I develop seamless, full-stack applications with a focus on front-end development.</p>
                     </div>

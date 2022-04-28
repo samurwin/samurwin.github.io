@@ -6,15 +6,13 @@ function SmProjectGallery({ designProjects, developmentProjects }) {
 
     return (
         <>
-            <div className='flex-row align-center justify-center'>
+            <div className='flex-row align-center justify-space-around'>
                 {gallery ? <>
                     <button 
                     type='button' 
                     className='milgran galleryBtn'
                     onClick={() => setGallery(0)}
                     >DESIGN</button>
-    
-                    <span className='milgran divider px-2'> / </span>
                     
                     <button 
                     type='button' 
@@ -29,8 +27,6 @@ function SmProjectGallery({ designProjects, developmentProjects }) {
                     className='milgran galleryBtn selected'
                     onClick={() => setGallery(0)}
                     >DESIGN</button>
-    
-                    <span className='milgran divider px-2'> / </span>
                     
                     <button 
                     type='button' 
@@ -41,7 +37,7 @@ function SmProjectGallery({ designProjects, developmentProjects }) {
                 }
 
             </div>
-            <div className='px-5'>
+            <div className='px-4'>
                 {gallery ? 
                     developmentProjects.map((project) => (
                         <Project key={project.title} project={project} />

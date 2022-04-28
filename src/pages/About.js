@@ -78,14 +78,14 @@ function About() {
             {/* ABOUT ME */}
             <section className='slanted-left'>
                 <div className='container flex-row justify-center justify-space-between-lg align-center'>
-                    <div className='col-8 col-lg-5 col-xl-4 about-img'>
+                    <div className='col-11 col-lg-5 col-xl-4 about-img'>
                         <img 
                             src={require('../assets/images/about-me.jpg')} 
                             alt='Samantha Urwin on the Street' 
                         />
                     </div>
 
-                    <div className='col-10 col-lg-7 col-xl-8 about-text'>
+                    <div className='col-12 col-lg-7 col-xl-8 about-text'>
                         <div className='about-title'>
                             <h1 className='milgran text-quatrinary s'>HI I'M SAM! </h1>
                             <span className='desc text-quatrinary'>DESIGNER / DEVELOPER - TORONTO, ON</span>
