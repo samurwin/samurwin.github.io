@@ -1,15 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { HiMenu } from 'react-icons/hi';
 
-import Nav from '../Nav';
 import logo from '../../assets/images/SMU-logo.svg';
 
-
 function Header() {
+    const [navbarOpen, setNavbarOpen] = useState(false);
+    const [selected, setSelected] = useState('home');
+
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen);
+    }
 
     const githubURL = 'https://github.com/samurwin';
-    const instaURL = 'https://www.instagram.com/surwindesign/';
     const linkedinURL = 'https://www.linkedin.com/in/samanthaurwin/';
     const behanceURL = 'https://www.behance.net/samanthaurwin';
 
@@ -18,17 +22,56 @@ function Header() {
     }
 
     return (
-        <header className='sidebar flex-column justify-space-between'>
-            <div className='p-4'>
-                <Link to='/'>
-                    <img 
-                    src={logo} 
-                    alt='SMU logo' 
-                    className= 'logo'
-                    />
-                </Link>
+        <header className='sidebar flex-column justify-space-between align-center'>
+            <div className="flex-column align-center gapMd">
+                <div className='logo'>
+                    <Link to='/'>
+                        <img 
+                        src={logo} 
+                        alt='SMU logo' 
+                        className= 'w-100'
+                        />
+                    </Link>
+                </div>
+
+                <button 
+                type="button" 
+                className="menu"
+                onClick={() => handleToggle()}
+                >
+                    <HiMenu/>
+                </button>
             </div>
-            <Nav />
+
+            <nav className={`navbar ${!navbarOpen ? "navbarOpen" : ""}`}>
+                <div id="home" className={`navItem ${selected === 'home' ? "activePage" : ""}`}>
+                    <Link 
+                    to='/'
+                    onClick={() => setSelected('home') }
+                    >
+                        Home
+                    </Link>
+                </div>
+
+                <div id="portfolio" className={`navItem ${selected === 'portfolio' ? "activePage" : ""}`}>
+                    <Link 
+                    to='/portfolio'
+                    onClick={() => setSelected('portfolio')}
+                    >
+                        Portfolio
+                    </Link>
+                </div>
+
+                <div id="contact" className={`navItem ${selected === 'contact' ? "activePage" : ""}`}>
+                    <Link 
+                    to='/contact'
+                    onClick={() => setSelected('contact')}
+                    >
+                        Contact
+                    </Link>
+                </div>
+            </nav>
+
             <div className="flex-column align-center">
                 <span 
                 className="svg text-secondary pb-3"
