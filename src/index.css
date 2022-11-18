@@ -29,6 +29,7 @@
 html,
 body {
   height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -69,7 +70,6 @@ p {
   font-size: 1.1rem;
   margin-top: 0;
   line-height: 1.6;
-  text-align: center;
 }
 
 a {
@@ -77,38 +77,21 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    text-align: left;
-  }
-}
-
-li {
-  margin-bottom: var(--spacing-one);
-  color: var(--dark);
-  font-weight: bolder;
-}
-
 .container {
-  width: 80%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: auto;
-}
-
-.section-spacing {
-  margin-top: calc(1rem * 3);
-  margin-bottom: calc(1rem * 3);
+  margin-left: 80px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  .section-spacing {
-    margin-top: calc(1rem * 6);
-    margin-bottom: calc(1rem * 6);
+  .container {
+    margin-left: 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    margin-left: 200px;
   }
 }
 
@@ -119,10 +102,14 @@ li {
 
 /* HEADER STYLES */
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   background: var(--dark);
   height: 100vh;
   width: fit-content;
   padding: 1.5rem 1rem;
+  transition: width 0.5s ease-in-out;
 }
 
 .logo {
@@ -153,7 +140,7 @@ nav a {
 .menu {
   background: none;
   border: none;
-  font-size: 40px;
+  font-size: 32px;
   color: var(--secondary);
   cursor: pointer;
 }
@@ -197,9 +184,11 @@ nav a {
   .menu {
     display: none;
   }
+
+  .sidebar {
+    padding: 1.5rem;
+  }
 }
-
-
 
 /* FONT UTILS */
 .underline {
