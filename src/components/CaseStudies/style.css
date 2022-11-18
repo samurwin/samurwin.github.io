@@ -1,0 +1,9 @@
+.thumbnail {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider {
+    margin: 40px 0;
+}
