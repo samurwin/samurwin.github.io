@@ -13,6 +13,7 @@
     color: var(--secondary);
     font-size: 18px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .greenStar {
@@ -42,7 +43,7 @@
     }
 
     .jobTitle {
-        text-algin: left;
+        text-align: left;
         margin-left: 3rem;
     }
 
@@ -72,5 +73,38 @@
         height: 500px;
         margin-top: -10rem;
         margin-right: -8rem;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .greenStar {
+        width: 300px;
+        height: 300px;
+        margin-left: -11rem;
+    }
+
+    .orangeStar {
+        width: 600px;
+        height: 600px;
+        margin-top: -12rem;
+        margin-right: -12rem;
+    }
+
+    .name {
+        margin-left: 5rem;
+        font-size: 56px;
+    }
+
+    .jobTitle {
+        margin-left: 5rem;
+        font-size: 24px;
+    }
+
+    .hero {
+        margin-top: 18rem;
     }
 }
