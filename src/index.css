@@ -26,16 +26,19 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100vh;
-  overflow: hidden;
-}
+/* html {
+  height: 100%;
+} */
 
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--tertiary-color);
   background: linear-gradient(#0E0E0F, #292B2C);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .milgran {
@@ -43,11 +46,12 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 h3 {
@@ -70,11 +74,6 @@ p {
   font-size: 1.1rem;
   margin-top: 0;
   line-height: 1.6;
-}
-
-a {
-  color: var(--primary);
-  text-decoration: none;
 }
 
 .container {
@@ -120,6 +119,10 @@ a {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   transition: all 0.2s;
+}
+
+.navItem a {
+  text-decoration: none;
 }
 
 .navItem:hover {
@@ -774,6 +777,10 @@ nav a {
 
 .gapXl {
   gap: 5rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .col-auto {

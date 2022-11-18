@@ -43,7 +43,7 @@ function Header() {
                 </button>
             </div>
 
-            <nav className={`navbar ${!navbarOpen ? "navbarOpen" : ""}`}>
+            <nav className={`navbar ${navbarOpen ? "navbarOpen" : ""}`}>
                 <div id="home" className={`navItem ${selected === 'home' ? "activePage" : ""}`}>
                     <Link 
                     to='/'

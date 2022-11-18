@@ -90,7 +90,7 @@ const projectInfo = {
 function App() {
   return (
     <Router>
-      <div className="">
+      <div>
         <Header />
           <Switch>
             <Route exact path='/' component={Home} />

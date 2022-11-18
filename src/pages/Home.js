@@ -1,13 +1,21 @@
 import React from 'react';
 import './home.css';
 
+import About from "../components/About";
+import CaseStudies from "../components/CaseStudies";
+import Link from "../components/Link";
+
 function Home() {
     return (
         <>
         <section className="container hero">
-            <div>
+            <div className="heroTxt">
                 <h1 className="name">Samantha Urwin</h1>
                 <p className="jobTitle">Web Designer & Full Stack Developer</p>
+                <div className="mt-3 flex-row flex-wrap gapSm">
+                    <Link color="secondary" text="Get in Touch" link="/contact"/>
+                    <Link color="primary" text="View portfolio" link="/portfolio"/>
+                </div>
             </div>
             <div className="greenStar">
                 <svg id="b" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" 
@@ -44,6 +52,8 @@ function Home() {
                 </svg>
             </div>
         </section>
+        <About/>
+        <CaseStudies/>
         </>
     )
 }

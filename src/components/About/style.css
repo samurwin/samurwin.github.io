@@ -1,0 +1,14 @@
+.aboutCon {
+    width: 100%;
+    background: var(--secondary);
+    margin: 5rem 0;
+    padding: 2.5rem 0;
+}
+
+.aboutImg {
+    margin-bottom: 40px;
+}
+
+.aboutHeading {
+    margin-bottom: 40px;
+}

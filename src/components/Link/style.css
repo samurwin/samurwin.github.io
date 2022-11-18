@@ -1,0 +1,29 @@
+.btnPrimary {
+    padding: 16px 24px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnPrimary:hover {
+    opacity: 0.5;
+}
+
+.btnSecondary {
+    padding: 16px 24px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnSecondary:hover {
+    opacity: 0.5;
+}
