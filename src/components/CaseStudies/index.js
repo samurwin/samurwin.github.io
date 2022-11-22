@@ -12,13 +12,31 @@ import Link from "../Link";
 export default function CaseStudies() {
 
     return (
-        <section className="container caseStudies">
+        <section className="caseStudies">
             <h1 className="text-secondary text-center">Case Studies</h1>
 
                 <Swiper
-                    slidesPerView={1.3}
-                    centeredSlides={true}
-                    spaceBetween={10}
+                    slidesPerView={1.4}
+                    spaceBetween={0}
+                    breakpoints={{
+                        500:{
+                            spaceBetween: 40
+                        },
+
+                        640:{
+                            spaceBetween: 56
+                        },
+
+                        768:{
+                            spaceBetween: 72
+                        },
+
+                        992:{
+                            spaceBetween: 80,
+                            slidesPerView: 2
+                        }
+                        
+                    }}
                 >
                     <SwiperSlide>
                         <img

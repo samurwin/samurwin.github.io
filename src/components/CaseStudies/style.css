@@ -5,6 +5,10 @@
     gap: 2.5rem;
 }
 
+.slider {
+    margin: 40px 0;
+} 
+
 .swiper {
     width: 100%;
 }
@@ -13,12 +17,28 @@
     width: 100%;
 }
 
-.swiper-slide img {
-    border-radius: 10px;
-    width: 280px;
-    height: 280px;
+.swiper-slide {
+    width: 80%;
+    height: 80%;
+    padding: 0 1.5rem;
+    cursor: grab;
 }
 
-.slider {
-    margin: 40px 0;
+.swiper-slide img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .swiper-slide {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 80%;
+        max-width: 1200px;
+    }
 }
