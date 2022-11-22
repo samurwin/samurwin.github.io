@@ -1,6 +1,7 @@
 import React from 'react';
 // import Swiper JS
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper'
 // import Swiper styles
 import 'swiper/css';
 import "./style.css";
@@ -15,11 +16,9 @@ export default function CaseStudies() {
             <h1 className="text-secondary text-center">Case Studies</h1>
 
                 <Swiper
-                    spaceBetween={40}
-                    slidesPerView={"auto"}
-                    pagination={{
-                        clickable: true,
-                    }}
+                    slidesPerView={1.3}
+                    centeredSlides={true}
+                    spaceBetween={10}
                 >
                     <SwiperSlide>
                         <img

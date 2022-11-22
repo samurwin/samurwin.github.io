@@ -5,9 +5,12 @@
     gap: 2.5rem;
 }
 
-.swiper-slide {
-    width: 280px;
-    height: 280px;
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
 }
 
 .swiper-slide img {
