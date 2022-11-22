@@ -1,7 +1,19 @@
-.thumbnail {
+.caseStudies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.swiper-slide {
     width: 280px;
-    height: auto;
+    height: 280px;
+}
+
+.swiper-slide img {
     border-radius: 10px;
+    width: 280px;
+    height: 280px;
 }
 
 .slider {
