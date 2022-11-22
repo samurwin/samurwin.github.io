@@ -76,21 +76,24 @@ p {
   line-height: 1.6;
 }
 
+.wrapper {
+  margin-left: 74px;
+}
+
 .container {
-  margin-left: 80px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    margin-left: 96px;
+  .wrapper {
+    margin-left: 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    margin-left: 200px;
+  .wrapper {
+    margin-left: 194px;
   }
 }
 
@@ -104,6 +107,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   background: var(--dark);
   height: 100vh;
   width: fit-content;
@@ -112,7 +116,7 @@ p {
 }
 
 .logo {
-  width: 48px;
+  width: 40px;
 }
 
 .navItem {
@@ -168,7 +172,7 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .logo {
-    width: 64px;
+    width: 48px;
   }
 }
 

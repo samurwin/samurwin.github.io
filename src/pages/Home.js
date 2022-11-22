@@ -7,12 +7,12 @@ import Link from "../components/Link";
 
 function Home() {
     return (
-        <>
+        <div className="wrapper">
         <section className="container hero">
             <div className="heroTxt">
                 <h1 className="name">Samantha Urwin</h1>
                 <p className="jobTitle">Web Designer & Full Stack Developer</p>
-                <div className="mt-3 flex-row flex-wrap gapSm">
+                <div className="mt-3 flex-row flex-wrap gapSm justify-center">
                     <Link color="secondary" text="Get in Touch" link="/contact"/>
                     <Link color="primary" text="View portfolio" link="/portfolio"/>
                 </div>
@@ -54,7 +54,7 @@ function Home() {
         </section>
         <About/>
         <CaseStudies/>
-        </>
+        </div>
     )
 }
 

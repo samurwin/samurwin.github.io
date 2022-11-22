@@ -1,5 +1,6 @@
 .hero {
-    margin-top: 14rem;    
+    margin-top: 14rem;  
+    overflow-x: hidden;  
 }
 
 .heroTxt {
@@ -39,7 +40,7 @@
     top: 0;
     right: 0;
     margin-top: -5rem;
-    margin-right: -5rem;
+    margin-right: -7rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,5 +121,17 @@
 
     .hero {
         margin-top: 16rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .heroTxt {
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .heroTxt {
+        margin-left: 15rem;
     }
 }

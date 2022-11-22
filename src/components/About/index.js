@@ -6,16 +6,16 @@ import aboutImg from "../../assets/images/samantha-urwin-ui-designer-web-develop
 export default function About () {
 
     return (
-        <section className="aboutCon">
-            <div className="container">
+        <section className="aboutWrapper">
+            <div className="container aboutCon">
                 <div className="aboutImg">
                     <img
                     src={aboutImg}
                     alt="Samantha Urwin Web Developer and UI Designer"
                     />
                 </div>
-                <h2 className="aboutHeading text-primary">A designer with a creative heart and a strategic mind.</h2>
-                <div>
+                <div className="aboutTxt">
+                    <h2 className="text-primary">A designer with a creative heart and a strategic mind.</h2>
                     <p className="mb-3">
                         Nulla porttitor accumsan tincidunt. Proin eget tortor risus. 
                         Vivamus suscipit tortor eget felis porttitor volutpat.
