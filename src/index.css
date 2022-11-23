@@ -269,6 +269,11 @@ nav a {
   min-width: 100vw;
 }
 
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
 /* MARGIN/PADDING UTILS */
 
 /* Margin - all sides */

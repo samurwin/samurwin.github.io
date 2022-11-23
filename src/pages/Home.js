@@ -4,6 +4,72 @@ import './home.css';
 import About from "../components/About";
 import CaseStudies from "../components/CaseStudies";
 import Link from "../components/Link";
+import TechSquare from '../components/TechSquare';
+
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa'
+
+const technologies = [
+    {
+      id: 0,
+      name: 'HTML',
+      icon: <FaHtml5 color='#d6e0ec' />
+    },
+    {
+      id: 1,
+      name: 'CSS',
+      icon: < FaCss3Alt/>
+    },
+    {
+      id: 2,
+      name: 'JavaScript',
+      icon: 'DiJavascript1'
+    },
+    {
+      id: 3,
+      name: 'React',
+      icon: <FaReact/>
+    },
+    {
+      id: 4,
+      name: 'TypeScript',
+      icon: 'SiTypescript'
+    },
+    {
+      id: 5,
+      name: 'MongoDB',
+      icon: 'DiMongodb'
+    },
+    {
+      id: 6,
+      name: 'MySQL',
+      icon: 'DiMysql'
+    },
+    {
+      id: 7,
+      name: 'NextJs',
+      icon: 'SiNextdotjs'
+    },
+    {
+      id: 8,
+      name: 'GraphQL',
+      icon: 'SiGraphql'
+    },
+    {
+      id: 9,
+      name: 'NodeJs',
+      icon: <FaNodeJs/>
+    },
+    {
+      id: 10,
+      name: 'Figma',
+      icon: 'SiFigma'
+    },
+    {
+      id: 11,
+      name: 'Adobe CC',
+      icon: 'SiAdobecreativecloud'
+    }
+  ];
 
 function Home() {
     return (
@@ -55,11 +121,18 @@ function Home() {
         <About/>
         <CaseStudies/>
 
-        <section className="container sectionSpacing flex-column gapMd">
+        <section className="container sectionSpacing flex-column gapMd align-center">
             <div className="skillsCard">
                 <div>
                     <h4 className="cardTitle">Technologies</h4>
                     <div className="line"></div>
+                </div>
+                <div className="mt-3">
+                    <TechSquare tech={{
+                        id: 0,
+                        name: 'HTML',
+                        icon: <FaHtml5 color='#d6e0ec' size='2rem' />
+                    }} />
                 </div>
             </div>
             <div className="skillsCard">

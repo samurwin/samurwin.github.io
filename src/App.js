@@ -7,6 +7,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import ProjectPage from './components/ProjectPage';
 
+
 const projectInfo = {
   TM: {
     title: 'Trust Me',
@@ -85,7 +86,6 @@ const projectInfo = {
     deployed: 'https://samurwin.github.io/weather-dashboard/'
   }
 };
-
 
 function App() {
   return (

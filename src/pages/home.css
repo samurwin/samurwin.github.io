@@ -143,6 +143,7 @@
     background: #0E0E0F;
     border-radius: 10px;
     padding: 1rem 1.5rem;
+    width: 100%;
 }
 
 .cardTitle {

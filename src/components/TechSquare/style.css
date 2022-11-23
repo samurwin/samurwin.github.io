@@ -1,0 +1,25 @@
+.iconCon {
+    width: 64px;
+    height: 64px;
+    background: #292B2C;
+    padding: 1rem;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconCon:hover {
+    background: #36393B;
+}
+
+.iconCon ~ p {
+    font-size: 14px;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.iconCon:hover ~ p {
+    display: block;
+    opacity: 1;
+}
