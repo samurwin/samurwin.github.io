@@ -14,7 +14,7 @@ function Home() {
                 <p className="jobTitle">Web Designer & Full Stack Developer</p>
                 <div className="mt-3 flex-row flex-wrap gapSm justify-center">
                     <Link color="secondary" text="Get in Touch" link="/contact"/>
-                    <Link color="primary" text="View portfolio" link="/portfolio"/>
+                    <Link color="primary" text="View Portfolio" link="/portfolio"/>
                 </div>
             </div>
             <div className="greenStar">
@@ -54,6 +54,25 @@ function Home() {
         </section>
         <About/>
         <CaseStudies/>
+
+        <section className="container sectionSpacing flex-column gapMd">
+            <div className="skillsCard">
+                <div>
+                    <h4 className="cardTitle">Technologies</h4>
+                    <div className="line"></div>
+                </div>
+            </div>
+            <div className="skillsCard">
+                <div>
+                    <h4 className="cardTitle">Education</h4>
+                    <div className="line"></div>
+                </div>
+            </div>
+
+            <div>
+            <Link color="secondary" text="My Resume" link="/"/>
+            </div>
+        </section>
         </div>
     )
 }

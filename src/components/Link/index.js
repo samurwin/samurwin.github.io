@@ -14,11 +14,11 @@ function Link({ color, text, link }) {
     }
 
     return (
-        <>
-        <a href={link} className={btnClass}>
-            {text}
-        </a>
-        </>
+        <div className="my-4">
+            <a href={link} className={btnClass}>
+                {text}
+            </a>
+        </div>
     )
 }
 

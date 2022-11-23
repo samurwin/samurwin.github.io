@@ -55,19 +55,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 21px;
 }
 
 h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 p {
@@ -78,11 +70,17 @@ p {
 
 .wrapper {
   margin-left: 74px;
+  padding-bottom: 1px;
 }
 
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.sectionSpacing {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 @media screen and (min-width: 768px) {

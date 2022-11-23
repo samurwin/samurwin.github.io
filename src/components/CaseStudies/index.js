@@ -12,7 +12,7 @@ import Link from "../Link";
 export default function CaseStudies() {
 
     return (
-        <section className="caseStudies">
+        <section className="caseStudies sectionSpacing">
             <h1 className="text-secondary text-center">Case Studies</h1>
 
                 <Swiper

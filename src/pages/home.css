@@ -1,3 +1,4 @@
+/* Hero Styles */
 .hero {
     margin-top: 14rem;  
     overflow-y: hidden;  
@@ -134,4 +135,25 @@
     .heroTxt {
         margin-left: 15rem;
     }
+}
+/* Hero Styles End */
+
+/* Skills and Education Styles */
+.skillsCard {
+    background: #0E0E0F;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.cardTitle {
+    color: #CECECE;
+    text-align: center;
+    font-weight: 400;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #36393B;
+    margin-top: 0.5rem;
 }

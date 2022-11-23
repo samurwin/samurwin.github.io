@@ -6,7 +6,7 @@ import aboutImg from "../../assets/images/samantha-urwin-ui-designer-web-develop
 export default function About () {
 
     return (
-        <section className="aboutWrapper">
+        <section className="aboutWrapper sectionSpacing">
             <div className="container aboutCon">
                 <div className="aboutImg">
                     <img
