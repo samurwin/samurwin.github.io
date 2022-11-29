@@ -7,67 +7,69 @@ import Link from "../components/Link";
 import TechSquare from '../components/TechSquare';
 
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa'
+import { DiJavascript1, DiMongodb, DiMysql } from 'react-icons/di'
+import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
 
 const technologies = [
     {
       id: 0,
       name: 'HTML',
-      icon: <FaHtml5 color='#d6e0ec' />
+      icon: <FaHtml5 color='#d6e0ec' className="techIcon" />
     },
     {
       id: 1,
       name: 'CSS',
-      icon: < FaCss3Alt/>
+      icon: < FaCss3Alt color='#d6e0ec' className="techIcon" />
     },
     {
       id: 2,
       name: 'JavaScript',
-      icon: 'DiJavascript1'
+      icon: <DiJavascript1 color='#d6e0ec' className="techIcon" />
     },
     {
       id: 3,
       name: 'React',
-      icon: <FaReact/>
+      icon: <FaReact color='#d6e0ec' className="techIcon" />
     },
     {
       id: 4,
       name: 'TypeScript',
-      icon: 'SiTypescript'
+      icon: <SiTypescript color='#d6e0ec' className="techIcon" />
     },
     {
       id: 5,
       name: 'MongoDB',
-      icon: 'DiMongodb'
+      icon: <DiMongodb color='#d6e0ec' className="techIcon" />
     },
     {
       id: 6,
       name: 'MySQL',
-      icon: 'DiMysql'
+      icon: <DiMysql color='#d6e0ec' className="techIcon" />
     },
     {
       id: 7,
       name: 'NextJs',
-      icon: 'SiNextdotjs'
+      icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
     },
     {
       id: 8,
       name: 'GraphQL',
-      icon: 'SiGraphql'
+      icon: <SiGraphql color='#d6e0ec' className="techIcon" />
     },
     {
       id: 9,
       name: 'NodeJs',
-      icon: <FaNodeJs/>
+      icon: <FaNodeJs color='#d6e0ec' className="techIcon" />
     },
     {
       id: 10,
       name: 'Figma',
-      icon: 'SiFigma'
+      icon: <SiFigma color='#d6e0ec' className="techIcon" />
     },
     {
       id: 11,
       name: 'Adobe CC',
-      icon: 'SiAdobecreativecloud'
+      icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon" />
     }
   ];
 
@@ -127,12 +129,17 @@ function Home() {
                     <h4 className="cardTitle">Technologies</h4>
                     <div className="line"></div>
                 </div>
-                <div className="mt-3">
-                    <TechSquare tech={{
-                        id: 0,
-                        name: 'HTML',
-                        icon: <FaHtml5 color='#d6e0ec' size='2rem' />
-                    }} />
+                {/* Technology List */}
+                <div className="techGrid">
+                    {technologies.map((tech) => (
+                            <TechSquare 
+                            key={tech.id}
+                            tech={{
+                                id: tech.id,
+                                name: tech.name,
+                                icon: tech.icon
+                            }} />
+                    ))}
                 </div>
             </div>
             <div className="skillsCard">
