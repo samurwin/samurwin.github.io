@@ -1,8 +1,9 @@
 .iconCon {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     background: #292B2C;
-    padding: 1rem;
+    border: none;
+    padding: 1.5rem;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     transition: all 0.2s ease-in-out;
@@ -12,40 +13,33 @@
     background: #36393B;
 }
 
+.iconCon:focus {
+    background: #36393B;
+}
+
 .iconCon ~ p {
     font-size: 14px;
     opacity: 0;
-    display: none;
     transition: opacity 0.2s ease-in-out;
 }
 
 .iconCon:hover ~ p {
-    display: block;
     opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
+.iconCon:focus ~ p {
+    opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
     .iconCon {
-        width: 80px;
-        height: 80px;
-        padding: 1.5rem;
+        width: 104px;
+        height: 104px;
+        padding: 2rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .iconCon {
-        width: 96px;
-        height: 96px;
-        padding: 1.75rem;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .iconCon {
-        width: 104px;
-        height: 104px;
-    }
-
     .iconCon ~ p {
         font-size: 16px;
     }

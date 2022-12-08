@@ -204,6 +204,14 @@ nav a {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
 .text-center {
   text-align: center;
 }

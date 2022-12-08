@@ -6,70 +6,70 @@ import CaseStudies from "../components/CaseStudies";
 import Link from "../components/Link";
 import TechSquare from '../components/TechSquare';
 
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa'
-import { DiJavascript1, DiMongodb, DiMysql } from 'react-icons/di'
+import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
+import { DiMongodb, DiMysql } from 'react-icons/di'
 import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
 
 const technologies = [
     {
-      id: 0,
-      name: 'HTML',
-      icon: <FaHtml5 color='#d6e0ec' className="techIcon" />
+        id: 0,
+        name: 'React',
+        icon: <FaReact color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 1,
-      name: 'CSS',
-      icon: < FaCss3Alt color='#d6e0ec' className="techIcon" />
+        id: 1,
+        name: 'TypeScript',
+        icon: <SiTypescript color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 2,
-      name: 'JavaScript',
-      icon: <DiJavascript1 color='#d6e0ec' className="techIcon" />
+        id: 2,
+        name: 'NextJs',
+        icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 3,
-      name: 'React',
-      icon: <FaReact color='#d6e0ec' className="techIcon" />
+        id: 3,
+        name: 'MongoDB',
+        icon: <DiMongodb color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 4,
-      name: 'TypeScript',
-      icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+        id: 4,
+        name: 'MySQL',
+        icon: <DiMysql color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 5,
-      name: 'MongoDB',
-      icon: <DiMongodb color='#d6e0ec' className="techIcon" />
+        id: 5,
+        name: 'GraphQL',
+        icon: <SiGraphql color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 6,
-      name: 'MySQL',
-      icon: <DiMysql color='#d6e0ec' className="techIcon" />
+        id: 6,
+        name: 'NodeJS',
+        icon: <FaNodeJs color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 7,
-      name: 'NextJs',
-      icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+        id: 7,
+        name: 'Git',
+        icon: <FaGitAlt color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 8,
-      name: 'GraphQL',
-      icon: <SiGraphql color='#d6e0ec' className="techIcon" />
+        id: 8,
+        name: 'Shopify',
+        icon: <FaShopify color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 9,
-      name: 'NodeJs',
-      icon: <FaNodeJs color='#d6e0ec' className="techIcon" />
+        id: 9,
+        name: 'Wordpress',
+        icon: <FaWordpressSimple color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 10,
-      name: 'Figma',
-      icon: <SiFigma color='#d6e0ec' className="techIcon" />
+        id: 10,
+        name: 'Figma',
+        icon: <SiFigma color='#d6e0ec' className="techIcon" />
     },
     {
-      id: 11,
-      name: 'Adobe CC',
-      icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon" />
+        id: 11,
+        name: 'Adobe CC',
+        icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon" />
     }
   ];
 
@@ -125,12 +125,12 @@ function Home() {
 
         <section className="container sectionSpacing flex-column gapMd align-center">
             <div className="skillsCard">
-                <div>
+                <div className='w-100 mb-3'>
                     <h4 className="cardTitle">Technologies</h4>
                     <div className="line"></div>
                 </div>
                 {/* Technology List */}
-                <div className="techGrid">
+                <div className="techGrid w-100">
                     {technologies.map((tech) => (
                             <TechSquare 
                             key={tech.id}
@@ -143,10 +143,23 @@ function Home() {
                 </div>
             </div>
             <div className="skillsCard">
-                <div>
+                <div className='w-100 mb-3'>
                     <h4 className="cardTitle">Education</h4>
                     <div className="line"></div>
                 </div>
+
+                <div className='eduCon'>
+                    <div>
+                        <p className='text-secondary semibold'>Certificate in Full Stack Development</p>
+                        <p className='text-secondary italic'>University of Toronto SCS</p>
+                    </div>
+
+                    <div>
+                        <p className='text-secondary semibold'>Diploma in Advertising and Graphic Design</p>
+                        <p className='text-secondary italic'>Humber College</p>
+                    </div>
+                </div>
+
             </div>
 
             <div>
