@@ -178,6 +178,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-width: 250px;
+}
+
+@media screen and (min-width: 560px) {
+    .eduCon {
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
