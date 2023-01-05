@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './pages/Home';
-import About from './pages/About';
+import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
-import ProjectPage from './components/ProjectPage';
+
 
 
 const projectInfo = {
@@ -97,31 +97,7 @@ function App() {
 
             <Route exact path='/portfolio' component={Portfolio} />
 
-            <Route exact path='/about' component={About} />
-
-            <Route exact path='/trustme'> 
-              <ProjectPage key={projectInfo.TM.title} projectInfo={projectInfo.TM} /> 
-            </Route>
-
-            <Route exact path='/sorgenmorket'> 
-              <ProjectPage key={projectInfo.SM.title} projectInfo={projectInfo.SM} /> 
-            </Route>
-
-            <Route exact path='/thebasketproject'> 
-              <ProjectPage key={projectInfo.BP.title} projectInfo={projectInfo.BP} /> 
-            </Route>
-
-            <Route exact path='/savourysubscriptions'> 
-              <ProjectPage key={projectInfo.SS.title} projectInfo={projectInfo.SS} /> 
-            </Route>
-
-            <Route exact path='/devdiaries'> 
-              <ProjectPage key={projectInfo.DD.title} projectInfo={projectInfo.DD} /> 
-            </Route>
-
-            <Route exact path='/weatherdashboard'> 
-              <ProjectPage key={projectInfo.WD.title} projectInfo={projectInfo.WD} /> 
-            </Route>
+            <Route exact path='/contact' component={Contact} />
 
           </Switch>
       </div>

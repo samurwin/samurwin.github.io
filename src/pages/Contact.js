@@ -34,28 +34,32 @@ function Contact() {
     };
 
     return (
-        <section className='w-100 my-4 flex-column align-center'>
-            <h1 className='text-primary mb-2'>Contact Me</h1>
-            <form className='flex-column align-center align-start-lg card my-2 w-75'>
-                <div className='my-2 flex-column w-100'>
-                    <label className='mb-1 text-uppercase text-dark' htmlFor='name'>Name:</label>
-                    <input name='name' placeholder='Enter your name...' onBlur={formChange} />
-                </div>
-                <div className='my-2 flex-column w-100'>
-                    <label className='mb-1 text-uppercase text-dark' htmlFor='email'>Email:</label>
-                    <input name='email' placeholder='Enter your email...' onBlur={formChange} />
-                </div>
-                <div className='my-2 w-100'>
-                    <textarea name='message' placeholder='Enter your message...' onBlur={formChange} ></textarea>
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className='text-error'>{errorMessage}</p>
+        <div className="wrapper">
+            <section className="container">
+                <h1 className="text-primary milgran">Let's Connect</h1>
+            </section>
+            <section className='container sectionSpacing'>
+                <form className='flex-column align-center align-start-lg card my-2 w-75'>
+                    <div className='my-2 flex-column w-100'>
+                        <label className='mb-1 text-uppercase text-dark' htmlFor='name'>Name:</label>
+                        <input name='name' placeholder='Enter your name...' onBlur={formChange} />
                     </div>
-                )}
-                <button type='submit' className='w-100 btn mt-2' onClick={handleSubmit}>Send</button>
-            </form>
-        </section>
+                    <div className='my-2 flex-column w-100'>
+                        <label className='mb-1 text-uppercase text-dark' htmlFor='email'>Email:</label>
+                        <input name='email' placeholder='Enter your email...' onBlur={formChange} />
+                    </div>
+                    <div className='my-2 w-100'>
+                        <textarea name='message' placeholder='Enter your message...' onBlur={formChange} ></textarea>
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className='text-error'>{errorMessage}</p>
+                        </div>
+                    )}
+                    <button type='submit' className='w-100 btn mt-2' onClick={handleSubmit}>Send</button>
+                </form>
+            </section>
+        </div>
     );
 };
 
