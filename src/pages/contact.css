@@ -2,6 +2,8 @@ form {
     padding: 2rem 1rem;
     background: #0E0E0F;
     border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .formTitle {
@@ -28,7 +30,7 @@ textarea {
     min-height: 200px;
 }
 
-.btnSecondary {
+.btn {
     padding: 8px 16px;
     border: 2px solid var(--secondary);
     color: var(--secondary);
@@ -38,4 +40,10 @@ textarea {
     border-radius: 10px;
     opacity: 1;
     transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        padding: 2.5rem;
+    }
 }
