@@ -42,7 +42,7 @@ body {
 }
 
 .milgran {
-  font-family: 'MilgranCondensed';
+  font-family: milgran;
 }
 
 h1 {
@@ -97,6 +97,11 @@ p {
 
 .svg {
   font-size: 24px;
+  cursor: pointer;
+}
+
+.svgLg {
+  font-size: 36px;
   cursor: pointer;
 }
 

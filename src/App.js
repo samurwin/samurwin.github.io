@@ -6,7 +6,11 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 
-
+const socialLinks = {
+ githubURL: 'https://github.com/samurwin',
+ linkedinURL: 'https://www.linkedin.com/in/samanthaurwin/',
+ behanceURL: 'https://www.behance.net/samanthaurwin'
+}
 
 const projectInfo = {
   TM: {
@@ -91,13 +95,13 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
+        <Header socialLinks={ socialLinks }/>
           <Switch>
             <Route exact path='/' component={Home} />
 
             <Route exact path='/portfolio' component={Portfolio} />
 
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/contact' socialLinks={ socialLinks } component={Contact} />
 
           </Switch>
       </div>

@@ -5,17 +5,13 @@ import { HiMenu } from 'react-icons/hi';
 
 import logo from '../../assets/images/SMU-logo.svg';
 
-function Header() {
+function Header(socialLinks) {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [selected, setSelected] = useState('home');
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen);
     }
-
-    const githubURL = 'https://github.com/samurwin';
-    const linkedinURL = 'https://www.linkedin.com/in/samanthaurwin/';
-    const behanceURL = 'https://www.behance.net/samanthaurwin';
 
     function onClick(link) {
         window.open(link, '_blank');
@@ -77,7 +73,7 @@ function Header() {
                 className="svg text-secondary pb-3"
                 onClick={(e) => {
                     e.preventDefault();
-                    onClick(linkedinURL)
+                    onClick(socialLinks.linkedinURL)
                 }}
                 >
                     <FaLinkedinIn/>
@@ -87,7 +83,7 @@ function Header() {
                 className="svg text-secondary pb-3"
                 onClick={(e) => {
                     e.preventDefault();
-                    onClick(githubURL)
+                    onClick(socialLinks.githubURL)
                 }}
                 >
                     <FaGithub/>
@@ -97,7 +93,7 @@ function Header() {
                 className="svg text-secondary"
                 onClick={(e) => {
                     e.preventDefault();
-                    onClick(behanceURL)
+                    onClick(socialLinks.behanceURL)
                 }}
                 >
                     <FaBehance/>

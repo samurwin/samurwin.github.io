@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import './contact.css'
 
-function Contact() {
+import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
+function Contact( socialLinks ) {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     const [errorMessage, setErrorMessage] = useState('');
@@ -33,30 +36,72 @@ function Contact() {
         console.log(formState);
     };
 
+    function onClick(link) {
+        window.open(link, '_blank');
+    }
+
     return (
         <div className="wrapper">
-            <section className="container">
-                <h1 className="text-primary milgran">Let's Connect</h1>
+            <section className="container sectionSpacing flex-column align-center">
+                <h1 className="text-primary text-uppercase milgran pb-4 text-center">
+                    Let's 
+                    <br/>
+                    Connect!
+                </h1>
+
+                <div className="flex-row gapLg align-center">
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.linkedinURL)
+                    }}
+                    >
+                        <FaLinkedinIn/>
+                    </span>
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.githubURL)
+                    }}
+                    >
+                        <FaGithub/>
+                    </span>
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.behanceURL)
+                    }}
+                    >
+                        <FaBehance/>
+                    </span>
+                </div>
             </section>
             <section className='container sectionSpacing'>
-                <form className='flex-column align-center align-start-lg card my-2 w-75'>
-                    <div className='my-2 flex-column w-100'>
-                        <label className='mb-1 text-uppercase text-dark' htmlFor='name'>Name:</label>
-                        <input name='name' placeholder='Enter your name...' onBlur={formChange} />
+                <form className='flex-column gapMd'>
+                    <h2 className="formTitle w-100 text-secondary">Contact Me</h2>
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor='name'>Name:</label>
+                        <input name='name' placeholder='Name' onBlur={formChange} />
                     </div>
-                    <div className='my-2 flex-column w-100'>
-                        <label className='mb-1 text-uppercase text-dark' htmlFor='email'>Email:</label>
-                        <input name='email' placeholder='Enter your email...' onBlur={formChange} />
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor="email">Email:</label>
+                        <input name='email' placeholder='Email' onBlur={formChange} />
                     </div>
-                    <div className='my-2 w-100'>
-                        <textarea name='message' placeholder='Enter your message...' onBlur={formChange} ></textarea>
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor="message">Message</label>
+                        <textarea name='message' placeholder='Message...' onBlur={formChange} ></textarea>
                     </div>
                     {errorMessage && (
                         <div>
                             <p className='text-error'>{errorMessage}</p>
                         </div>
                     )}
-                    <button type='submit' className='w-100 btn mt-2' onClick={handleSubmit}>Send</button>
+                    <div>
+                        <button type='submit' className='btnSecondary' onClick={handleSubmit}>Send</button>
+                    </div>
                 </form>
             </section>
         </div>
