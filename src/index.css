@@ -26,10 +26,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  height: 100%;
-} */
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--tertiary-color);
@@ -39,6 +35,21 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   overflow-x: hidden;
+}
+
+/* Scroll Bar */
+body::-webkit-scrollbar {
+  width: 16px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0E0E0F;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #36393B;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 5px solid #0E0E0F;  /* creates padding around scroll thumb */
 }
 
 .milgran {
