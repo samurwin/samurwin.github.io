@@ -32,3 +32,19 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.overviewTxt > p {
+    color: var(--light);
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deployedLink {
+    color: var(--tertiary);
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}

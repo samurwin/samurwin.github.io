@@ -1,0 +1,66 @@
+.subheading {
+    font-weight: 400;
+}
+
+.backgroundBlue {
+    background-color: #02033C;
+}
+
+.backgroundRed {
+    background-color: #CC2C12;
+}
+
+.backgroundWhite {
+    background-color: #F3F5F7;
+}
+
+.backgroundBlack {
+    background-color: #1A1A1A;
+    border: 1px solid #F3F5F7;
+}
+
+.bgSecondaryOne {
+    background-color: #5C5C99;
+}
+
+.bgSecondaryTwo {
+    background-color: #E6E9F4;
+}
+
+.rwiLogoCon {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoPng {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slideImg { 
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-size: 14px;
+    color: var(--light);
+    text-align: center;
+    font-style: italic;
+}
+
+.colourSquare {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (min-width: 1200px) {
+    .logoPng {
+        width: 30%;
+    }
+}

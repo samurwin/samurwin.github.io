@@ -2,10 +2,10 @@ import React from 'react';
 
 import './style.css';
 
-export default function ProjectHeading( { title, subtitle, tags, image } ) {
+export default function ProjectHeading( { title, subtitle, tags, image, overview, link } ) {
 
     return (
-        <section className="container sectionSpacing">
+        <section className="container sectionSpacing max1000">
             <h1 className="milgran text-primary text-uppercase text-center">{ title }</h1>
             <h4 className="text-secondary text-center weight500">{ subtitle }</h4>
             
@@ -44,6 +44,14 @@ export default function ProjectHeading( { title, subtitle, tags, image } ) {
                     backgroundSize: 'cover',
                 }}
             ></div>
+            <div className="overviewTxt mt-5">
+                <p>{ overview }</p>
+
+                {link 
+                ? <a  className="deployedLink mt-3" href={link.url}>{link.linkTitle}</a>
+                : <></>
+                }
+            </div>
         </section>
     )
 }
