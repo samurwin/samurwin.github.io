@@ -6,25 +6,8 @@
     background-color: #02033C;
 }
 
-.backgroundRed {
-    background-color: #CC2C12;
-}
-
 .backgroundWhite {
     background-color: #F3F5F7;
-}
-
-.backgroundBlack {
-    background-color: #1A1A1A;
-    border: 1px solid #F3F5F7;
-}
-
-.bgSecondaryOne {
-    background-color: #5C5C99;
-}
-
-.bgSecondaryTwo {
-    background-color: #E6E9F4;
 }
 
 .rwiLogoCon {
@@ -54,10 +37,32 @@
     font-style: italic;
 }
 
-.colourSquare {
-    height: 100px;
-    width: 100px;
+.card {
+    background: #0E0E0F;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.cardTitle {
+    color: #CECECE;
+    text-align: center;
+    font-weight: 400;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #36393B;
+    margin-top: 0.5rem;
+}
+
 
 @media screen and (min-width: 1200px) {
     .logoPng {
