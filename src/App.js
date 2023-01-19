@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Rwi from './pages/Rwi';
+import Project from './pages/Project';
+
+import { projectInfo } from './assets/projectInfo'
 
 const socialLinks = {
  githubURL: 'https://github.com/samurwin',
@@ -23,9 +26,17 @@ function App() {
 
             <Route exact path='/portfolio' component={Portfolio} />
 
-            <Route exact path='/contact' socialLinks={ socialLinks } component={Contact} />
+            <Route exact path='/contact'>
+              <Contact socialLinks={socialLinks} />
+            </Route>
 
             <Route exact path='/portfolio/rwi-case-study' component={ Rwi } />
+
+            {projectInfo.map((info) => (
+              <Route exact path={info.path} key={info.title}>
+                <Project projectInfo={info} />
+              </Route>
+            ))}
 
           </Switch>
       </div>

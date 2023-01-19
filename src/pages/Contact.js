@@ -5,7 +5,7 @@ import './contact.css'
 import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineErrorOutline } from 'react-icons/md'
 
-function Contact( socialLinks ) {
+function Contact( {socialLinks} ) {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     const [errorMessage, setErrorMessage] = useState('');

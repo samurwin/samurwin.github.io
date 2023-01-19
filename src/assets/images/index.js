@@ -1,3 +1,4 @@
+import rwiThumbnail from './RWI-Labs-thumbnail.jpg'
 import rwiLogoMain from './rwi/RWI-Logo_Colour-Small.png';
 import rwiLogoSecondary from './rwi/RWI-Wordmark_Partial-Colour-Small.png';
 import rwiColourCombos from './rwi/RWI_Logo-colour-combinations.png';
@@ -8,9 +9,13 @@ import illustration01 from './rwi/illustration01.png'
 import illustration02 from './rwi/illustration02.png'
 import illustration03 from './rwi/illustration03.png'
 import illustration04 from './rwi/illustration04.png'
+import alloveusThumbnail from './projects/alloveus-thumbnail.png'
+import devDiariesThumbnail from './projects/dev-diaries-thumbnail.png'
+import savouryThumbnail from './projects/savoury-thumbnail.png'
 
 
 const rwiImgs = {
+    bannerImg: rwiThumbnail,
     logos: [
         {
             img: rwiLogoMain,
@@ -59,4 +64,34 @@ const rwiImgs = {
     ]
 }
 
-export { rwiImgs } 
+const alloveusImgs = {
+    bannerImg: alloveusThumbnail,
+    webDesign: [
+        {
+            img: '',
+            alt: ''
+        }
+    ]
+}
+
+const devDiariesImgs = {
+    bannerImg: devDiariesThumbnail,
+    images: [
+        {
+            img: '',
+            alt: ''
+        }
+    ]
+}
+
+const savouryImgs = {
+    bannerImg: savouryThumbnail,
+    images: [
+        {
+            img: '',
+            alt: ''
+        }
+    ]
+}
+
+export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs } 

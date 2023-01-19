@@ -92,6 +92,7 @@ function Rwi() {
                 <div>
                     {rwi.images.webDesign.map((image) => (
                         <img
+                        key={image.alt}
                         src={image.img}
                         alt={image.alt}
                         className="slideImg my-2"
@@ -105,6 +106,7 @@ function Rwi() {
                     <p></p>
                     {rwi.images.illustrations.map((image) => (
                         <img
+                        key={image.alt}
                         src={image.img}
                         alt={image.alt}
                         className="slideImg my-2"
