@@ -4,6 +4,10 @@ import rwiColourCombos from './rwi/RWI_Logo-colour-combinations.png';
 import webdesign01 from './rwi/rwi-web-design-01.png'
 import webdesign02 from './rwi/rwi-web-design-02.png'
 import webdesign03 from './rwi/rwi-web-design-03.png'
+import illustration01 from './rwi/illustration01.png'
+import illustration02 from './rwi/illustration02.png'
+import illustration03 from './rwi/illustration03.png'
+import illustration04 from './rwi/illustration04.png'
 
 
 const rwiImgs = {
@@ -33,6 +37,24 @@ const rwiImgs = {
         {
             img: webdesign03,
             alt: 'RWI website about page design'
+        }
+    ],
+    illustrations: [
+        {
+            img: illustration01,
+            alt: 'Screenshot of service page for custom web apps on rwi website. Includes illustration.'
+        },
+        {
+            img: illustration02,
+            alt: 'Screenshot of service page for shopify development on rwi website. Includes illustration.'
+        },
+        {
+            img: illustration03,
+            alt: 'Screenshot of service page for brand strategy on rwi website. Includes illustration.'
+        },
+        {
+            img: illustration04,
+            alt: 'Screenshot of service page for digital strategy on rwi website. Includes illustration.'
         }
     ]
 }

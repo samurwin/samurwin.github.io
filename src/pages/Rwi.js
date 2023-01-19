@@ -97,6 +97,19 @@ function Rwi() {
                         className="slideImg my-2"
                         />
                     ))}
+
+                    <p className="text-secondary text-center my-3">View the RWI design system <a href="" className="text-tertiary">here</a></p>
+                </div>
+
+                <div>
+                    <p></p>
+                    {rwi.images.illustrations.map((image) => (
+                        <img
+                        src={image.img}
+                        alt={image.alt}
+                        className="slideImg my-2"
+                        />
+                    ))}
                 </div>
             </section>
 

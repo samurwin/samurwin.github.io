@@ -25,7 +25,7 @@ function App() {
 
             <Route exact path='/contact' socialLinks={ socialLinks } component={Contact} />
 
-            <Route exact path='/rwi-case-study' component={ Rwi } />
+            <Route exact path='/portfolio/rwi-case-study' component={ Rwi } />
 
           </Switch>
       </div>
