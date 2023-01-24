@@ -24,7 +24,9 @@ function App() {
           <Switch>
             <Route exact path='/' component={Home} />
 
-            <Route exact path='/portfolio' component={Portfolio} />
+            <Route exact path='/portfolio'>
+              <Portfolio projects={projectInfo} />
+            </Route>
 
             <Route exact path='/contact'>
               <Contact socialLinks={socialLinks} />

@@ -1,0 +1,27 @@
+.caseStudyImg {
+    border-radius: 10px;
+    height: 450px !important;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tagTxt {
+    font-size: 12px;
+    color: var(--tertiary);
+    text-decoration: underline;
+}
+
+.projectImg {
+    aspect-ratio: 1 / 1;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectImg img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
