@@ -15,8 +15,19 @@ function Project({projectInfo}) {
             link={projectInfo.link}
             />
 
-            <section className="container sectionSpacing">
-                
+            <section className="container sectionSpacing max800">
+                {projectInfo.images.map((image) => (
+                    <img
+                    src={image.img}
+                    alt={image.alt}
+                    key={image.alt}
+                    className="slideImg my-2"
+                    />
+                ))}
+
+                <div className="w-100 mt-5">
+                    <a href='/portfolio' className='text-center text-tertiary'>View all Projects</a>
+                </div>
             </section>
         </div>
     )

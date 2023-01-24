@@ -10,8 +10,16 @@ import illustration02 from './rwi/illustration02.png'
 import illustration03 from './rwi/illustration03.png'
 import illustration04 from './rwi/illustration04.png'
 import alloveusThumbnail from './projects/alloveus-thumbnail.png'
+import alloveus01 from './projects/alloveus01.png'
+import alloveus02 from './projects/alloveus02.png'
+import alloveus03 from './projects/alloveus03.png'
+import alloveus04 from './projects/alloveus04.png'
 import devDiariesThumbnail from './projects/dev-diaries-thumbnail.png'
+import devDiaries01 from './projects/dev-diaries01.jpeg'
 import savouryThumbnail from './projects/savoury-thumbnail.png'
+import savoury01 from './projects/savoury01.png'
+import savoury02 from './projects/savoury02.png'
+import savoury03 from './projects/savoury03.png'
 
 
 const rwiImgs = {
@@ -68,8 +76,20 @@ const alloveusImgs = {
     bannerImg: alloveusThumbnail,
     webDesign: [
         {
-            img: '',
-            alt: ''
+            img: alloveus01,
+            alt: 'Alloveus Home Page Design'
+        }, 
+        {
+            img: alloveus02,
+            alt: 'Alloveus About Us Page Design'
+        },
+        {
+            img: alloveus03,
+            alt: 'Alloveus Event Page Design'
+        },
+        {
+            img: alloveus04,
+            alt: 'Alloveus Contact Page Design'
         }
     ]
 }
@@ -78,8 +98,8 @@ const devDiariesImgs = {
     bannerImg: devDiariesThumbnail,
     images: [
         {
-            img: '',
-            alt: ''
+            img: devDiaries01,
+            alt: 'Dev Diaries User Feed'
         }
     ]
 }
@@ -88,8 +108,16 @@ const savouryImgs = {
     bannerImg: savouryThumbnail,
     images: [
         {
-            img: '',
-            alt: ''
+            img: savoury01,
+            alt: 'Screenshot of Savoury Subscriptions Home Page'
+        }, 
+        {
+            img: savoury02,
+            alt: 'Screenshot of Savoury Subscription Meals Page'
+        },
+        {
+            img: savoury03,
+            alt: 'Screenshot of Savoury Subscription Account Page'
         }
     ]
 }
