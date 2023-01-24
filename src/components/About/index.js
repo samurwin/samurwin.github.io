@@ -7,7 +7,7 @@ export default function About () {
 
     return (
         <section className="aboutWrapper sectionSpacing">
-            <div className="container aboutCon">
+            <div className="container aboutCon max1000">
                 <div className="aboutImg">
                     <img
                     src={aboutImg}

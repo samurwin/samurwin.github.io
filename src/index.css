@@ -120,6 +120,10 @@ a {
   cursor: pointer;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 /* HEADER STYLES */
 .sidebar {
   position: fixed;

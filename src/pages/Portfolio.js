@@ -35,7 +35,7 @@ function Portfolio({projects}) {
           <section className="sectionSpacing container max800">
             <h3 className="text-secondary text-center">Case Study</h3>
             <div 
-              className="caseStudyImg my-4"
+              className="caseStudyImg my-4 cursorPointer"
               style={{ 
                   backgroundImage: `url(${rwiThumbnail})`,
                   backgroundSize: 'cover',
@@ -43,7 +43,12 @@ function Portfolio({projects}) {
               onClick={() => handleClick('/portfolio/rwi-case-study')}
             ></div>
             <div>
-              <h4 className="text-primary text-center">RWI Labs</h4>
+              <h4 
+              className="text-primary text-center cursorPointer"
+              onClick={() => handleClick('/portfolio/rwi-case-study')}
+              >
+                RWI Labs
+              </h4>
               <p className="text-secondary text-center">Digital Marketing Agency</p>
               <div className="flex-row align-center justify-center gapSm">
                 <p className="tagTxt">Web Design</p>
@@ -59,7 +64,7 @@ function Portfolio({projects}) {
               {projects.map((project) => (
                   <div
                   key={project.title}
-                  className="projectImg"
+                  className="projectImg cursorPointer"
                   >
                     <img
                     src={project.bannerImg}

@@ -5,6 +5,7 @@ import About from "../components/About";
 import CaseStudies from "../components/CaseStudies";
 import Link from "../components/Link";
 import TechSquare from '../components/TechSquare';
+import rwiImg from'../assets/images/RWI-Labs-thumbnail.jpg'
 
 import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
@@ -74,6 +75,11 @@ const technologies = [
   ];
 
 function Home() {
+
+    function handleClick(url) {
+        window.location.assign(url);
+    }
+
     return (
         <div className="wrapper">
         <section className="container hero">
@@ -120,8 +126,23 @@ function Home() {
                 </svg>
             </div>
         </section>
+
         <About/>
-        <CaseStudies/>
+
+        {/* <CaseStudies/> */}
+        <section className="container sectionSpacing">
+            <h2 className="text-secondary text-center">Case Study</h2>
+
+            <div 
+            className="caseStudy mt-4 cursorPointer"
+            src={rwiImg}
+            onClick={() => handleClick('/rwi-case-study')}
+            style={{ 
+                backgroundImage: `url(${rwiImg})`,
+                backgroundSize: 'cover',
+            }}
+            ></div>
+        </section>
 
         <section className="container sectionSpacing flex-column gapMd align-center">
             <div className="skillsCard">
