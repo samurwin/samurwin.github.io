@@ -103,7 +103,7 @@ function Contact( {socialLinks} ) {
                         </div>
                     )}
                     <div>
-                        <button type='submit' className='btn'>Send</button>
+                        <button type='submit' className='btn cursorPointer'>Send</button>
                     </div>
                 </form>
             </section>

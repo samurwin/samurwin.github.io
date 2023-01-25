@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import ProjectHeading from '../components/ProjectHeading'
+import TechSquare from '../components/TechSquare';
 
 function Project({projectInfo}) {
     
@@ -24,9 +26,31 @@ function Project({projectInfo}) {
                     className="slideImg my-2"
                     />
                 ))}
+            </section>
+
+            <section className="container sectionSpacing max800">
+                <div className="card">
+                    <div className='w-100 mb-3'>
+                        <h4 className="cardTitle">Technologies Used</h4>
+                        <div className="line"></div>
+                    </div>
+
+                    <div className="w-100 flex-row align-center justify-center gapLg">
+                        {projectInfo.technologies.map((tech) => (
+                            <TechSquare
+                            key={tech.id}
+                            tech={{
+                                id: tech.id,
+                                name: tech.name,
+                                icon: tech.icon
+                            }}
+                            />
+                        ))}
+                    </div>
+                </div>
 
                 <div className="w-100 mt-5">
-                    <a href='/portfolio' className='text-center text-tertiary'>View all Projects</a>
+                    <Link to='/portfolio' className='text-center text-tertiary'>View all Projects</Link>
                 </div>
             </section>
         </div>

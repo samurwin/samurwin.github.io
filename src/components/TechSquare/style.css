@@ -31,13 +31,13 @@
     opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .iconCon {
         width: 104px;
         height: 104px;
         padding: 2rem;
     }
-}
+} */
 
 @media screen and (min-width: 1024px) {
     .iconCon ~ p {

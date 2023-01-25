@@ -1,5 +1,9 @@
 import { alloveusImgs, devDiariesImgs, savouryImgs } from './images';
 
+import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
+import { DiMongodb, DiMysql } from 'react-icons/di'
+import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+
 const projectInfo = [
     {
         title: 'Alloveus',
@@ -19,12 +23,12 @@ const projectInfo = [
             {
                 id: 0,
                 name: 'Shopify',
-                icon: 'FaShopify'
+                icon: <FaShopify color='#d6e0ec' className="techIcon"/>
             },
             {
                 id: 1,
                 name: 'Adobe CC',
-                icon: 'SiAdobecreativecloud'
+                icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon"/>
             }
         ],
         path: '/portfolio/alloveus'
@@ -46,22 +50,22 @@ const projectInfo = [
             {
                 id: 0,
                 name: 'React',
-                icon: 'FaReact'
+                icon: <FaReact color='#d6e0ec' className="techIcon"/>
             },
             {
                 id: 1,
                 name: 'GraphQL',
-                icon: 'SiGraphql'
+                icon: <SiGraphql color='#d6e0ec' className="techIcon"/>
             },
             {
                 id: 2,
                 name: 'NodeJS',
-                icon: 'FaNodeJs'
+                icon: <FaNodeJs color='#d6e0ec' className="techIcon"/>
             },
             {
                 id: 3,
                 name: 'MongoDB',
-                icon: 'DiMongodb'
+                icon: <DiMongodb color='#d6e0ec' className="techIcon"/>
             }
         ],
         path: '/portfolio/savoury-subscriptions'
@@ -83,12 +87,12 @@ const projectInfo = [
             {
                 id: 0,
                 name: 'MySQL',
-                icon: 'DiMysql'
+                icon: <DiMysql color='#d6e0ec' className="techIcon"/>
             },
             {
                 id: 1,
                 name: 'NodeJS',
-                icon: 'FaNodeJs'
+                icon: <FaNodeJs color='#d6e0ec' className="techIcon"/>
             }
         ],
         path: '/portfolio/dev-diaries'

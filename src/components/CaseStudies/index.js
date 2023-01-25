@@ -7,7 +7,7 @@ import 'swiper/css';
 import "./style.css";
 
 import rwiThumbnail from "../../assets/images/RWI-Labs-thumbnail.jpg";
-import Link from "../Link";
+import Link from "../Button";
 
 export default function CaseStudies() {
 

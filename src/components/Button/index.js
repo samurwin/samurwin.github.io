@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import "./style.css";
 
-function Link({ color, text, link }) {
+function Button({ color, text, link }) {
     let btnClass = "";
 
     switch(color) {
@@ -15,11 +16,11 @@ function Link({ color, text, link }) {
 
     return (
         <div className="my-4">
-            <a href={link} className={btnClass}>
+            <Link to={link} className={btnClass}>
                 {text}
-            </a>
+            </Link>
         </div>
     )
 }
 
-export default Link;
+export default Button;

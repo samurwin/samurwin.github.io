@@ -6,7 +6,7 @@ import { SiTypescript, SiNextdotjs } from 'react-icons/si'
 import './rwi.css';
 import ProjectHeading from '../components/ProjectHeading';
 import TechSquare from '../components/TechSquare';
-import Link from '../components/Link';
+import Button from '../components/Button';
 import { rwiImgs } from '../assets/images';
 
 const rwi = {
@@ -136,7 +136,7 @@ function Rwi() {
                 </div>
                 <div className="flex-column align-center mt-4">
                     <p className="text-secondary mb-2">Visit the website here:</p>
-                    <Link color='primary' text='Website' link='https://rwilabs.io'/>
+                    <Button color='primary' text='Website' link='https://rwilabs.io'/>
                 </div>
             </section>
 

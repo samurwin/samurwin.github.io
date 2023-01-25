@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './home.css';
 
 import About from "../components/About";
 import CaseStudies from "../components/CaseStudies";
-import Link from "../components/Link";
+import Button from "../components/Button";
 import TechSquare from '../components/TechSquare';
 import rwiImg from'../assets/images/RWI-Labs-thumbnail.jpg'
 
@@ -87,8 +88,8 @@ function Home() {
                 <h1 className="name">Samantha Urwin</h1>
                 <p className="jobTitle">Web Designer & Full Stack Developer</p>
                 <div className="mt-3 flex-row flex-wrap gapSm justify-center">
-                    <Link color="secondary" text="Get in Touch" link="/contact"/>
-                    <Link color="primary" text="View Portfolio" link="/portfolio"/>
+                    <Button color="secondary" text="Get in Touch" link="/contact"/>
+                    <Button color="primary" text="View Portfolio" link="/portfolio"/>
                 </div>
             </div>
             <div className="greenStar">
@@ -132,16 +133,17 @@ function Home() {
         {/* <CaseStudies/> */}
         <section className="container sectionSpacing">
             <h2 className="text-secondary text-center">Case Study</h2>
-
-            <div 
-            className="caseStudy mt-4 cursorPointer"
-            src={rwiImg}
-            onClick={() => handleClick('/rwi-case-study')}
-            style={{ 
-                backgroundImage: `url(${rwiImg})`,
-                backgroundSize: 'cover',
-            }}
-            ></div>
+            
+            <Link to='/portfolio/rwi-case-study'>
+                <div 
+                className="caseStudy mt-4 cursorPointer"
+                src={rwiImg}
+                style={{ 
+                    backgroundImage: `url(${rwiImg})`,
+                    backgroundSize: 'cover',
+                }}
+                ></div>
+            </Link>
         </section>
 
         <section className="container sectionSpacing flex-column gapMd align-center">
@@ -184,7 +186,7 @@ function Home() {
             </div>
 
             <div>
-            <Link color="secondary" text="My Resume" link="/"/>
+            <Button color="secondary" text="My Resume" link="/"/>
             </div>
         </section>
         </div>

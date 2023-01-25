@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
 
@@ -8,6 +8,22 @@ import logo from '../../assets/images/SMU-logo.svg';
 function Header(socialLinks) {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [selected, setSelected] = useState('home');
+
+    const history = useHistory()
+    useEffect(() => {
+        history.listen((location) => {
+            console.log(`You changed the page to: ${location.pathname}`)
+            const path = location.pathname;
+
+            if(path.includes('portfolio')) {
+                setSelected('portfolio');
+            } else if (path.includes('contact')) {
+                setSelected('contact');
+            } else {
+                setSelected('home');
+            }
+        })
+    }, [history])
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen);
@@ -43,7 +59,10 @@ function Header(socialLinks) {
                 <div id="home" className={`navItem ${selected === 'home' ? "activePage" : ""}`}>
                     <Link 
                     to='/'
-                    onClick={() => setSelected('home') }
+                    onClick={() => {
+                        setSelected('home');
+                        setNavbarOpen(false);
+                    }}
                     >
                         Home
                     </Link>
@@ -52,7 +71,10 @@ function Header(socialLinks) {
                 <div id="portfolio" className={`navItem ${selected === 'portfolio' ? "activePage" : ""}`}>
                     <Link 
                     to='/portfolio'
-                    onClick={() => setSelected('portfolio')}
+                    onClick={() => {
+                        setSelected('portfolio');
+                        setNavbarOpen(false);
+                    }}
                     >
                         Portfolio
                     </Link>
@@ -61,7 +83,10 @@ function Header(socialLinks) {
                 <div id="contact" className={`navItem ${selected === 'contact' ? "activePage" : ""}`}>
                     <Link 
                     to='/contact'
-                    onClick={() => setSelected('contact')}
+                    onClick={() => {
+                        setSelected('contact');
+                        setNavbarOpen(false);
+                    }}
                     >
                         Contact
                     </Link>
