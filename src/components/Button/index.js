@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import "./style.css";
 
-function Button({ color, text, link }) {
+function Button({ color, text, link, location }) {
     let btnClass = "";
 
     switch(color) {
@@ -16,9 +16,16 @@ function Button({ color, text, link }) {
 
     return (
         <div className="my-2">
-            <Link to={link} className={btnClass}>
-                {text}
-            </Link>
+            {location === 'internal' ? (
+                <Link to={link} className={btnClass}>
+                    {text}
+                </Link>
+            ): (
+                <a href={link} rel="noreferrer" target="_blank" className={btnClass}>
+                    {text}
+                </a>
+            )}
+
         </div>
     )
 }

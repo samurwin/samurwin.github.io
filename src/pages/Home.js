@@ -84,8 +84,8 @@ function Home() {
                 <h1 className="name">Samantha Urwin</h1>
                 <p className="jobTitle">Web Designer & Full Stack Developer</p>
                 <div className="mt-3 flex-row flex-wrap gapSm justify-center">
-                    <Button color="secondary" text="Get in Touch" link="/contact"/>
-                    <Button color="primary" text="View Portfolio" link="/portfolio"/>
+                    <Button color="secondary" text="Get in Touch" link="/contact" location="internal"/>
+                    <Button color="primary" text="View Portfolio" link="/portfolio" location="internal" />
                 </div>
             </div>
             <div className="greenStar">
@@ -182,7 +182,7 @@ function Home() {
             </div>
 
             <div>
-            <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/1XIGmPSdUwjZCGlBuAxCZAaZYDSMuynyK/view?usp=sharing"/>
+            <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/17zkRquQqufnLo7R-mcDZW4X642Re_Yby/view?usp=sharing"/>
             </div>
         </section>
         </div>
