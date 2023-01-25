@@ -99,7 +99,7 @@ function Rwi() {
                         />
                     ))}
 
-                    <p className="text-secondary text-center my-3">View the RWI design system <a href="" className="text-tertiary">here</a></p>
+                    <p className="text-secondary text-center my-3">View the RWI design system <a href="https://drive.google.com/file/d/1SKWZzwMbseL2MoYwXu4NvTSGCm0swc2q/view?usp=sharing" target="_blank" className="text-tertiary">here</a></p>
                 </div>
 
                 <div>

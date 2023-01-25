@@ -77,10 +77,6 @@ const technologies = [
 
 function Home() {
 
-    function handleClick(url) {
-        window.location.assign(url);
-    }
-
     return (
         <div className="wrapper">
         <section className="container hero">
@@ -186,7 +182,7 @@ function Home() {
             </div>
 
             <div>
-            <Button color="secondary" text="My Resume" link="/"/>
+            <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/1XIGmPSdUwjZCGlBuAxCZAaZYDSMuynyK/view?usp=sharing"/>
             </div>
         </section>
         </div>
