@@ -35,7 +35,7 @@ function Project({projectInfo}) {
                         <div className="line"></div>
                     </div>
 
-                    <div className="w-100 flex-row align-center justify-center gapLg">
+                    <div className="w-100 flex-row align-center justify-center gapMd">
                         {projectInfo.technologies.map((tech) => (
                             <TechSquare
                             key={tech.id}

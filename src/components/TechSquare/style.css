@@ -1,9 +1,9 @@
 .iconCon {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     background: #292B2C;
     border: none;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     transition: all 0.2s ease-in-out;
@@ -31,13 +31,13 @@
     opacity: 1;
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .iconCon {
-        width: 104px;
-        height: 104px;
-        padding: 2rem;
+        width: 80px;
+        height: 80px;
+        padding: 1.5rem;
     }
-} */
+}
 
 @media screen and (min-width: 1024px) {
     .iconCon ~ p {

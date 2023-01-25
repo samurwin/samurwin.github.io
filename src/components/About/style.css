@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
     .aboutImg {
-        width: 60%;
+        width: 40%;
     }
 
     .aboutTxt {
@@ -44,12 +44,12 @@
 
 @media screen and (min-width: 1024px) {
     .aboutImg {
-        width: 50%;
+        width: 30%;
     }
 
-    .aboutTxt {
+    /* .aboutTxt {
         width: 80%;
-    }
+    } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -63,6 +63,7 @@
     }
 
     .aboutImg {
+        width: 60%;
         margin-bottom: 0;
         margin-left: 3rem;
     }

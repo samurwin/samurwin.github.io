@@ -15,7 +15,7 @@ function Button({ color, text, link }) {
     }
 
     return (
-        <div className="my-4">
+        <div className="my-2">
             <Link to={link} className={btnClass}>
                 {text}
             </Link>

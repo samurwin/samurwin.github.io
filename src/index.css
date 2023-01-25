@@ -162,7 +162,7 @@ a {
 
 nav a {
   color: var(--secondary);
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -195,6 +195,10 @@ nav a {
 @media screen and (min-width: 768px) {
   .logo {
     width: 48px;
+  }
+
+  nav a {
+    font-size: 24px;
   }
 }
 

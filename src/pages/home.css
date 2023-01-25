@@ -142,7 +142,7 @@
 .skillsCard {
     background: #0E0E0F;
     border-radius: 10px;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -166,7 +166,7 @@
 .techGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 8px;
 }
 
 .techIcon {
@@ -184,6 +184,14 @@
 @media screen and (min-width: 560px) {
     .eduCon {
         max-width: 100%;
+    }
+
+    .skillsCard {
+        padding: 1rem 1.5rem;
+    }
+
+    .techGrid {
+        grid-gap: 16px;
     }
 }
 

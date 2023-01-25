@@ -37,13 +37,27 @@ export default function ProjectHeading( { title, subtitle, tags, image, overview
                 }) }
             </div>
 
-            <div 
+            {title === 'RWI Labs' ? (
+                <div 
                 className="projectImage mt-5"
+
                 style={{ 
                     backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                 }}
+            ></div> 
+            ) : (
+                <div 
+                className="projectImage mt-5"
+
+                style={{ 
+                    backgroundImage: `url(${image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
             ></div>
+            )}
+
             <div className="overviewTxt mt-5">
                 <p>{ overview }</p>
 
