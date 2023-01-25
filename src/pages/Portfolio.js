@@ -21,8 +21,9 @@ function Portfolio({projects}) {
           <section className="sectionSpacing container max1000">
             <h1 className="text-primary text-center milgran">Portfolio</h1>
             <p className="text-secondary text-center my-4">
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
-            Vivamus suscipit tortor eget felis porttitor volutpat.
+            Below you can find some of my recent website projects! 
+            To see more of my general design work check out my Behance, 
+            and similarly to see source code for my projects check out my GitHub.
             </p>
           </section>
 

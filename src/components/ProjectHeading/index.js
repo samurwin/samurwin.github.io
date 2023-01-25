@@ -53,7 +53,7 @@ export default function ProjectHeading( { title, subtitle, tags, image, overview
                 style={{ 
                     backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    backgroundPositionX: 'center'
                 }}
             ></div>
             )}

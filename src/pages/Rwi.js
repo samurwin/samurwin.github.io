@@ -18,7 +18,7 @@ const rwi = {
         "Brand Design",
     ],
     bannerImg: "/RWI-Labs-thumbnail.jpg",
-    overview: "Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+    overview: "This project was done for RWI Labs, a Digital Marketing Agency founded by myself and my business partner William. I feature this project as a case study because I believe it perfectly encapsulates all the skills that I have worked on cultivating these last few years. From the logo to the website and everything in between, I poured myself into this project and creating this brand.",
     link:  {
         url: "https://rwilabs.io",
         linkTitle: "RwiLabs.io"

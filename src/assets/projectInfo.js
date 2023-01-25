@@ -13,7 +13,7 @@ const projectInfo = [
             "Development"
         ],
         bannerImg: alloveusImgs.bannerImg,
-        overview: 'Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.',
+        overview: 'ALLOVEUS describes themselves as an artistic wellness community who host events to connect and move with one another. For this project I created the designed the ALLOVEUS website as well as, a custom Shopify theme for the company.',
         link: {
             url: 'https://alloveus.co',
             linkTitle: 'Alloveus.co'
@@ -40,7 +40,7 @@ const projectInfo = [
             'Development'
         ],
         bannerImg: savouryImgs.bannerImg,
-        overview: 'Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.',
+        overview: 'Savoury Subscriptions is a food subscription service where a user can signup/login, pick their favourite meals, and filter them by diet preference. The user can also save their diet preferences on their account page. Once they have their meals chosen, they can checkout using Stripe payment.',
         link: {
             url: '',
             linkTitle: 'Deployed Website'
@@ -77,7 +77,7 @@ const projectInfo = [
             'Development'
         ],
         bannerImg: devDiariesImgs.bannerImg,
-        overview: 'Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.',
+        overview: 'Dev Diaries is a tech blog forum. Users with an account can create posts and comment on others people’s posts. Made using TailwindCSS and MySQL/Sequelize.',
         link: {
             url: '',
             linkTitle: 'Deployed Website'

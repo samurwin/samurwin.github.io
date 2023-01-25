@@ -17,22 +17,19 @@ export default function About () {
                 <div className="aboutTxt">
                     <h2 className="text-primary">A designer with a creative heart and a strategic mind.</h2>
                     <p className="mb-3">
-                        Nulla porttitor accumsan tincidunt. Proin eget tortor risus. 
-                        Vivamus suscipit tortor eget felis porttitor volutpat.
+                        Hi there! I’m Sam, a web designer and developer from the Greater Toronto Area.
                     </p>
                     <p className="mb-3">
-                        Vestibulum ante ipsum primis in faucibus orci luctus et 
-                        ultrices posuere cubilia Curae; Donec velit neque, auctor 
-                        sit amet aliquam vel, ullamcorper sit amet ligula. Nulla 
-                        porttitor accumsan tincidunt. Nulla quis lorem ut libero 
-                        malesuada feugiat.
+                        I began my journey as a graphic designer working with a variety of brands, 
+                        and creating designs for both print and the web. While working as a graphic designer, 
+                        I gained a particular interest in designing content for the digital world and sought to 
+                        help bring brands to life online. It was then that I shifted my focus to the web – and 
+                        specifically to creating websites.
                     </p>
                     <p>
-                        Cras ultricies ligula sed magna dictum porta. Vestibulum 
-                        ante ipsum primis in faucibus orci luctus et ultrices posuere 
-                        cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, 
-                        ullamcorper sit amet ligula. Curabitur aliquet quam id dui 
-                        posuere blandit.
+                        Now, focusing on front-end development I have been able to utilize my skills in design 
+                        to create beautiful, responsive websites taking special consideration to accessible design 
+                        and user experience.
                     </p>
                 </div>
             </div>
