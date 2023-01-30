@@ -1,75 +1,190 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './home.css';
-import {Helmet} from 'react-helmet';
-import { Link } from 'react-router-dom';
+
+import About from "../components/About";
+import CaseStudies from "../components/CaseStudies";
+import Button from "../components/Button";
+import TechSquare from '../components/TechSquare';
+import rwiImg from'../assets/images/RWI-Labs-thumbnail.jpg'
+
+import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
+import { DiMongodb, DiMysql } from 'react-icons/di'
+import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+
+const technologies = [
+    {
+        id: 0,
+        name: 'React',
+        icon: <FaReact color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 1,
+        name: 'TypeScript',
+        icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 2,
+        name: 'NextJs',
+        icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 3,
+        name: 'MongoDB',
+        icon: <DiMongodb color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 4,
+        name: 'MySQL',
+        icon: <DiMysql color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 5,
+        name: 'GraphQL',
+        icon: <SiGraphql color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 6,
+        name: 'NodeJS',
+        icon: <FaNodeJs color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 7,
+        name: 'Git',
+        icon: <FaGitAlt color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 8,
+        name: 'Shopify',
+        icon: <FaShopify color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 9,
+        name: 'Wordpress',
+        icon: <FaWordpressSimple color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 10,
+        name: 'Figma',
+        icon: <SiFigma color='#d6e0ec' className="techIcon" />
+    },
+    {
+        id: 11,
+        name: 'Adobe CC',
+        icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon" />
+    }
+  ];
 
 function Home() {
+
     return (
-        <div>
-            <Helmet>
-                <style>{'body { background: var(--secondary); }'}</style>
-            </Helmet>
-            {/* Hero */}
-            <section className='flex-row justify-space-around align-center hero w-100'>
-                <div className='col-12 col-md-5 my-5'>
-                    <h4 className='text-secondary pb-4 intro'>Hi, I'm Sam!</h4>
-                    <p className='title text-primary'>DESIGNER<span className='title text-secondary'>.</span></p>
-                    <p className='title text-secondary'>DEVELOPER<span className='title text-primary'>.</span> </p>
+        <div className="wrapper">
+        <section className="container hero">
+            <div className="heroTxt">
+                <h1 className="name">Samantha Urwin</h1>
+                <p className="jobTitle">Web Designer & Full Stack Developer</p>
+                <div className="mt-3 flex-row flex-wrap gapSm justify-center">
+                    <Button color="secondary" text="Get in Touch" link="/contact" location="internal"/>
+                    <Button color="primary" text="View Portfolio" link="/portfolio" location="internal" />
                 </div>
-                <div className='col-12 col-md-5 my-3 img-container'>
-                    <img
-                    src={require('../assets/images/hero-star.png')} 
-                    alt='Samantha Urwin Web/Graphic Designer and Developer'
-                    className='hero-img'
-                    />
-                </div>
-            </section>
+            </div>
+            <div className="greenStar">
+                <svg id="b" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" 
+                viewBox="0 0 115.88 115.88"><g id="c">
+                    <path d="M60.29,20.89L69.73,3.89c1.36-2.44,5.08-1.44,5.03,1.35l-.32,19.44c-.03,
+                    2.11,2.26,3.43,4.06,2.35l16.68-10c2.4-1.44,5.12,1.29,3.68,3.68l-10,16.68c-1.08,
+                    1.81,.24,4.1,2.35,4.06l19.44-.32c2.79-.05,3.79,3.67,1.35,5.03l-17,9.44c-1.84,
+                    1.02-1.84,3.67,0,4.69l17,9.44c2.44,1.36,1.44,5.08-1.35,5.03l-19.44-.32c-2.11-.03-3.43,
+                    2.26-2.35,4.06l10,16.68c1.44,2.4-1.29,5.12-3.68,3.68l-16.68-10c-1.81-1.08-4.1,
+                    .24-4.06,2.35l.32,19.44c.05,2.79-3.67,3.79-5.03,1.35l-9.44-17c-1.02-1.84-3.67-1.84-4.69,
+                    0l-9.44,17c-1.36,2.44-5.08,1.44-5.03-1.35l.32-19.44c.03-2.11-2.26-3.43-4.06-2.35l-16.68,
+                    10c-2.4,1.44-5.12-1.29-3.68-3.68l10-16.68c1.08-1.81-.24-4.1-2.35-4.06l-19.44,.32c-2.79,
+                    .05-3.79-3.67-1.35-5.03l17-9.44c1.84-1.02,1.84-3.67,0-4.69L3.89,46.15c-2.44-1.36-1.44-5.08,
+                    1.35-5.03l19.44,.32c2.11,.03,3.43-2.26,2.35-4.06l-10-16.68c-1.44-2.4,1.29-5.12,3.68-3.68l16.68,
+                    10c1.81,1.08,4.1-.24,4.06-2.35l-.32-19.44c-.05-2.79,3.67-3.79,5.03-1.35l9.44,17c1.02,1.84,3.67,
+                    1.84,4.69,0Z" fill="none" stroke="#0f7173" strokeMiterlimit="10" strokeWidth="5"/></g>
+                </svg>
+            </div>
+            <div className="orangeStar">
+                <svg id="b" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" 
+                viewBox="0 0 115.88 115.88"><g id="c">
+                    <path d="M60.29,20.89L69.73,3.89c1.36-2.44,5.08-1.44,5.03,1.35l-.32,19.44c-.03,
+                    2.11,2.26,3.43,4.06,2.35l16.68-10c2.4-1.44,5.12,1.29,3.68,3.68l-10,16.68c-1.08,
+                    1.81,.24,4.1,2.35,4.06l19.44-.32c2.79-.05,3.79,3.67,1.35,5.03l-17,9.44c-1.84,
+                    1.02-1.84,3.67,0,4.69l17,9.44c2.44,1.36,1.44,5.08-1.35,5.03l-19.44-.32c-2.11-.03-3.43,
+                    2.26-2.35,4.06l10,16.68c1.44,2.4-1.29,5.12-3.68,3.68l-16.68-10c-1.81-1.08-4.1,
+                    .24-4.06,2.35l.32,19.44c.05,2.79-3.67,3.79-5.03,1.35l-9.44-17c-1.02-1.84-3.67-1.84-4.69,
+                    0l-9.44,17c-1.36,2.44-5.08,1.44-5.03-1.35l.32-19.44c.03-2.11-2.26-3.43-4.06-2.35l-16.68,
+                    10c-2.4,1.44-5.12-1.29-3.68-3.68l10-16.68c1.08-1.81-.24-4.1-2.35-4.06l-19.44,.32c-2.79,
+                    .05-3.79-3.67-1.35-5.03l17-9.44c1.84-1.02,1.84-3.67,0-4.69L3.89,46.15c-2.44-1.36-1.44-5.08,
+                    1.35-5.03l19.44,.32c2.11,.03,3.43-2.26,2.35-4.06l-10-16.68c-1.44-2.4,1.29-5.12,3.68-3.68l16.68,
+                    10c1.81,1.08,4.1-.24,4.06-2.35l-.32-19.44c-.05-2.79,3.67-3.79,5.03-1.35l9.44,17c1.02,1.84,3.67,
+                    1.84,4.69,0Z" fill="none" stroke="#FFB870" strokeMiterlimit="10" strokeWidth="5"/></g>
+                </svg>
+            </div>
+        </section>
 
-            {/* Page Content */}
-            <section>
-                <div className='section-spacing flex-column align-center justify-center'>
-                    <h1 className='blurb milgran text-quatrinary text-center p-5'>A <span className='text-primary'>DESIGNER</span> WITH A CREATIVE HEART 
-                     AND A STRATEGIC MIND.</h1>
+        <About/>
+
+        {/* <CaseStudies/> */}
+        <section className="container sectionSpacing">
+            <h2 className="text-secondary text-center">Case Study</h2>
+            
+            <Link to='/portfolio/rwi-case-study'>
+                <div 
+                className="caseStudy mt-4 cursorPointer"
+                src={rwiImg}
+                style={{ 
+                    backgroundImage: `url(${rwiImg})`,
+                    backgroundSize: 'cover',
+                }}
+                ></div>
+            </Link>
+        </section>
+
+        <section className="container sectionSpacing flex-column gapMd align-center">
+            <div className="skillsCard">
+                <div className='w-100 mb-3'>
+                    <h4 className="cardTitle">Technologies</h4>
+                    <div className="line"></div>
+                </div>
+                {/* Technology List */}
+                <div className="techGrid w-100">
+                    {technologies.map((tech) => (
+                            <TechSquare 
+                            key={tech.id}
+                            tech={{
+                                id: tech.id,
+                                name: tech.name,
+                                icon: tech.icon
+                            }} />
+                    ))}
+                </div>
+            </div>
+            <div className="skillsCard">
+                <div className='w-100 mb-3'>
+                    <h4 className="cardTitle">Education</h4>
+                    <div className="line"></div>
                 </div>
 
-                {/* Skills */}
-                <div className='flex-row align-center justify-space-around section-spacing mx-5'>
-                    <div className='skill-card col-12 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-primary text-center'>BRAND DESIGN</h4>
-                        <p className='text-dark pt-1 px-3 text-center'>I create eye-catching, unique designs to bring your brand to life and stand out from the rest!</p>
+                <div className='eduCon'>
+                    <div>
+                        <p className='text-secondary semibold'>Certificate in Full Stack Development</p>
+                        <p className='text-secondary italic'>University of Toronto SCS</p>
                     </div>
-                    <div className='skill-card col-12 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-tertiary text-center'>WEB DESIGN</h4>
-                        <p className='text-dark pt-1 px-3 text-center'>I design accessible, responsive websites that will greatly enhance your brand’s online presence.</p>
-                    </div>
-                    <div className='skill-card col-12 col-md-5 col-lg-3'>
-                        <h4 className='milgran text-quatrinary text-center'>DEVELOPMENT</h4>
-                        <p className='text-dark pt-1 px-3 text-center'>I develop seamless, full-stack applications with a focus on front-end development.</p>
+
+                    <div>
+                        <p className='text-secondary semibold'>Diploma in Advertising and Graphic Design</p>
+                        <p className='text-secondary italic'>Humber College</p>
                     </div>
                 </div>
 
-                {/* Featured Projects */}
-                <div className='section-spacing'>
-                    <h1 className='milgran text-quatrinary text-center mx-3'>FEATURED PROJECTS</h1>
-                    <div className='flex-row align-center justify-space-around mt-5'>
-                        <Link to='/trustme' className='col-8 col-lg-4'>
-                            <img 
-                            src={require('../assets/images/TM-project-img.jpg')}
-                            alt='Trust Me Branding Project'
-                            className='featured-img col-8 col-lg-3'
-                            />
-                        </Link>
+            </div>
 
-                        <Link to='/savourysubscriptions' className='col-8 col-lg-4'>
-                            <img
-                            src={require('../assets/images/SS-project-img.jpg')}
-                            alt='Savoury Subscriptions Full Stack Development Project'
-                            className='featured-img'
-                            />
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <div>
+            <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/17zkRquQqufnLo7R-mcDZW4X642Re_Yby/view?usp=sharing"/>
+            </div>
+        </section>
         </div>
     )
 }

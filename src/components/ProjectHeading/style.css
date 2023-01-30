@@ -1,0 +1,50 @@
+.projectTag {
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.primaryTag {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.orangeTag {
+    color: var(--tertiary);
+    border: 2px solid var(--tertiary);
+}
+
+.greenTag {
+    color: var(--quatrinary);
+    border: 2px solid var(--quatrinary);
+}
+
+.weight500 {
+    font-weight: 500;
+}
+
+.projectImage {
+    border-radius: 10px;
+    height: 400px !important;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overviewTxt > p {
+    color: var(--light);
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deployedLink {
+    color: var(--tertiary);
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    width: 100%;  
+}

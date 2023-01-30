@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import './contact.css'
 
-function Contact() {
+import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { MdOutlineErrorOutline } from 'react-icons/md'
+
+function Contact( {socialLinks} ) {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     const [errorMessage, setErrorMessage] = useState('');
 
     function formChange(e) {
-        if (e.target.name === 'email') {
+        if (e.target.name === 'Email') {
             const isValid = validateEmail(e.target.value);
 
             if (isValid) {
                 setErrorMessage('');
+                console.log('valid')
             } else {
-                setErrorMessage('Please enter a valid email!');
+                setErrorMessage(' Please enter a valid email!');
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required!`);
+                setErrorMessage(` ${e.target.name} is required!`);
             } else {
                 setErrorMessage('');
             }
@@ -33,29 +38,76 @@ function Contact() {
         console.log(formState);
     };
 
+    function onClick(link) {
+        window.open(link, '_blank');
+    }
+
     return (
-        <section className='w-100 my-4 flex-column align-center'>
-            <h1 className='text-primary mb-2'>Contact Me</h1>
-            <form className='flex-column align-center align-start-lg card my-2 w-75'>
-                <div className='my-2 flex-column w-100'>
-                    <label className='mb-1 text-uppercase text-dark' htmlFor='name'>Name:</label>
-                    <input name='name' placeholder='Enter your name...' onBlur={formChange} />
+        <div className="wrapper">
+            <section className="container sectionSpacing flex-column align-center">
+                <h1 className="text-primary text-uppercase milgran pb-4 text-center">
+                    Let's Connect!
+                </h1>
+
+                <div className="flex-row gapLg align-center">
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.linkedinURL)
+                    }}
+                    >
+                        <FaLinkedinIn/>
+                    </span>
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.githubURL)
+                    }}
+                    >
+                        <FaGithub/>
+                    </span>
+                    <span 
+                    className="svgLg text-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onClick(socialLinks.behanceURL)
+                    }}
+                    >
+                        <FaBehance/>
+                    </span>
                 </div>
-                <div className='my-2 flex-column w-100'>
-                    <label className='mb-1 text-uppercase text-dark' htmlFor='email'>Email:</label>
-                    <input name='email' placeholder='Enter your email...' onBlur={formChange} />
-                </div>
-                <div className='my-2 w-100'>
-                    <textarea name='message' placeholder='Enter your message...' onBlur={formChange} ></textarea>
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className='text-error'>{errorMessage}</p>
+            </section>
+            <section className='container sectionSpacing'>
+                <form action="https://formsubmit.co/urwinsamantha@gmail.com" method="POST" className='flex-column gapMd mx-auto'>
+                    <h2 className="formTitle w-100 text-secondary">Contact Me</h2>
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor='Name'>Name:</label>
+                        <input name='Name' placeholder='Name' onBlur={formChange} />
                     </div>
-                )}
-                <button type='submit' className='w-100 btn mt-2' onClick={handleSubmit}>Send</button>
-            </form>
-        </section>
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor="Email">Email:</label>
+                        <input name='Email' placeholder='Email' onBlur={formChange} />
+                    </div>
+                    <div className='flex-column w-100'>
+                        <label className='hide' htmlFor="Message">Message</label>
+                        <textarea name='Message' placeholder='Message...' onBlur={formChange} ></textarea>
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className='text-error'>
+                                <MdOutlineErrorOutline />
+                                {errorMessage}
+                            </p>
+                        </div>
+                    )}
+                    <div>
+                        <button type='submit' className='btn cursorPointer'>Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     );
 };
 

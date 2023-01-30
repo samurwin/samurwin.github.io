@@ -1,96 +1,232 @@
-.featured-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: var(--spacing-five);
-}
-
-.blurb {
-    font-size: 2rem;
-    width: 100%
-}
-
-.skill-card {
-    background-color: var(--light);
-    padding: var(--spacing-four);
-    border: none;
-    border-radius: 10px;
-    width: 20rem;
-    margin-bottom: var(--spacing-five);
-    box-shadow: 0px 2px 2px 0 rgba(0,0,0,.1);
-}
-
-
-.title {
-    font-size: 4.25rem;
-    font-family: 'MilgranCondensed';
-    margin: -1.75rem 0;
-    text-align: center;
-}
-
-.intro {
-    text-align: center;
-    padding-right: 0;
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-}
-
+/* Hero Styles */
 .hero {
-    background: radial-gradient(#36393B, #252729);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-    padding-top: calc(1rem * 6);
-    padding-bottom: var(--spacing-six);
+    margin-top: 14rem;  
+    overflow-y: hidden;  
 }
 
-.hero-img {
-    width: 80%;
-    height: auto;
+.heroTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.name {
+    color: var(--primary);
+    font-family: milgran;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.jobTitle {
+    color: var(--secondary);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.greenStar {
+    width: 150px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    postion: absolute;
+    margin-left: -6rem;
+    margin-top: 2rem;
+}
+
+.orangeStar {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -5rem;
+    margin-right: -7rem;
+}
 
 @media screen and (min-width: 768px) {
-    .title {
-        text-align: right !important;
+    .heroTxt {
+        margin-left: 3rem;
     }
     
-    .intro {
-        text-align: right;
-        padding-right: var(--spacing-four);
+    .name {
+        text-align: left;
     }
-    .blurb {
-        width: 75%;
+
+    .jobTitle {
+        text-align: left;
+    }
+
+    .heroTxt {
+        align-items: flex-start;
+    }
+
+    .greenStar {
+        width: 200px;
+        height: 200px;
+        margin-left: -7.5rem;
+    }
+
+    .orangeStar {
+        width: 350px;
+        height: 350px;
+        margin-top: -6rem;
+        margin-right: -6rem;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .blurb {
-        font-size: 3rem;
-        width: 60%;
-    }
-    .featured-img {
-        margin-bottom: 0;
+@media screen and (min-width: 1024px) {
+    .greenStar {
+        width: 250px;
+        height: 250px;
+        margin-left: -9rem;
     }
 
-    .skill-card {
-        margin-bottom: 0;
+    .orangeStar {
+        width: 500px;
+        height: 500px;
+        margin-top: -10rem;
+        margin-right: -8rem;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .greenStar {
+        width: 300px;
+        height: 300px;
+        margin-left: -11rem;
+    }
+
+    .orangeStar {
+        width: 600px;
+        height: 600px;
+        margin-top: -12rem;
+        margin-right: -12rem;
+    }
+
+    .name {
+        font-size: 56px;
+    }
+
+    .jobTitle {
+        font-size: 24px;
+    }
+
+    .heroTxt {
+        margin-left: 5rem;
     }
 
     .hero {
-        padding-top: calc(1rem * 9);
-        padding-bottom: var(--spacing-five);
-    }
-
-    .img-container {
-        display: block;
+        margin-top: 16rem;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    .blurb {
-        width: 50%;
+    .heroTxt {
+        margin-left: 10rem;
     }
+}
+
+@media screen and (min-width: 1920px) {
+    .heroTxt {
+        margin-left: 15rem;
+    }
+}
+/* Hero Styles End */
+
+/* Skills and Education Styles */
+.skillsCard {
+    background: #0E0E0F;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTitle {
+    color: #CECECE;
+    text-align: center;
+    font-weight: 400;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #36393B;
+    margin-top: 0.5rem;
+}
+
+.techGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.techIcon {
+    width: 100%;
+    height: 100%;
+}
+
+.eduCon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 250px;
+}
+
+@media screen and (min-width: 560px) {
+    .eduCon {
+        max-width: 100%;
+    }
+
+    .skillsCard {
+        padding: 1rem 1.5rem;
+    }
+
+    .techGrid {
+        grid-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .techGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .eduCon {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .techGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .techGrid {
+        margin-top: 1rem;
+    }
+}
+
+.caseStudy {
+    border-radius: 10px;
+    height: 400px !important;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
