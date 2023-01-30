@@ -15,15 +15,18 @@
 }
 
 @font-face {
-  font-family: "MilgranCondensed";
-  src: local("MilgranCondensed"),
-  url("./assets/fonts/Milgran-Condensed.otf") format("opentype");
+  font-family: "Milgran";
+  src: local("Milgran"),
+  url("./assets/fonts/Milgran.otf") format("opentype");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -34,7 +37,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Scroll Bar */
@@ -53,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .milgran {
-  font-family: milgran;
+  font-family: "Milgran";
 }
 
 h1 {
@@ -226,6 +228,9 @@ nav a {
 /* FONT UTILS */
 .underline {
   text-decoration: underline;
+}
+.noDecoration {
+  text-decoration: none !important;
 }
 
 .text-uppercase {

@@ -39,11 +39,11 @@ function Portfolio({projects}) {
               ></div>
               <div>
                 <h4 
-                className="text-primary text-center cursorPointer"
+                className="text-primary text-center cursorPointer noDecoration"
                 >
                   RWI Labs
                 </h4>
-                <p className="text-secondary text-center">Digital Marketing Agency</p>
+                <p className="text-secondary text-center noDecoration">Digital Marketing Agency</p>
                 <div className="flex-row align-center justify-center gapSm">
                   <p className="tagTxt">Web Design</p>
                   <p className="tagTxt">Development</p>
@@ -59,12 +59,17 @@ function Portfolio({projects}) {
               {projects.map((project) => (
                   <Link to={project.path} key={project.title} className="mx-auto cursorPointer">
                     <div
-                    className="projectImg "
+                    className="projectImg"
+                    style={{ 
+                      backgroundImage: `url(${project.bannerImg})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}
                     >
-                      <img
+                      {/* <img
                       src={project.bannerImg}
                       alt={`${project.title} project link`}
-                      />
+                      /> */}
                     </div>
                   </Link>
                 ))}
