@@ -5,7 +5,7 @@ import { HiMenu } from 'react-icons/hi';
 
 import logo from '../../assets/images/SMU-logo.svg';
 
-function Header(socialLinks) {
+function Header({socialLinks}) {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [selected, setSelected] = useState('home');
 
