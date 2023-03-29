@@ -36,6 +36,7 @@ function Contact( {socialLinks} ) {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+        
     };
 
     function onClick(link) {
