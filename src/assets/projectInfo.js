@@ -42,8 +42,8 @@ const projectInfo = [
         bannerImg: savouryImgs.bannerImg,
         overview: 'Savoury Subscriptions is a food subscription service where a user can signup/login, pick their favourite meals, and filter them by diet preference. The user can also save their diet preferences on their account page. Once they have their meals chosen, they can checkout using Stripe payment.',
         link: {
-            url: '',
-            linkTitle: 'Deployed Website'
+            url: 'https://github.com/ScalexanderB/Savoury-Subscriptions',
+            linkTitle: 'Github Repo'
         },
         images: savouryImgs.images,
         technologies: [
@@ -79,7 +79,7 @@ const projectInfo = [
         bannerImg: devDiariesImgs.bannerImg,
         overview: 'Dev Diaries is a tech blog forum. Users with an account can create posts and comment on others people’s posts. Made using TailwindCSS and MySQL/Sequelize.',
         link: {
-            url: '',
+            url: 'https://cryptic-dusk-52607.herokuapp.com/',
             linkTitle: 'Deployed Website'
         },
         images: devDiariesImgs.images,
