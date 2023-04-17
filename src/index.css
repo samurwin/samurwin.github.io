@@ -29,6 +29,7 @@
 html {
   overflow-x: hidden;
   position: relative;
+  scoll-behavior: smooth;
 }
 
 body {
@@ -225,6 +226,21 @@ nav a {
   .sidebar {
     padding: 1.5rem;
   }
+}
+
+.bgPrimary {
+  background-color: var(--primary);
+}
+
+.bgSecondary {
+  background-color: var(--secondary);
+}
+
+.bgTertiary {
+  background-color: var(--tertiary);
+}
+.bgQuatrinary {
+  background-color: var(--quatrinary);
 }
 
 /* FONT UTILS */

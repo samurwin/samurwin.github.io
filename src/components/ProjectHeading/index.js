@@ -33,6 +33,8 @@ export default function ProjectHeading( { title, subtitle, tags, image, overview
                                 Development
                             </div>
                         )
+                    } else {
+                        return '';
                     }
                 }) }
             </div>
@@ -62,7 +64,7 @@ export default function ProjectHeading( { title, subtitle, tags, image, overview
                 <p>{ overview }</p>
 
                 {link 
-                ? <a  className="deployedLink mt-3" href={link.url}>{link.linkTitle}</a>
+                ? <a  className="deployedLink mt-3" href={link.url} target="_blank" rel="noreferrer" >{link.linkTitle}</a>
                 : <></>
                 }
             </div>

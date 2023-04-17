@@ -12,6 +12,9 @@ function Button({ color, text, link, location }) {
         case 'secondary':
             btnClass = "btnSecondary";
             break;
+        default: 
+            btnClass = "btnPrimary";
+            break;
     }
 
     return (

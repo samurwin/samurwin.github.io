@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaBehance, FaGithub, FaLinkedinIn, FaDribbble } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
 
 import logo from '../../assets/images/SMU-logo.svg';
@@ -92,7 +92,8 @@ function Header({socialLinks}) {
                     </Link>
                 </div>
             </nav>
-
+            
+            {/* Social Links */}
             <div className="flex-column align-center">
                 <span 
                 className="svg text-secondary pb-3"
@@ -115,13 +116,23 @@ function Header({socialLinks}) {
                 </span>
 
                 <span 
-                className="svg text-secondary"
+                className="svg text-secondary pb-3"
                 onClick={(e) => {
                     e.preventDefault();
                     onClick(socialLinks.behanceURL)
                 }}
                 >
                     <FaBehance/>
+                </span>
+
+                <span 
+                className="svg text-secondary"
+                onClick={(e) => {
+                    e.preventDefault();
+                    onClick(socialLinks.dribbbleURL)
+                }}
+                >
+                    <FaDribbble />
                 </span>
             </div>
         </header>
