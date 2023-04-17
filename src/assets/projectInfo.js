@@ -1,8 +1,8 @@
 import { alloveusImgs, devDiariesImgs, savouryImgs } from './images';
 
-import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
+import { FaReact, FaShopify, FaNodeJs } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
-import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+import { SiGraphql, SiAdobecreativecloud } from 'react-icons/si'
 
 const projectInfo = [
     {
