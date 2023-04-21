@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FaBehance, FaGithub, FaLinkedinIn, FaDribbble } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
+import { socialLinksAll } from '../../assets/projectInfo'
 
 import logo from '../../assets/images/SMU-logo.svg';
+import Socials from '../Socials';
 
-function Header({socialLinks}) {
+
+function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [selected, setSelected] = useState('home');
 
@@ -27,10 +29,6 @@ function Header({socialLinks}) {
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen);
-    }
-
-    function onClick(link) {
-        window.open(link, '_blank');
     }
 
     return (
@@ -95,45 +93,7 @@ function Header({socialLinks}) {
             
             {/* Social Links */}
             <div className="flex-column align-center">
-                <span 
-                className="svg text-secondary pb-3"
-                onClick={(e) => {
-                    e.preventDefault();
-                    onClick(socialLinks.linkedinURL)
-                }}
-                >
-                    <FaLinkedinIn/>
-                </span>
-
-                <span 
-                className="svg text-secondary pb-3"
-                onClick={(e) => {
-                    e.preventDefault();
-                    onClick(socialLinks.githubURL)
-                }}
-                >
-                    <FaGithub/>
-                </span>
-
-                <span 
-                className="svg text-secondary pb-3"
-                onClick={(e) => {
-                    e.preventDefault();
-                    onClick(socialLinks.behanceURL)
-                }}
-                >
-                    <FaBehance/>
-                </span>
-
-                <span 
-                className="svg text-secondary"
-                onClick={(e) => {
-                    e.preventDefault();
-                    onClick(socialLinks.dribbbleURL)
-                }}
-                >
-                    <FaDribbble />
-                </span>
+                <Socials socialLinks={socialLinksAll} />
             </div>
         </header>
     );

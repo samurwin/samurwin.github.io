@@ -20,6 +20,11 @@ import savouryThumbnail from './projects/savoury-thumbnail.png'
 import savoury01 from './projects/savoury01.png'
 import savoury02 from './projects/savoury02.png'
 import savoury03 from './projects/savoury03.png'
+import francaisthumbnail from './projects/cahier-de-francias-thumbnail.png'
+import francaisHomeLight from './projects/home-lightMode.png'
+import francaisHomeDark from './projects/home-darkMode.png'
+import francaisContentLight from './projects/content-lightMode.png'
+import francaisContentDark from './projects/content-darkMode.png'
 
 
 const rwiImgs = {
@@ -122,4 +127,28 @@ const savouryImgs = {
     ]
 }
 
-export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs } 
+const francaisImgs = {
+    bannerImg: francaisthumbnail,
+    homeImgs: [
+        {
+            img: francaisHomeLight,
+            alt: "Light mode home page design for french learning website"
+        },
+        {
+            img: francaisHomeDark,
+            alt: "Dark mode home page design for french learning website"
+        }
+    ],
+    contentImgs: [
+        {
+            img: francaisContentLight,
+            alt: "Light mode page design for content on french learning website"
+        },
+        {
+            img: francaisContentDark,
+            alt: "Dark mode page design for content on french learning website"
+        }
+    ]
+}
+
+export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs } 

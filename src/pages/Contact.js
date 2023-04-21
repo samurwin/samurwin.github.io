@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 import './contact.css'
+import { socialLinksAll } from '../assets/projectInfo'
 
-import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineErrorOutline } from 'react-icons/md'
+import Socials from '../components/Socials';
 
-function Contact( {socialLinks} ) {
+function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     const [errorMessage, setErrorMessage] = useState('');
@@ -51,33 +52,7 @@ function Contact( {socialLinks} ) {
                 </h1>
 
                 <div className="flex-row gapLg align-center">
-                    <span 
-                    className="svgLg text-secondary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        onClick(socialLinks.linkedinURL)
-                    }}
-                    >
-                        <FaLinkedinIn/>
-                    </span>
-                    <span 
-                    className="svgLg text-secondary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        onClick(socialLinks.githubURL)
-                    }}
-                    >
-                        <FaGithub/>
-                    </span>
-                    <span 
-                    className="svgLg text-secondary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        onClick(socialLinks.behanceURL)
-                    }}
-                    >
-                        <FaBehance/>
-                    </span>
+                    <Socials socialLinks={socialLinksAll} />
                 </div>
             </section>
             <section className='container sectionSpacing'>

@@ -1,10 +1,52 @@
-import { alloveusImgs, devDiariesImgs, savouryImgs } from './images';
+import { alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs } from './images';
 
 import { FaReact, FaShopify, FaNodeJs } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
-import { SiGraphql, SiAdobecreativecloud } from 'react-icons/si'
+import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+import { FaBehance, FaGithub, FaLinkedinIn, FaDribbble } from 'react-icons/fa';
 
 const projectInfo = [
+    {
+        title: "Cahier de Françias",
+        subtitle: "French Learning Website",
+        tags: [
+            "Web Design",
+            "Development"
+        ],
+        bannerImg: francaisImgs.bannerImg,
+        overview: "Cahier de Français is a language learning site, which contains reference materials for French grammar. I started learning French about a year ago, using popular apps to practice and learn. After a while I wanted to find more unique ways to improve my French. Working on this website I was able to practice skills in both the French language, as well as several coding languages! I plan to continue working on this site and update it with more content, quizzes and fun features.",
+        link: {
+            url: "https://cahier-de-francais.herokuapp.com/",
+            linkTitle: "Deployed Website"
+        },
+        images: {
+            homePage: francaisImgs.homeImgs,
+            contentPage: francaisImgs.contentImgs
+        },
+        technologies: [
+            {
+                id: 0,
+                name: 'React',
+                icon: <FaReact color='#d6e0ec' className="techIcon"/>
+            },
+            {
+                id: 1,
+                name: "Next.Js",
+                icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+            },
+            {
+                id: 2,
+                name: "Typescript",
+                icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+            },
+            {
+                id: 3,
+                name: "Figma",
+                icon: <SiFigma color='#d6e0ec' className="techIcon" />
+            }
+        ],
+        path: "/portfolio/cahier-de-francais"
+    },
     {
         title: 'Alloveus',
         subtitle: 'Events and Community',
@@ -99,4 +141,28 @@ const projectInfo = [
     },
 ]
 
-export { projectInfo };
+const socialLinksAll = [
+    {
+      url: 'https://github.com/samurwin',
+      key: 'github',
+      icon: <FaGithub />
+    },
+    {
+      url: 'https://www.linkedin.com/in/samanthaurwin/',
+      key: 'linkedin',
+      icon: <FaLinkedinIn />
+    },
+    {
+      url: 'https://www.behance.net/samanthaurwin',
+      key: 'behance',
+      icon: <FaBehance />
+    },
+    {
+      url: 'https://www.dribbble.com/smu-design',
+      key: 'dribbble',
+      icon: <FaDribbble />
+    }
+  ];
+
+
+export { projectInfo, socialLinksAll };
