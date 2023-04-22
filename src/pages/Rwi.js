@@ -1,47 +1,10 @@
 import React from 'react';
 
-import { FaReact } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs } from 'react-icons/si'
-
-import './rwi.css';
+import './projects.css';
 import ProjectHeading from '../components/ProjectHeading';
 import TechSquare from '../components/TechSquare';
 import Button from '../components/Button';
-import { rwiImgs } from '../assets/images';
-
-const rwi = {
-    title: "RWI Labs",
-    subtitle: "Digital Marketing Agency",
-    tags: [
-        "Web Design",
-        "Development",
-        "Brand Design",
-    ],
-    bannerImg: "/RWI-Labs-thumbnail.jpg",
-    overview: "This project was done for RWI Labs, a Digital Marketing Agency founded by myself and my business partner William. I feature this project as a case study because I believe it perfectly encapsulates all the skills that I have worked on cultivating these last few years. From the logo to the website and everything in between, I poured myself into this project and creating this brand.",
-    link:  {
-        url: "https://rwilabs.io",
-        linkTitle: "RwiLabs.io"
-    },
-    images : rwiImgs,
-    technologies: [
-        {
-            id: 0,
-            name: 'React',
-            icon: <FaReact color='#d6e0ec' className="techIcon" />
-        },
-        {
-            id: 1,
-            name: 'Typescript',
-            icon: <SiTypescript color='#d6e0ec' className="techIcon" />
-        },
-        {
-            id: 2,
-            name: 'NextJs',
-            icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
-        }
-    ]
-  }
+import { rwi } from '../assets/projectInfo';
 
 function Rwi() {
 

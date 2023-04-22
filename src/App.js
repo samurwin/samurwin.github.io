@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Rwi from './pages/Rwi';
 import Project from './pages/Project';
+import Altitude from './pages/Altitude'
 
 import { projectInfo } from './assets/projectInfo'
 import ScrollToTop from './components/ScrollToTop';
@@ -28,6 +29,8 @@ function App() {
             </Route>
 
             <Route exact path='/portfolio/rwi-case-study' component={ Rwi } />
+
+            <Route exact path='/portfolio/altitude-apparel' component={ Altitude } />
 
             {projectInfo.map((info) => (
               <Route exact path={info.path} key={info.title}>

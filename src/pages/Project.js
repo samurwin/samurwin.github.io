@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import './projects.css'
 import ProjectHeading from '../components/ProjectHeading'
 import TechSquare from '../components/TechSquare';
 

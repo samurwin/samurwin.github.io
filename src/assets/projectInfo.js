@@ -1,4 +1,4 @@
-import { alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs } from './images';
+import { alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, rwiImgs, altitudeImgs } from './images';
 
 import { FaReact, FaShopify, FaNodeJs } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
@@ -141,6 +141,64 @@ const projectInfo = [
     },
 ]
 
+const rwi = {
+    title: "RWI Labs",
+    subtitle: "Digital Marketing Agency",
+    tags: [
+        "Web Design",
+        "Development",
+        "Brand Design",
+    ],
+    bannerImg: "/RWI-Labs-thumbnail.jpg",
+    overview: "This project was done for RWI Labs, a Digital Marketing Agency founded by myself and my business partner William. I feature this project as a case study because I believe it perfectly encapsulates all the skills that I have worked on cultivating these last few years. From the logo to the website and everything in between, I poured myself into this project and creating this brand.",
+    link:  {
+        url: "https://rwilabs.io",
+        linkTitle: "RwiLabs.io"
+    },
+    images : rwiImgs,
+    technologies: [
+        {
+            id: 0,
+            name: 'React',
+            icon: <FaReact color='#d6e0ec' className="techIcon" />
+        },
+        {
+            id: 1,
+            name: 'Typescript',
+            icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+        },
+        {
+            id: 2,
+            name: 'NextJs',
+            icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+        }
+    ]
+}
+
+const altitudeApparel = {
+    title: "Altitude Apparel",
+    subtitle: "Active Wear Company",
+    tags: [
+        "Web Design",
+        "Brand Design"
+    ],
+    bannerImg: altitudeImgs.bannerImg,
+    overview: "This project was done for Altitude Apparel, a fictional luxury activewear company. I first created the branding, getting inspiration for the logo mark from contour lines seen on topographic maps. I then created an ecommerce website design, with the idea of translating it to a Shopify theme. Now I am working on expanding the design and developing a Shopify theme.",
+    images: altitudeImgs,
+    technologies: [
+        {
+            id: 0,
+            name: 'Adobe CC',
+            icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon"/>
+        },
+        {
+            id: 1,
+            name: "Figma",
+            icon: <SiFigma color='#d6e0ec' className="techIcon" />
+        }
+    ]
+}
+
 const socialLinksAll = [
     {
       url: 'https://github.com/samurwin',
@@ -165,4 +223,4 @@ const socialLinksAll = [
   ];
 
 
-export { projectInfo, socialLinksAll };
+export { projectInfo, socialLinksAll, rwi, altitudeApparel };

@@ -25,6 +25,94 @@ import francaisHomeLight from './projects/home-lightMode.png'
 import francaisHomeDark from './projects/home-darkMode.png'
 import francaisContentLight from './projects/content-lightMode.png'
 import francaisContentDark from './projects/content-darkMode.png'
+import altitudeThumbnail from './altitude-thumbnail.png'
+import altitudeBrand01 from './altitude/altitude-brand01.png'
+import altitudeBrand02 from './altitude/altitude-brand02.png'
+import altitudeBrand03 from './altitude/altitude-brand03.png'
+import altitudeBrand04 from './altitude/altitude-brand04.png'
+import desktopOne from './altitude/Desktop1.png'
+import desktopTwo from './altitude/Desktop2.png'
+import desktopThree from './altitude/Desktop3.png'
+import columnOne01 from './altitude/columnOne.png'
+import columnTwo01 from './altitude/columnTwo-1.png'
+import columnTwo02 from './altitude/columnTwo-2.png'
+import columnTwo03 from './altitude/column2-3.png'
+import columnThree01 from './altitude/columnThree-1.png'
+import columnThree02 from './altitude/columnThree-2.png'
+import columnThree03 from './altitude/columnThree-3.png'
+import columnThree04 from './altitude/columnThree-4.png'
+
+const altitudeImgs = {
+    bannerImg: altitudeThumbnail,
+    brand: [
+        {
+            img: altitudeBrand01,
+            alt: "Altitude Logo Design"
+        },
+        {
+            img: altitudeBrand02,
+            alt: "Altitude Typography. Ben Font and Cremona Font"
+        },
+        {
+            img: altitudeBrand03,
+            alt: "Altitude brand colour palette"
+        },
+        {
+            img: altitudeBrand04,
+            alt: "Altitude logo mark design"
+        }
+    ],
+    desktop: [
+        {
+            img: desktopOne,
+            alt: "Altitude Apparel desktop size home page web design"
+        },
+        {
+            img: desktopTwo,
+            alt: "Altitude Apparel desktop size product page web design"
+        },
+        {
+            img: desktopThree,
+            alt: "Altitude Apparel desktop size cart drawer web design"
+        }
+    ],
+    columnOne: {
+        img: columnOne01,
+        alt: "Altitude Apparel mobile home page design"
+    },
+    columnTwo: [
+        {
+            img: columnTwo01,
+            alt: "Altitude Apparel mobile product page design"
+        },
+        {
+            img: columnTwo02,
+            alt: "Altitude Apparel mobile cart drawer design"
+        },
+        {
+            img: columnTwo03,
+            alt: "Altitude Apparel mobile cart page design"
+        }
+    ],
+    columnThree: [
+        {
+            img: columnThree01,
+            alt: "Altitude Apparel mobile collection page design"
+        },
+        {
+            img: columnThree02,
+            alt: "Altitude Apparel mobile search page design"
+        },
+        {
+            img: columnThree03,
+            alt: "Altitude Apparel mobile account page design"
+        },
+        {
+            img: columnThree04,
+            alt: "Altitude Apparel mobile past order page"
+        }
+    ]
+}
 
 
 const rwiImgs = {
@@ -151,4 +239,4 @@ const francaisImgs = {
     ]
 }
 
-export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs } 
+export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, altitudeImgs } 
