@@ -4,6 +4,7 @@ import './portfolio.css';
 import { socialLinksAll } from '../assets/projectInfo'
 
 import rwiThumbnail from '../assets/images/RWI-Labs-thumbnail.jpg'
+import altitudeThumbnail from '../assets/images/altitude-thumbnail.png'
 import Socials from '../components/Socials';
 
 function Portfolio({projects}) {
@@ -33,7 +34,7 @@ function Portfolio({projects}) {
           </section>
 
           <section className="sectionSpacing container max800">
-            <h3 className="text-secondary text-center">Featured Project</h3>
+            <h3 className="text-secondary text-center">Featured Projects</h3>
             <Link to='/portfolio/rwi-case-study'>
               <div 
                 className="caseStudyImg my-4 cursorPointer"
@@ -52,6 +53,28 @@ function Portfolio({projects}) {
                 <div className="flex-row align-center justify-center gapSm">
                   <p className="tagTxt">Web Design</p>
                   <p className="tagTxt">Development</p>
+                  <p className="tagTxt">Brand Design</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link to='/portfolio/altitude-apparel'>
+              <div 
+                className="caseStudyImg my-4 cursorPointer"
+                style={{ 
+                    backgroundImage: `url(${altitudeThumbnail})`,
+                    backgroundSize: 'cover',
+                }}
+              ></div>
+              <div>
+                <h4 
+                className="text-primary text-center cursorPointer noDecoration"
+                >
+                  Altitude Apparel
+                </h4>
+                <p className="text-secondary text-center noDecoration">Active Wear Company</p>
+                <div className="flex-row align-center justify-center gapSm">
+                  <p className="tagTxt">Web Design</p>
                   <p className="tagTxt">Brand Design</p>
                 </div>
               </div>
