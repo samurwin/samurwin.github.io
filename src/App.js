@@ -7,22 +7,16 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Rwi from './pages/Rwi';
 import Project from './pages/Project';
+import Altitude from './pages/Altitude'
 
 import { projectInfo } from './assets/projectInfo'
 import ScrollToTop from './components/ScrollToTop';
-
-const socialLinks = {
- githubURL: 'https://github.com/samurwin',
- linkedinURL: 'https://www.linkedin.com/in/samanthaurwin/',
- behanceURL: 'https://www.behance.net/samanthaurwin',
- dribbbleURL: 'https://www.dribbble.com/smu-design'
-}
 
 function App() {
   return (
     <Router>
       <ScrollToTop>
-        <Header socialLinks={ socialLinks }/>
+        <Header />
           <Switch>
             <Route exact path='/' component={Home} />
 
@@ -31,10 +25,12 @@ function App() {
             </Route>
 
             <Route exact path='/contact'>
-              <Contact socialLinks={socialLinks} />
+              <Contact />
             </Route>
 
             <Route exact path='/portfolio/rwi-case-study' component={ Rwi } />
+
+            <Route exact path='/portfolio/altitude-apparel' component={ Altitude } />
 
             {projectInfo.map((info) => (
               <Route exact path={info.path} key={info.title}>

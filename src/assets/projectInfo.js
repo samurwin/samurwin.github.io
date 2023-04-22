@@ -1,10 +1,52 @@
-import { alloveusImgs, devDiariesImgs, savouryImgs } from './images';
+import { alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, rwiImgs, altitudeImgs } from './images';
 
 import { FaReact, FaShopify, FaNodeJs } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
-import { SiGraphql, SiAdobecreativecloud } from 'react-icons/si'
+import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+import { FaBehance, FaGithub, FaLinkedinIn, FaDribbble } from 'react-icons/fa';
 
 const projectInfo = [
+    {
+        title: "Cahier de Françias",
+        subtitle: "French Learning Website",
+        tags: [
+            "Web Design",
+            "Development"
+        ],
+        bannerImg: francaisImgs.bannerImg,
+        overview: "Cahier de Français is a language learning site, which contains reference materials for French grammar. I started learning French about a year ago, using popular apps to practice and learn. After a while I wanted to find more unique ways to improve my French. Working on this website I was able to practice skills in both the French language, as well as several coding languages! I plan to continue working on this site and update it with more content, quizzes and fun features.",
+        link: {
+            url: "https://cahier-de-francais.herokuapp.com/",
+            linkTitle: "Deployed Website"
+        },
+        images: {
+            homePage: francaisImgs.homeImgs,
+            contentPage: francaisImgs.contentImgs
+        },
+        technologies: [
+            {
+                id: 0,
+                name: 'React',
+                icon: <FaReact color='#d6e0ec' className="techIcon"/>
+            },
+            {
+                id: 1,
+                name: "Next.Js",
+                icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+            },
+            {
+                id: 2,
+                name: "Typescript",
+                icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+            },
+            {
+                id: 3,
+                name: "Figma",
+                icon: <SiFigma color='#d6e0ec' className="techIcon" />
+            }
+        ],
+        path: "/portfolio/cahier-de-francais"
+    },
     {
         title: 'Alloveus',
         subtitle: 'Events and Community',
@@ -99,4 +141,86 @@ const projectInfo = [
     },
 ]
 
-export { projectInfo };
+const rwi = {
+    title: "RWI Labs",
+    subtitle: "Digital Marketing Agency",
+    tags: [
+        "Web Design",
+        "Development",
+        "Brand Design",
+    ],
+    bannerImg: "/RWI-Labs-thumbnail.jpg",
+    overview: "This project was done for RWI Labs, a Digital Marketing Agency founded by myself and my business partner William. I feature this project as a case study because I believe it perfectly encapsulates all the skills that I have worked on cultivating these last few years. From the logo to the website and everything in between, I poured myself into this project and creating this brand.",
+    link:  {
+        url: "https://rwilabs.io",
+        linkTitle: "RwiLabs.io"
+    },
+    images : rwiImgs,
+    technologies: [
+        {
+            id: 0,
+            name: 'React',
+            icon: <FaReact color='#d6e0ec' className="techIcon" />
+        },
+        {
+            id: 1,
+            name: 'Typescript',
+            icon: <SiTypescript color='#d6e0ec' className="techIcon" />
+        },
+        {
+            id: 2,
+            name: 'NextJs',
+            icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
+        }
+    ]
+}
+
+const altitudeApparel = {
+    title: "Altitude Apparel",
+    subtitle: "Active Wear Company",
+    tags: [
+        "Web Design",
+        "Brand Design"
+    ],
+    bannerImg: altitudeImgs.bannerImg,
+    overview: "This project was done for Altitude Apparel, a fictional luxury activewear company. I first created the branding, getting inspiration for the logo mark from contour lines seen on topographic maps. I then created an ecommerce website design, with the idea of translating it to a Shopify theme. Now I am working on expanding the design and developing a Shopify theme.",
+    images: altitudeImgs,
+    technologies: [
+        {
+            id: 0,
+            name: 'Adobe CC',
+            icon: <SiAdobecreativecloud color='#d6e0ec' className="techIcon"/>
+        },
+        {
+            id: 1,
+            name: "Figma",
+            icon: <SiFigma color='#d6e0ec' className="techIcon" />
+        }
+    ]
+}
+
+const socialLinksAll = [
+    {
+      url: 'https://github.com/samurwin',
+      key: 'github',
+      icon: <FaGithub />
+    },
+    {
+      url: 'https://www.linkedin.com/in/samanthaurwin/',
+      key: 'linkedin',
+      icon: <FaLinkedinIn />
+    },
+    {
+      url: 'https://www.behance.net/samanthaurwin',
+      key: 'behance',
+      icon: <FaBehance />
+    },
+    {
+      url: 'https://www.dribbble.com/smu-design',
+      key: 'dribbble',
+      icon: <FaDribbble />
+    }
+  ];
+
+
+export { projectInfo, socialLinksAll, rwi, altitudeApparel };

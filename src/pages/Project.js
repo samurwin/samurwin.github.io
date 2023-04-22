@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import './projects.css'
 import ProjectHeading from '../components/ProjectHeading'
 import TechSquare from '../components/TechSquare';
 
@@ -17,16 +18,42 @@ function Project({projectInfo}) {
             link={projectInfo.link}
             />
 
-            <section className="container sectionSpacing max800">
-                {projectInfo.images.map((image) => (
-                    <img
-                    src={image.img}
-                    alt={image.alt}
-                    key={image.alt}
-                    className="slideImg my-2"
-                    />
-                ))}
-            </section>
+            {projectInfo.title === "Cahier de Françias" ? (
+                <section className="container sectionSpacing max1000">
+                    <h2 className="text-center text-secondary mb-4">Home Page</h2>
+                    <div className="frenchGrid">
+                        {projectInfo.images.homePage.map((image) =>(
+                            <img
+                            src={image.img}
+                            alt={image.alt}
+                            key={image.alt}
+                            className="slideImg"/>
+                        ))}
+                    </div>
+                    
+                    <h2 className="text-center text-secondary mb-4">Content Page</h2>
+                    <div className="frenchGrid">
+                        {projectInfo.images.contentPage.map((image) =>(
+                            <img
+                            src={image.img}
+                            alt={image.alt}
+                            key={image.alt}
+                            className="slideImg"/>
+                        ))}
+                    </div>
+                </section>
+            ): (
+                <section className="container sectionSpacing max800">
+                    {projectInfo.images.map((image) => (
+                        <img
+                        src={image.img}
+                        alt={image.alt}
+                        key={image.alt}
+                        className="slideImg my-2"
+                        />
+                    ))}
+                </section>
+            )}
 
             <section className="container sectionSpacing max800">
                 <div className="card">

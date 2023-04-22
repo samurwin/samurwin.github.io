@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './portfolio.css';
+import { socialLinksAll } from '../assets/projectInfo'
 
 import rwiThumbnail from '../assets/images/RWI-Labs-thumbnail.jpg'
+import altitudeThumbnail from '../assets/images/altitude-thumbnail.png'
+import Socials from '../components/Socials';
 
 function Portfolio({projects}) {
     // const [width, setWidth] = useState(window.innerWidth);
@@ -18,17 +21,20 @@ function Portfolio({projects}) {
 
     return (
         <div className="wrapper">
-          <section className="sectionSpacing container max1000">
+          <section className="sectionSpacing container max1000 flex-column align-center">
             <h1 className="text-primary text-center milgran">Portfolio</h1>
             <p className="text-secondary text-center my-4">
             Below you can find some of my recent website projects! 
-            To see more of my general design work check out my Behance, 
-            and similarly to see source code for my projects check out my GitHub.
+            To see more of my general design work check out my Behance and Dribbble. 
+            Similarly, to see source code for my projects check out my GitHub.
             </p>
+            <div className="flex-row gapLg align-center">
+              <Socials socialLinks={socialLinksAll} />
+            </div>
           </section>
 
           <section className="sectionSpacing container max800">
-            <h3 className="text-secondary text-center">Case Study</h3>
+            <h3 className="text-secondary text-center">Featured Projects</h3>
             <Link to='/portfolio/rwi-case-study'>
               <div 
                 className="caseStudyImg my-4 cursorPointer"
@@ -51,6 +57,28 @@ function Portfolio({projects}) {
                 </div>
               </div>
             </Link>
+
+            <Link to='/portfolio/altitude-apparel'>
+              <div 
+                className="caseStudyImg my-4 cursorPointer"
+                style={{ 
+                    backgroundImage: `url(${altitudeThumbnail})`,
+                    backgroundSize: 'cover',
+                }}
+              ></div>
+              <div>
+                <h4 
+                className="text-primary text-center cursorPointer noDecoration"
+                >
+                  Altitude Apparel
+                </h4>
+                <p className="text-secondary text-center noDecoration">Active Wear Company</p>
+                <div className="flex-row align-center justify-center gapSm">
+                  <p className="tagTxt">Web Design</p>
+                  <p className="tagTxt">Brand Design</p>
+                </div>
+              </div>
+            </Link>
           </section>
 
           <section className="container sectionSpacing">
@@ -66,10 +94,6 @@ function Portfolio({projects}) {
                       backgroundPosition: 'center'
                     }}
                     >
-                      {/* <img
-                      src={project.bannerImg}
-                      alt={`${project.title} project link`}
-                      /> */}
                     </div>
                   </Link>
                 ))}
