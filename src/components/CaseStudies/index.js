@@ -6,15 +6,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "./style.css";
 
-import rwiThumbnail from "../../assets/images/RWI-Labs-thumbnail.jpg";
-import Link from "../Button";
+import { rwi, altitudeApparel } from '../../assets/projectInfo'
+import { Link } from 'react-router-dom'
 
 export default function CaseStudies() {
 
+    const featuredProjects = [
+        {
+            projectInfo: rwi,
+            link: '/portfolio/rwi-case-study'
+        },
+        {
+            projectInfo: altitudeApparel,
+            link: '/portfolio/altitude-apparel'
+        } 
+        
+    ];
+
     return (
         <section className="caseStudies sectionSpacing">
-            <h1 className="text-secondary text-center">Case Studies</h1>
-
                 <Swiper
                     slidesPerView={1.4}
                     spaceBetween={0}
@@ -38,21 +48,18 @@ export default function CaseStudies() {
                         
                     }}
                 >
-                    <SwiperSlide>
-                        <img
-                            src={rwiThumbnail}
-                            alt="RWI Labs Digital Marketing Agency Project"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            src={rwiThumbnail}
-                            alt="RWI Labs Digital Marketing Agency Project"
-                        />
-                    </SwiperSlide>
+                    {featuredProjects.map(project => (
+                        <SwiperSlide key={project.projectInfo.title}>
+                            <Link to={project.link}>
+                                <img
+                                    src={project.projectInfo.bannerImg}
+                                    alt={`${project.projectInfo.title} project banner`}
+                                    className="slideImg"
+                                />
+                            </Link>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
-
-            <Link color="primary" text="View Portfolio" link="/portfolio"/>
         </section>
     )
 }
