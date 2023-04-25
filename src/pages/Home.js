@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './home.css';
 
 import About from "../components/About";
-// import CaseStudies from "../components/CaseStudies";
 import Button from "../components/Button";
 import TechSquare from '../components/TechSquare';
-import rwiImg from'../assets/images/RWI-Labs-thumbnail.jpg'
+import CaseStudies from '../components/CaseStudies';
 
 import { FaReact, FaShopify, FaNodeJs, FaGitAlt, FaWordpressSimple } from 'react-icons/fa'
 import { DiMongodb, DiMysql } from 'react-icons/di'
@@ -133,7 +131,7 @@ function Home() {
             <section className="container sectionSpacing">
                 <h2 className="text-secondary text-center">Featured Projects</h2>
                 
-                <Link to='/portfolio/rwi-case-study'>
+                {/* <Link to='/portfolio/rwi-case-study'>
                     <div 
                     className="caseStudy mt-4 cursorPointer"
                     src={rwiImg}
@@ -142,7 +140,8 @@ function Home() {
                         backgroundSize: 'cover',
                     }}
                     ></div>
-                </Link>
+                </Link> */}
+                <CaseStudies />
             </section>
             
             {/* RESUME */}
