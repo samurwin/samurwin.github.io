@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet'
 import { validateEmail } from '../utils/helpers';
 import './contact.css'
 import { socialLinksAll } from '../assets/projectInfo'
@@ -46,6 +47,11 @@ function Contact() {
 
     return (
         <div className="wrapper">
+
+            <Helmet>
+                <title>Contact | SMU Designs</title>
+            </Helmet>
+
             <section className="container sectionSpacing flex-column align-center">
                 <h1 className="text-primary text-uppercase milgran pb-4 text-center">
                     Let's Connect!

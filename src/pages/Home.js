@@ -190,7 +190,7 @@ function Home() {
             <section className="container sectionSpacing">
                 <h2 className="text-secondary text-center">Client Testimonial</h2>
 
-                <div class="testimonialCon">
+                <div className="testimonialCon">
                     <div className="testimonial">
                         <p>
                             “Samantha supported the entire project of building the website for my company from start to finish. She carefully listened to all of my requests 
