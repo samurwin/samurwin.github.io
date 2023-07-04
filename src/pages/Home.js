@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
+
+import { scrollTrigger } from '../utils/helpers';
 
 import About from "../components/About";
 import Button from "../components/Button";
@@ -75,6 +77,12 @@ const technologies = [
 
 function Home() {
 
+    useEffect(() => {
+        scrollTrigger('.testimonialCon', {
+        rootMargin: '-10px'
+        });
+    }, []);
+
     return (
         <div className="wrapper">
 
@@ -130,17 +138,6 @@ function Home() {
             {/* FEATURED */}
             <section className="container sectionSpacing">
                 <h2 className="text-secondary text-center">Featured Projects</h2>
-                
-                {/* <Link to='/portfolio/rwi-case-study'>
-                    <div 
-                    className="caseStudy mt-4 cursorPointer"
-                    src={rwiImg}
-                    style={{ 
-                        backgroundImage: `url(${rwiImg})`,
-                        backgroundSize: 'cover',
-                    }}
-                    ></div>
-                </Link> */}
                 <CaseStudies />
             </section>
             
@@ -195,7 +192,7 @@ function Home() {
 
                 <div class="testimonialCon">
                     <div className="testimonial">
-                        <p className="semibold">
+                        <p>
                             “Samantha supported the entire project of building the website for my company from start to finish. She carefully listened to all of my requests 
                             and fully brought this idea to life. From the design to the development of the site, she was able to craft the website to my liking. It is 
                             efficient and easy to use, with easy access to input information so I can shift its presentation as my company evolves. As I felt adjustments 

@@ -31,8 +31,17 @@
 }
 
 @media screen and (min-width: 992px) {
+    .swiper {
+        overflow: visible;
+    }
+    
     .swiper-slide {
         cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    .swiper-slide:hover {
+        transform: scale(1.1);
     }
 }
 
