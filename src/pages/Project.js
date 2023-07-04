@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 import './projects.css'
@@ -6,9 +7,20 @@ import ProjectHeading from '../components/ProjectHeading'
 import TechSquare from '../components/TechSquare';
 
 function Project({projectInfo}) {
+
+    let tagList = "";
+
+    projectInfo.tags.map(tag => {
+        return tagList = tagList + tag + ", ";
+    })
     
     return (
         <div className="wrapper">
+            <Helmet>
+                <title>{projectInfo.title} | SMU Designs</title>
+                <meta name="description" content={`Portfolio project ${projectInfo.title} showcasing Samantha Urwin's work in ${tagList}.`} />
+            </Helmet>
+
             <ProjectHeading 
             title={projectInfo.title}
             subtitle={projectInfo.subtitle}

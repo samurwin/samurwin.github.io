@@ -14,7 +14,6 @@ function Header() {
     const history = useHistory()
     useEffect(() => {
         history.listen((location) => {
-            console.log(`You changed the page to: ${location.pathname}`)
             const path = location.pathname;
 
             if(path.includes('portfolio')) {

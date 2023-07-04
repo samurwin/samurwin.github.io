@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 
 import './projects.css';
 import ProjectHeading from '../components/ProjectHeading';
@@ -8,8 +9,19 @@ import { rwi } from '../assets/projectInfo';
 
 function Rwi() {
 
+    let tagList = "";
+
+    rwi.tags.map(tag => {
+        return tagList = tagList + tag + ", ";
+    })
+
     return(
         <div className="wrapper">
+            <Helmet>
+                <title>{rwi.title} | SMU Designs</title>
+                <meta name="description" content={`Portfolio project ${rwi.title} showcasing Samantha Urwin's work in ${tagList}.`} />
+            </Helmet>
+
             <ProjectHeading title={rwi.title} subtitle={rwi.subtitle} tags={rwi.tags} image={rwi.bannerImg} overview={rwi.overview} link={rwi.link} />
 
             {/* Brand Design */}

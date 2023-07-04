@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import './portfolio.css';
 import { socialLinksAll } from '../assets/projectInfo'
@@ -8,19 +9,13 @@ import altitudeThumbnail from '../assets/images/altitude-thumbnail.png'
 import Socials from '../components/Socials';
 
 function Portfolio({projects}) {
-    // const [width, setWidth] = useState(window.innerWidth);
-    // const breakpoint = 769;
-  
-    // useEffect(() => {
-    //   const handleWindowResize = () => setWidth(window.innerWidth)
-    //   window.addEventListener("resize", handleWindowResize);
-  
-    //   // Return a function from the effect that removes the event listener
-    //   return () => window.removeEventListener("resize", handleWindowResize);
-    // }, []);
 
     return (
         <div className="wrapper">
+          <Helmet>
+              <title>SMU Designs | Portfolio</title>
+          </Helmet>
+
           <section className="sectionSpacing container max1000 flex-column align-center">
             <h1 className="text-primary text-center milgran">Portfolio</h1>
             <p className="text-secondary text-center my-4">

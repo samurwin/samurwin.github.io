@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import { altitudeApparel } from '../assets/projectInfo'
 import ProjectHeading from '../components/ProjectHeading'
@@ -6,8 +7,20 @@ import './projects.css'
 
 export default function Altitude() {
 
+  let tagList = "";
+
+  altitudeApparel.tags.map(tag => {
+      return tagList = tagList + tag + ", ";
+  })
+
   return(
     <div className="wrapper">
+
+      <Helmet>
+        <title>{altitudeApparel.title} | SMU Designs</title>
+        <meta name="description" content={`Portfolio project ${altitudeApparel.title} showcasing Samantha Urwin's work in ${tagList}.`} />
+      </Helmet>
+
       <ProjectHeading title={altitudeApparel.title} subtitle={altitudeApparel.subtitle} 
       tags={altitudeApparel.tags} image={altitudeApparel.bannerImg} overview={altitudeApparel.overview} link={altitudeApparel.link} />
 

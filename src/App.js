@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -15,6 +16,12 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
+      
+      <Helmet>
+        <title>SMU Designs | Web Design & Development</title>
+        <meta name="description" content={`Samantha Urwin web designer and full stack web developer from Toronto, Canada. View her portfolio of UI design, branding, and web development projects. Get in touch for freelance projects and job opportunities.`} />
+      </Helmet>
+
       <ScrollToTop>
         <Header />
           <Switch>
