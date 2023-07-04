@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { scrollTrigger } from '../../utils/helpers'
 import "./style.css"
 
 import aboutImg from "../../assets/images/samantha-urwin-ui-designer-web-developer.png";
 
 export default function About () {
+
+    useEffect(() => {
+        scrollTrigger('.aboutCon', {
+        rootMargin: '-10px'
+        });
+    }, []);
 
     return (
         <section className="aboutWrapper sectionSpacing">

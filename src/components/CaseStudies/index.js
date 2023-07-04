@@ -24,7 +24,7 @@ export default function CaseStudies() {
     ];
 
     return (
-        <section className="caseStudies sectionSpacing">
+        <section className="caseStudies mt-5">
                 <Swiper
                     slidesPerView={1.4}
                     spaceBetween={0}
