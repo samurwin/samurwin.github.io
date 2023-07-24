@@ -10,7 +10,7 @@ import Rwi from './pages/Rwi';
 import Project from './pages/Project';
 import Altitude from './pages/Altitude'
 
-import { projectInfo } from './assets/projectInfo'
+import { projectInfo, rwi, altitudeApparel } from './assets/projectInfo'
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
             <Route exact path='/' component={Home} />
 
             <Route exact path='/portfolio'>
-              <Portfolio projects={projectInfo} />
+              <Portfolio projects={projectInfo} rwi={rwi} altitudeApparel={altitudeApparel} />
             </Route>
 
             <Route exact path='/contact'>
