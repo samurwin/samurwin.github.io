@@ -172,7 +172,8 @@ const rwi = {
             name: 'NextJs',
             icon: <SiNextdotjs color='#d6e0ec' className="techIcon" />
         }
-    ]
+    ],
+    path: "/portfolio/rwi-case-study"
 }
 
 const altitudeApparel = {
@@ -196,7 +197,8 @@ const altitudeApparel = {
             name: "Figma",
             icon: <SiFigma color='#d6e0ec' className="techIcon" />
         }
-    ]
+    ],
+    path: "/portfolio/altitude-apparel"
 }
 
 const socialLinksAll = [

@@ -8,7 +8,8 @@ import rwiThumbnail from '../assets/images/RWI-Labs-thumbnail.jpg'
 import altitudeThumbnail from '../assets/images/altitude-thumbnail.png'
 import Socials from '../components/Socials';
 
-function Portfolio({projects}) {
+function Portfolio({projects, rwi, altitudeApparel}) {
+
 
     return (
         <div className="wrapper">
@@ -28,7 +29,7 @@ function Portfolio({projects}) {
             </div>
           </section>
 
-          <section className="sectionSpacing container max800">
+          {/* <section className="sectionSpacing container max800">
             <h3 className="text-secondary text-center">Featured Projects</h3>
             <Link to='/portfolio/rwi-case-study'>
               <div 
@@ -74,11 +75,33 @@ function Portfolio({projects}) {
                 </div>
               </div>
             </Link>
-          </section>
+          </section> */}
 
           <section className="container sectionSpacing">
             <h3 className="text-secondary text-center">Projects</h3>
             <div className="my-4 flex-row gapLg justify-space-between align-center max1000 mx-auto">
+            <Link to={rwi.path} className="mx-auto cursorPointer">
+                  <div
+                    className="projectImg"
+                    style={{ 
+                      backgroundImage: `url(${rwi.bannerImg})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}
+                    >
+                  </div>
+                </Link>
+                <Link to={altitudeApparel.path} className="mx-auto cursorPointer">
+                  <div
+                    className="projectImg"
+                    style={{ 
+                      backgroundImage: `url(${altitudeApparel.bannerImg})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}
+                    >
+                  </div>
+                </Link>
               {projects.map((project) => (
                   <Link to={project.path} key={project.title} className="mx-auto cursorPointer">
                     <div
