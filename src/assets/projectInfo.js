@@ -213,11 +213,6 @@ const socialLinksAll = [
       icon: <FaLinkedinIn />
     },
     {
-      url: 'https://www.behance.net/samanthaurwin',
-      key: 'behance',
-      icon: <FaBehance />
-    },
-    {
       url: 'https://www.dribbble.com/smu-design',
       key: 'dribbble',
       icon: <FaDribbble />
