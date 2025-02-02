@@ -18,7 +18,7 @@ function App() {
     <Router>
       
       <Helmet>
-        <title>SMU Designs | Web Design & Development</title>
+        <title>SMU Designs | Web Development & Design</title>
         <meta name="description" content={`Samantha Urwin web designer and full stack web developer from Toronto, Canada. View her portfolio of UI design, branding, and web development projects. Get in touch for freelance projects and job opportunities.`} />
       </Helmet>
 
