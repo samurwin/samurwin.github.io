@@ -184,7 +184,7 @@ function Home() {
 
                 </div>
 
-                <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/17zkRquQqufnLo7R-mcDZW4X642Re_Yby/view?usp=sharing"/>
+                <Button color="secondary" text="My Resume" link="https://docs.google.com/document/d/1jvhdNTM6NbECvuLYNSCfOpEfoAEX_zYd/edit?usp=sharing&ouid=101342070222739972129&rtpof=true&sd=true"/>
             </section>
 
             <section className="container sectionSpacing">
